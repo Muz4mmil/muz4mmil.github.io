@@ -29,10 +29,10 @@
     --secfont: #18333e;
     --headfont: rgb(59, 59, 59);
     --scrollbg: rgb(228, 228, 228);
-    --homebg: #fffff8;
-    --aboutbg: rgb(255, 254, 246);
-    --projectbg: #fbfcef;
-    --contactbg: #fff9ea;
+    --homebg: #EFF8FF;
+    --aboutbg: #FEFBF3;
+    --projectbg: #f5fcff;
+    --contactbg: #fdf8ea;
     --navbg: rgb(247, 236, 202);
     --cardbg: rgb(255, 227, 176);
 }
