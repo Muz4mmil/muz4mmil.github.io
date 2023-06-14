@@ -164,7 +164,7 @@ theme i{
 
     nav ul{
         /* background: var(--navbg); */
-        background: rgba(128, 128, 128, 0.4);
+        background: rgba(128, 128, 128, 0.2);
         padding: 13px 20px;
         border-radius: 14px;
         /* box-shadow: 0 3px 5px 0px rgb(26, 26, 26); */
