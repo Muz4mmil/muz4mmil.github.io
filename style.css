@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
     transition: .3s;
 }
 
@@ -23,6 +22,7 @@
     --navbg: rgb(60, 60, 60);
     --cardbg: antiquewhite;
 }
+
 .lightmode{
     --mainfont: #000000;
     --awfont: rgb(48, 35, 0);
@@ -30,12 +30,18 @@
     --headfont: rgb(59, 59, 59);
     --scrollbg: rgb(228, 228, 228);
     --homebg: url('./images/homebg1.png');
-    --aboutbg: #FEFBF3;
-    --projectbg: #f5fcff;
-    --contactbg: #fdf8ea;
+    --aboutbg: rgba(255, 166, 0, 0.08);
+    --projectbg: rgba(255, 166, 0, 0.13);
+    --contactbg: rgba(255, 166, 0, 0.08);
     --navbg: rgb(247, 236, 202);
     --cardbg: rgb(255, 227, 176);
 }
+/* .lightmode{
+    --homebg: url('./images/homebg1.png');
+    --aboutbg: #fffff0;
+    --projectbg: #fffae53a;
+    --contactbg: #fdf8ea46;
+} */
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -90,7 +96,7 @@ nav{
 
 
 nav ul{
-    background: rgba(128, 128, 128, 0.2);
+    background: rgba(128, 128, 128, 0.1);
     padding: 10px 30px;
     backdrop-filter: blur(5px);
     border-radius: 8px;
