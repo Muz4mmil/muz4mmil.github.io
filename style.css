@@ -29,19 +29,19 @@
     --secfont: #18333e;
     --headfont: rgb(59, 59, 59);
     --scrollbg: rgb(228, 228, 228);
-    --homebg: url('./images/homebg1.png');
+    /* --homebg: url('./images/homebg1.png');
     --aboutbg: rgba(255, 166, 0, 0.08);
     --projectbg: rgba(255, 166, 0, 0.13);
-    --contactbg: rgba(255, 166, 0, 0.08);
+    --contactbg: rgba(255, 166, 0, 0.08); */
     --navbg: rgb(247, 236, 202);
     --cardbg: rgb(255, 227, 176);
 }
-/* .lightmode{
+.lightmode{
     --homebg: url('./images/homebg1.png');
-    --aboutbg: #fffff0;
-    --projectbg: #fffae53a;
-    --contactbg: #fdf8ea46;
-} */
+    --aboutbg: #F5F5F5;
+    --projectbg: #EBEBEB ;
+    --contactbg: #F5F5F5 ;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -654,16 +654,20 @@ theme i{
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    /* background: rgb(255, 198, 93); */
     background: var(--cardbg);
     float: right;
     transition: .3s;
     cursor: pointer;
-    box-shadow: 0px 2px 5px rgba(194, 165, 71, 0.589);
+    /* box-shadow: 0px 2px 5px rgba(194, 165, 71, 0.589); */
 }
 
 .contact-btn:hover{
     background: orange;
-    transform: scale(105%);
+    /* transform: scale(105%); */
+    box-shadow: 2px 4px 0px rgba(128, 128, 128, 0.425);
+    /* transform: scale(1.02); */
+    transform: translate(-1px, -1px);
 }
 
 @media (max-width: 800px){
