@@ -404,7 +404,7 @@ theme i{
     padding: 10px 15px;
 }
 .skilli:nth-child(4):hover{
-    width: 225px;
+    width: 200px;
 }
 
 @media (max-width: 800px){
@@ -440,7 +440,7 @@ theme i{
     .skilli:hover{
         width: 175px;
     }
-    .skilli:nth-child(6):hover{
+    .skilli:nth-child(4):hover{
         width: 175px;
     }
 
@@ -463,16 +463,8 @@ theme i{
         margin-bottom: 60px;
     }
 
-    .skilli:nth-child(6) p{
-        visibility: hidden;
-        position: relative;
-    }
-    .skilli:nth-child(6) p::after{
-        visibility: visible;
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "JS";
+    .skilli:nth-child(4) p{
+        font-size: 14px;
     }
 }
 
@@ -503,8 +495,10 @@ theme i{
 }
 
 .card:hover{
-    box-shadow: 0px 5px 5px rgb(80, 80, 80);
-    transform: scale(1.02);
+    /* box-shadow: 0px 5px 5px rgb(80, 80, 80); */
+    box-shadow: 7px 7px 0px rgba(128, 128, 128, 0.425);
+    /* transform: scale(1.02); */
+    transform: translate(-2.5px, -2.5px);
 }
 
 .pr-img{

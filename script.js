@@ -1,3 +1,38 @@
+function typename(){
+    const typed = new Typed('#typed', {
+    strings: ['Muzammil ;)'],
+    typeSpeed: 200
+      });
+}
+
+setTimeout(function(){typename();}, 1500);
+
+// -------------------------------------------------------------------------------
+
+const skillContainer = document.querySelector('.skillpart')
+
+skillSet.map((si)=>{
+    let skilli = `<div class="skilli reveal" >
+                        <img src="./images/${si.name}.png">
+                        <div class="abskill">
+                            <p>${si.name}</p>
+                            <div class="level">`;
+                            for(let i = 0; i < si.level; i++) {
+                                skilli+=`<i class="fa-solid fa-star"></i>`
+                            };
+                            for(let i = 0; i < 3 - si.level; i++) {
+                                skilli+=`<i class="fa-regular fa-star"></i>`
+                            };
+                                
+                    skilli+=`  </div>
+                            </div>
+                        </div>`
+
+    skillContainer.insertAdjacentHTML('beforeend', skilli);
+})
+
+// -------------------------------------------------------------------------------
+
 window.addEventListener('scroll', reveal);
 
 function reveal(){
@@ -16,21 +51,13 @@ function reveal(){
     }
 }
 
-function typename(){
-    const typed = new Typed('#typed', {
-    strings: ['Muzammil ;)'],
-    typeSpeed: 200
-      });
-}
-
-setTimeout(function(){typename();}, 1500);
-
+// -------------------------------------------------------------------------------
 
 function changeTheme(){
     document.body.classList.toggle("lightmode");
 }
 
-
+// -------------------------------------------------------------------------------
 
 function sendMail(){
 
