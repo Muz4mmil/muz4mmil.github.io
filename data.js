@@ -20,6 +20,10 @@ let skillSet = [
         level: 1
     },
     {
+        name: "ReactJS",
+        level: 1
+    },
+    {
         name: "SASS",
         level: 2
     },

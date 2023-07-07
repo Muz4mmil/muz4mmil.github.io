@@ -125,12 +125,12 @@
 
             <div class="cont-form">
                 <p>Drop a message</p>
-                <form>
+                <form onsubmit="return false">
                     <input type="text" id="name" placeholder="Full Name" required>
                     <input type="email" id="email" placeholder="Email" required>
                     <textarea rows="5" id="message" placeholder="Message" required></textarea>
+                    <button class="contact-btn" type="submit" onclick="sendMail()">Send</button>
                 </form>
-                <button class="contact-btn" type="submit" onclick="sendMail()">Send</button>
             </div>
         </div>
 

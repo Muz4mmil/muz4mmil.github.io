@@ -645,6 +645,7 @@ theme i{
 
 .contact-btn{
     margin: 10px auto;
+    margin-right: 0;
     height: 30px;
     width: 110px;
     font-size: 17px;
