@@ -33,6 +33,51 @@ skillSet.map((si)=>{
 
 // -------------------------------------------------------------------------------
 
+{/* <div class="card">
+                <div class="pr-img">
+                    <img src="./images/thumb-music.jpg">
+                </div>
+                <div class="pr-title">
+                    Music Player
+                </div>
+                <div class="pr-info">
+                    An interactive Music Player clone 
+                </div>
+                <div class="pr-view">
+                    <a href="https://muz4mmil.github.io/Music-Player" target="_blank"><i class="fa-solid fa-play"></i> Preview
+                    </a>
+                    <a href="https://github.com/Muz4mmil/Music-Player" target="_blank"><i class="fa-solid fa-code"></i> Code
+                    </a>
+                </div>
+            </div> */}
+
+const projectsGallery = document.querySelector('.gallery')
+
+projects.map((project) =>{
+    let card = `<div class="card">
+                    <div class="pr-img">
+                        <img src=${project.img}>
+                    </div>
+                    <div class="pr-title">
+                        ${project.title}
+                    </div>
+                    <div class="pr-info">
+                        ${project.info} 
+                    </div>
+                    <div class="pr-view">
+                        <a href=${project.previewLink} target="_blank"><i class="fa-solid fa-play"></i> Preview
+                        </a>
+                        <a href=${project.codeLink} target="_blank"><i class="fa-solid fa-code"></i> Code
+                        </a>
+                    </div>
+                </div>`;
+
+    projectsGallery.insertAdjacentHTML('beforeend', card)
+})
+
+
+// -------------------------------------------------------------------------------
+
 window.addEventListener('scroll', reveal);
 
 function reveal(){
