@@ -540,6 +540,7 @@ theme i{
     margin-top: 10px;
     text-align: center;
     font-size: 14px;
+    font-weight: 500;
     border-radius: 6px;
     text-decoration: none;
     transition: none;
@@ -574,10 +575,10 @@ theme i{
     text-align: center;
     color: var(--mainfont);
     font-weight: 500;
-    border-left: 1px solid orange;
-    border-right: 1px solid orange;
+    border-bottom: 2px solid orange;
+    /* border-right: 1px solid orange; */
     width: max-content;
-    padding: 0 10px;
+    padding: 4px 2px;
     margin-top: 30px;
 }
 
