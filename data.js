@@ -56,6 +56,6 @@ let projects = [
         info: "Easy and Secure File transfer app that works without any login/signup.",
         type: 'mini',
         previewLink : "https://fileglide.web.app",
-        codeLink: "https://github.com/Muz4mmil/Diskord"
+        codeLink: "https://github.com/Muz4mmil/FileGlide"
     },
 ]
