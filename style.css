@@ -16,9 +16,11 @@
     --headfont: rgb(204, 204, 204);
     --scrollbg: rgb(27, 27, 27);
     --homebg: #171717;
-    --aboutbg: #242222;
+    --aboutbg: #1b1a1a;
+    /* --aboutbg: #242222; */
     --projectbg: #181818;
-    --contactbg: #1b1a1a;
+    --contactbg: #242222;
+    /* --contactbg: #1b1a1a; */
     --navbg: rgb(60, 60, 60);
     --cardbg: antiquewhite;
 }
@@ -471,9 +473,9 @@ theme i{
 /* ---------------------------------------------- */
 
 .projects{
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--projectbg);
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .gallery{
