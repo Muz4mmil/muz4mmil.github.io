@@ -362,8 +362,17 @@ theme i{
     margin: auto 15px;
 }
 
-.skilli img{
+.big-skill img{
     height: 60px;
+}
+.small-skill img{
+    height: 38px;
+}
+
+.small-skill{
+    margin-top: 20px;
+    padding: 8px 2px;
+    align-items: center;
 }
 
 .skilli i{
@@ -371,7 +380,7 @@ theme i{
 }
 
 .skilli p{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -395,20 +404,33 @@ theme i{
     transform: translateY(0px);
     opacity: 1;
 }
-.skilli.reveal.active{
+
+.big-skill.reveal.active{
     width: 70px;
     background: none;
 }
+.small-skill.reveal.active{
+    width: 50px;
+    background: none;
+}
 
-.skilli.active:hover{
+.big-skill.active:hover{
     background: var(--cardbg);
     width: 185px;
     padding: 10px 15px;
 }
-.skilli:nth-child(4):hover{
-    width: 200px;
+.small-skill.active:hover{
+    background: var(--cardbg);
+    width: 145px;
+    padding: 8px 10px;
+}
+.small-skill:nth-child(4):hover{
+    width: 175px;
 }
 
+/* .big-skill:nth-child(2):hover{
+    width: 210px;
+} */
 @media (max-width: 800px){
     .about{
         padding-bottom: 100px;
@@ -423,6 +445,7 @@ theme i{
 
     .skillpart{
         display: grid;
+        width: max-content;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-items: center;
@@ -465,7 +488,7 @@ theme i{
         margin-bottom: 60px;
     }
 
-    .skilli:nth-child(4) p{
+    .small-skill:nth-child(4) p{
         font-size: 14px;
     }
 }
@@ -486,7 +509,7 @@ theme i{
 }
 
 .card{
-    width: 230px;
+    width: 260px;
     background: var(--cardbg);
     margin: auto;
     padding: 15px;
@@ -528,6 +551,17 @@ theme i{
     color: rgb(66, 66, 66);
 }
 
+.pr-stack{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.pr-stack img{
+    margin: 0 4px;
+    height: 20px;
+}
 
 .pr-view{
     display: flex;
@@ -701,9 +735,9 @@ theme i{
 .contact-btn:hover{
     background: orange;
     /* transform: scale(105%); */
-    box-shadow: 2px 4px 0px rgba(128, 128, 128, 0.425);
+    /* box-shadow: 2px 4px 0px rgba(128, 128, 128, 0.425); */
     /* transform: scale(1.02); */
-    transform: translate(-1px, -1px);
+    /* transform: translate(-1px, -1px); */
 }
 
 @media (max-width: 800px){

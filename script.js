@@ -9,10 +9,10 @@ setTimeout(function(){typename();}, 1500);
 
 // -------------------------------------------------------------------------------
 
-const skillContainer = document.querySelector('.skillpart')
+const bigSkillContainer = document.querySelector('.big-skills')
 
-skillSet.map((si)=>{
-    let skilli = `<div class="skilli reveal" >
+skillSet.filter(skill => skill.type === 1).map((si)=>{
+    let skilli = `<div class="skilli reveal big-skill" >
                         <img src="./images/${si.name}.png">
                         <div class="abskill">
                             <p>${si.name}</p>
@@ -28,7 +28,20 @@ skillSet.map((si)=>{
                             </div>
                         </div>`
 
-    skillContainer.insertAdjacentHTML('beforeend', skilli);
+    bigSkillContainer.insertAdjacentHTML('beforeend', skilli);
+})
+
+const smallSkillContainer = document.querySelector('.small-skills')
+
+skillSet.filter(skill => skill.type === 2).map((si)=>{
+    let skilli = `<div class="skilli reveal small-skill" >
+                        <img src="./images/${si.name}.png">
+                        <div class="abskill">
+                            <p>${si.name}</p>
+                        </div>
+                        </div>`
+
+    smallSkillContainer.insertAdjacentHTML('beforeend', skilli);
 })
 
 // -------------------------------------------------------------------------------
@@ -63,6 +76,12 @@ projects.map((project) =>{
                     </div>
                     <div class="pr-info">
                         ${project.info} 
+                    </div>
+                    <div class="pr-stack">
+                        <p>Stack: </p>
+                        ${ project.stack.map((skill)=>{
+                            return `<img src="./images/${skill}.png">`
+                        }).join(' ')}
                     </div>
                     <div class="pr-view">
                         <a href=${project.previewLink} target="_blank"><i class="fa-solid fa-play"></i> Preview
