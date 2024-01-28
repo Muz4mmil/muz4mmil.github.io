@@ -67,14 +67,14 @@ skillSet.filter(skill => skill.type === 2).map((si)=>{
 const projectsGallery = document.querySelector('.gallery')
 
 projects.map((project) =>{
-    let card = `<div class="card">
+    let card = `<div class="card hover:shadow-md">
                     <div class="pr-img">
                         <img src=${project.img}>
                     </div>
                     <div class="pr-title">
                         ${project.title}
                     </div>
-                    <div class="pr-info">
+                    <div class="pr-info cursor-default">
                         ${project.info} 
                     </div>
                     <div class="pr-stack">
