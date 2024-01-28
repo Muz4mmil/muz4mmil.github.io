@@ -78,7 +78,7 @@ let projects = [
         type: 'mini',
         previewLink: "https://muz4mmil.github.io/Diskord",
         codeLink: "https://github.com/Muz4mmil/Diskord",
-        stack: ["ReactJS", "SASS", "Firebase"]
+        stack: ["ReactJS", "SASS", "FireBase"]
     },
     {
         title: 'Music Player',
