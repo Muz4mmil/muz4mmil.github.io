@@ -36,7 +36,7 @@ let skillSet = [
     },
     {
         name: "MongoDB",
-        level: 2,
+        level: 1,
         type: 1
     },
     {
