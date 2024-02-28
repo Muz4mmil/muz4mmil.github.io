@@ -63,6 +63,15 @@ let skillSet = [
 
 let projects = [
     {
+        title: 'ProJet',
+        img: "./images/thumb-projet.PNG",
+        info: "A platform where you can showcase your projects and explore projects from others",
+        type: 'mini',
+        previewLink: "https://projet-app.web.app",
+        codeLink: "https://github.com/Muz4mmil/ProJet-Firebase",
+        stack: ["ReactJS", "Tailwind", "Firebase"]
+    },
+    {
         title: 'FileGLide',
         img: "./images/thumb-fileglide.PNG",
         info: "Easy and Secure File transfer app that works without any login/signup.",

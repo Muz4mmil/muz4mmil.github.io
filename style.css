@@ -36,13 +36,14 @@
     --projectbg: rgba(255, 166, 0, 0.13);
     --contactbg: rgba(255, 166, 0, 0.08); */
     --navbg: rgb(247, 236, 202);
-    --cardbg: rgb(255, 227, 176);
+    --cardbg: rgb(255, 235, 199);
 }
 .lightmode{
-    --homebg: url('./images/homebg1.png');
-    --aboutbg: #F5F5F5;
-    --projectbg: #EBEBEB ;
-    --contactbg: #F5F5F5 ;
+    /* --homebg: url('./images/homebg1.png'); */
+    --homebg: #fef5ea80;
+    --aboutbg: #fef5ea56;
+    --projectbg: #f9f5ea80 ;
+    --contactbg: #fef5ea3f ;
 }
 
 body{
@@ -424,7 +425,7 @@ theme i{
     width: 145px;
     padding: 8px 10px;
 }
-.small-skill:nth-child(4):hover{
+.small-skill:nth-child(3):hover{
     width: 175px;
 }
 
@@ -504,7 +505,9 @@ theme i{
 .gallery{
     width: max-content;
     margin: 70px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
     gap: 20px;
 }
 
@@ -516,7 +519,7 @@ theme i{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    border: 1px solid grey;
+    border: 1px solid rgba(0,0,0,0.2);
     /* box-shadow: 0px 5px 10px rgb(99, 82, 64); */
 }
 
@@ -621,6 +624,7 @@ theme i{
 @media (max-width: 800px){
     .gallery{
         flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
