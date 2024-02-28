@@ -69,7 +69,7 @@ let projects = [
         type: 'mini',
         previewLink: "https://projet-app.web.app",
         codeLink: "https://github.com/Muz4mmil/ProJet-Firebase",
-        stack: ["ReactJS", "Tailwind", "Firebase"]
+        stack: ["ReactJS", "Tailwind", "FireBase"]
     },
     {
         title: 'FileGLide',
@@ -78,7 +78,7 @@ let projects = [
         type: 'mini',
         previewLink: "https://fileglide.web.app",
         codeLink: "https://github.com/Muz4mmil/FileGlide",
-        stack: ["ReactJS", "SASS", "Firebase"]
+        stack: ["ReactJS", "SASS", "FireBase"]
     },
     {
         title: 'Diskord',
