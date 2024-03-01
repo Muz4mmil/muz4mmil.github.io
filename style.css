@@ -42,8 +42,9 @@
     /* --homebg: url('./images/homebg1.png'); */
     --homebg: #fef5ea80;
     --aboutbg: #fef5ea56;
+    --aboutbg: #fef5ea36;
     --projectbg: #f9f5ea80 ;
-    --contactbg: #fef5ea3f ;
+    --contactbg: #fef5ea31 ;
 }
 
 body{

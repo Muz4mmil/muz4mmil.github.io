@@ -55,7 +55,7 @@ let skillSet = [
         type: 1
     },
     {
-        name: "FireBase",
+        name: "Firebase",
         level: 2,
         type: 1
     }
@@ -69,7 +69,7 @@ let projects = [
         type: 'mini',
         previewLink: "https://projet-app.web.app",
         codeLink: "https://github.com/Muz4mmil/ProJet-Firebase",
-        stack: ["ReactJS", "Tailwind", "FireBase"]
+        stack: ["ReactJS", "Tailwind", "Firebase"]
     },
     {
         title: 'FileGLide',
@@ -78,21 +78,21 @@ let projects = [
         type: 'mini',
         previewLink: "https://fileglide.web.app",
         codeLink: "https://github.com/Muz4mmil/FileGlide",
-        stack: ["ReactJS", "SASS", "FireBase"]
+        stack: ["ReactJS", "SASS", "Firebase"]
     },
     {
         title: 'Diskord',
         img: "./images/thumb-diskord.PNG",
-        info: "A Discord style chat app with Google Auth and seperate Room Feature.",
+        info: "A Discord style Chat app with seperate Rooms chat and Gemini Powered AI chat.",
         type: 'mini',
         previewLink: "https://muz4mmil.github.io/Diskord",
         codeLink: "https://github.com/Muz4mmil/Diskord",
-        stack: ["ReactJS", "SASS", "FireBase"]
+        stack: ["ReactJS", "SASS", "Firebase"]
     },
     {
         title: 'Music Player',
         img: "./images/thumb-music.jpg",
-        info: "An interactive Music Player made with vanilla HTML, CSS and JavaScript.",
+        info: "An interactive Music Player with Playlist and a beautiful Light/Dark UI.",
         type: 'mini',
         previewLink: "https://muz4mmil.github.io/Music-Player",
         codeLink: "https://github.com/Muz4mmil/Music-Player",
