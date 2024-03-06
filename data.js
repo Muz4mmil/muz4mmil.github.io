@@ -73,7 +73,7 @@ let projects = [
     },
     {
         title: 'FileGLide',
-        img: "./images/thumb-fileglide.PNG",
+        img: "./images/thumb-fileglide.png",
         info: "Easy and Secure File transfer app that works without any login/signup.",
         type: 'mini',
         previewLink: "https://fileglide.web.app",
