@@ -40,6 +40,11 @@ let skillSet = [
         type: 1
     },
     {
+        name: "NextJs",
+        level: 2,
+        type: 1
+    },
+    {
         name: "SASS",
         level: 2,
         type: 2
@@ -47,6 +52,11 @@ let skillSet = [
     {
         name: "Python",
         level: 1,
+        type: 2
+    },
+    {
+        name: "Git-GitHub",
+        level: 2,
         type: 2
     },
     {
@@ -88,14 +98,5 @@ let projects = [
         previewLink: "https://muz4mmil.github.io/Diskord",
         codeLink: "https://github.com/Muz4mmil/Diskord",
         stack: ["ReactJS", "SASS", "Firebase"]
-    },
-    {
-        title: 'Music Player',
-        img: "./images/thumb-music.jpg",
-        info: "An interactive Music Player with Playlist and a beautiful Light/Dark UI.",
-        type: 'mini',
-        previewLink: "https://muz4mmil.github.io/Music-Player",
-        codeLink: "https://github.com/Muz4mmil/Music-Player",
-        stack: ["HTML", "CSS", "JavaScript"]
     },
 ]

@@ -226,8 +226,10 @@ theme i{
     color: var(--secfont);
     margin-top: 30px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: justify;
+    display: flex;
+    gap: 14px;
     /* border: 1px solid grey; */
 }
 
@@ -330,7 +332,7 @@ theme i{
     margin-left: 60px;
     max-width: 600px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--awfont);
     align-items: center;
     display: flex;
@@ -428,6 +430,14 @@ theme i{
 }
 .small-skill:nth-child(3):hover{
     width: 175px;
+}
+
+.small-skill:last-child{
+    white-space: nowrap;
+}
+
+.small-skill:last-child:hover{
+    width: 160px;
 }
 
 /* .big-skill:nth-child(2):hover{
