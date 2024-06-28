@@ -77,7 +77,7 @@ let projects = [
         img: "./images/thumb-projet.PNG",
         info: "A platform where you can showcase your projects and explore projects from others",
         type: 'mini',
-        previewLink: "https://projet-app.web.app",
+        previewLink: "https://projetapp.vercel.app",
         codeLink: "https://github.com/Muz4mmil/ProJet-Firebase",
         stack: ["ReactJS", "Tailwind", "Firebase"]
     },
