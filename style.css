@@ -428,7 +428,8 @@ theme i{
     width: 145px;
     padding: 8px 10px;
 }
-.small-skill:nth-child(3):hover{
+.small-skill:nth-child(1):hover,
+.small-skill:nth-child(4):hover{
     width: 175px;
 }
 

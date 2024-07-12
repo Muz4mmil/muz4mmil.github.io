@@ -1,5 +1,10 @@
 let skillSet = [
     {
+        name: "Typescript",
+        level: 2,
+        type: 2
+    },
+    {
         name: "HTML",
         level: 2,
         type: 2
@@ -25,6 +30,11 @@ let skillSet = [
         type: 1
     },
     {
+        name: "NextJs",
+        level: 2,
+        type: 1
+    },
+    {
         name: "NodeJS",
         level: 1,
         type: 1
@@ -37,11 +47,6 @@ let skillSet = [
     {
         name: "MongoDB",
         level: 1,
-        type: 1
-    },
-    {
-        name: "NextJs",
-        level: 2,
         type: 1
     },
     {
