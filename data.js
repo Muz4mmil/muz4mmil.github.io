@@ -15,7 +15,7 @@ let skillSet = [
         type: 2
     },
     {
-        name: "JavaScript",
+        name: "Javascript",
         level: 2,
         type: 2
     },
