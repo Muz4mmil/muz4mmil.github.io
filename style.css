@@ -774,10 +774,10 @@ theme i{
         padding-bottom: 30px;
     }
 
-    .sclbtn{
+    .sclbtn a{
         width: auto;
     }
-    .sclbtn label{
+    .sclbtn a p{
         display: none;
         font-size: 15px;
     }
