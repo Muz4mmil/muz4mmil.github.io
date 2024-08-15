@@ -82,9 +82,9 @@ let projects = [
         img: "./images/thumb-projet.PNG",
         info: "A platform where you can showcase your projects and explore projects from others",
         type: 'mini',
-        previewLink: "https://projetapp.vercel.app",
-        codeLink: "https://github.com/Muz4mmil/ProJet-Firebase",
-        stack: ["ReactJS", "Tailwind", "Firebase"]
+        previewLink: "https://app-projet.vercel.app",
+        codeLink: "https://github.com/Muz4mmil/ProJet",
+        stack: ["ReactJS", "NodeJS", "Express", "MongoDB", "Tailwind"]
     },
     {
         title: 'FileGLide',
