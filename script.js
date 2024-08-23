@@ -91,7 +91,29 @@ projects.map((project) =>{
                     </div>
                 </div>`;
 
-    projectsGallery.insertAdjacentHTML('beforeend', card)
+        let card2 = `<div class="container">
+        <div class="content">
+          <div class="left-section">
+            <h6>${project.title}</h6>
+            <p>${project.info}</p>
+            <div class="stack">
+            ${ project.stack.map((skill)=>{
+                return `<img src="./images/${skill}.png">`
+            }).join(' ')}
+            </div>
+          </div>
+      
+          <div class="right-section">
+            <div class="links">
+              <a href=${project.previewLink} class="preview" target="_blank"><i class="fa-solid fa-play"></i> Preview</a>
+              <a href=${project.codeLink} class="code" target="_blank"><i class="fa-solid fa-code"></i> Code</a>
+            </div>
+            <img src="project-images/${project.img}" alt="" class="project-image">
+          </div>
+        </div>
+      </div>`
+
+    projectsGallery.insertAdjacentHTML('beforeend', card2)
 })
 
 

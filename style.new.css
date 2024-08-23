@@ -17,7 +17,7 @@
     --navbg: rgb(247, 236, 202);
     --cardbg: white;
     /* --cardbg: rgb(255, 227, 176); */
-    --homebg: url('./images/homebg1.png');
+    --homebg: #FFF;
     --aboutbg: #F5F5F5;
     --projectbg: #EBEBEB;
     --contactbg: #F5F5F5;

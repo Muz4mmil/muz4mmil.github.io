@@ -20,11 +20,6 @@ let skillSet = [
         type: 2
     },
     {
-        name: "jQuery",
-        level: 1,
-        type: 2
-    },
-    {
         name: "ReactJS",
         level: 2,
         type: 1
@@ -79,16 +74,16 @@ let skillSet = [
 let projects = [
     {
         title: 'ProJet',
-        img: "./images/thumb-projet.PNG",
+        img: "projet.png",
         info: "A platform where you can showcase your projects and explore projects from others",
         type: 'mini',
-        previewLink: "https://app-projet.vercel.app",
+        previewLink: "https://projetapp.vercel.app",
         codeLink: "https://github.com/Muz4mmil/ProJet",
         stack: ["ReactJS", "NodeJS", "Express", "MongoDB", "Tailwind"]
     },
     {
         title: 'FileGLide',
-        img: "./images/thumb-fileglide.PNG",
+        img: "fileglide.png",
         info: "Easy and Secure File transfer app that works without any login/signup.",
         type: 'mini',
         previewLink: "https://fileglide.web.app",
@@ -97,7 +92,7 @@ let projects = [
     },
     {
         title: 'Diskord',
-        img: "./images/thumb-diskord.PNG",
+        img: "diskord.png",
         info: "A Discord style Chat app with seperate Rooms chat and Gemini Powered AI chat.",
         type: 'mini',
         previewLink: "https://muz4mmil.github.io/Diskord",
