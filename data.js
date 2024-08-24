@@ -95,7 +95,7 @@ let projects = [
         img: "diskord.png",
         info: "A Discord style Chat app with seperate Rooms chat and Gemini Powered AI chat.",
         type: 'mini',
-        previewLink: "https://muz4mmil.github.io/Diskord",
+        previewLink: "https://diskordchat.web.app",
         codeLink: "https://github.com/Muz4mmil/Diskord",
         stack: ["ReactJS", "SASS", "Firebase"]
     },
