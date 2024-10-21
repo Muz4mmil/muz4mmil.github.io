@@ -46,7 +46,7 @@ export default function Contact() {
 			<div className="mb-36 grid lg:grid-cols-2 grid-cols-1 place-items-center lg:gap-20 h-full">
 				<div className="relative">
 					<p className="text-6xl max-sm:text-4xl leading-[1.2] text-gray-400 font-extrabold">
-						Feel free to reach out—I'm always excited to <span className="text-black">connect, collaborate, learn, and grow!</span>
+						Feel free to reach out—I{"'"}m always excited to <span className="text-black">connect, collaborate, learn, and grow!</span>
 					</p>
 					<motion.div
 						initial={{ scaleX: 1 }}

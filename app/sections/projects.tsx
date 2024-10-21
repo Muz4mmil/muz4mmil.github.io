@@ -1,6 +1,6 @@
 import React from 'react'
 import projects from '@/app/data/projects.json'
-import { ArrowDown, ArrowRight, ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'

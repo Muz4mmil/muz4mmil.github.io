@@ -8,7 +8,6 @@ import { useState, useRef } from "react";
 import { motion } from 'framer-motion'
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(false)
   const home = useRef<HTMLDivElement>(null)
   const about = useRef<HTMLDivElement>(null)
   const projects = useRef<HTMLDivElement>(null)
