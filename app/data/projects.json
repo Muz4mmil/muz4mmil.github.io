@@ -1,0 +1,28 @@
+{
+	"projects": [
+		{
+			"name": "ProJet",
+			"description": "A platform where users can upload and showcase all their projects in one place. It also allows them to explore projects from others, encouraging collaboration and learning.",
+			"techStack": ["ReactJS", "Material UI", "Tailwind CSS", "NodeJS", "Express", "MongoDB", "Firebase"],
+			"link": "https://projetapp.vercel.app/",
+			"code": "https://github.com/Muz4mmil/ProJet",
+			"imagePath": "/projects/projet.png"
+		},
+		{
+			"name": "FileGlide",
+			"description": "An easy-to-use platform for quick and secure file sharing, allowing instant sharing across devices without needing to log in or sign up.",
+			"techStack": ["ReactJS", "SCSS", "Firebase"],
+			"link": "https://fileglide.web.app/",
+			"code": "https://github.com/Muz4mmil/FileGlide",
+			"imagePath": "/projects/fileglide.png"
+		},
+		{
+			"name": "Diskord",
+			"description": "A chat app featuring secure login, separate room chats, and an AI chat powered by Gemini for smart conversations.",
+			"techStack": ["ReactJS", "SCSS", "Firebase", "Gemini AI"],
+			"link": "https://diskordchat.web.app/",
+			"code": "https://github.com/Muz4mmil/Diskord",
+			"imagePath": "/projects/diskord.png"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-head {
+    font-size: 5.3rem;
+    line-height: 1;
+  }
+}
+

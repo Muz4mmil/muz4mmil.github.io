@@ -1,0 +1,32 @@
+{
+    "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Python"
+    ],
+    "frameworks_libraries_tools": [
+        "ReactJS",
+        "NextJS",
+        "NodeJS",
+        "Express",
+        "Tailwind CSS",
+        "SCSS",
+        "Redux",
+        "Material UI",
+        "Firebase",
+        "Supabase",
+        "Prisma ORM",
+        "Figma"
+    ],
+    "databases": [
+        "MongoDB",
+        "PostgreSQL"
+    ],
+    "soft_skills": [
+        "Teamwork",
+        "Problem Solving",
+        "Quick Learning"
+    ]
+}
