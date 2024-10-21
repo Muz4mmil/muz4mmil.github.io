@@ -59,7 +59,7 @@ export default function About() {
               viewport={{ once: true }}
               className='md:w-2/5 max-sm:border-b md:border-r border-neutral-300 md:pr-8 max-sm:pb-8 text-neutral-900'>
               <h3 className="mb-3 font-semibold">Education</h3>
-              <p className='text-xl text-neutral-900'>I{"'"}m currently pursuing a <strong>Bachelor's degree of Computer Science</strong> at the <strong>Maharashtra Institute of Technology, Aurangabad</strong>, expected to graduate in 2025.</p>
+              <p className='text-xl text-neutral-900'>I{"'"}m currently pursuing a <strong>Bachelor{"'"}s degree of Computer Science</strong> at the <strong>Maharashtra Institute of Technology, Aurangabad</strong>, expected to graduate in 2025.</p>
             </motion.div>
 
 

@@ -4,7 +4,7 @@ import Hero from "./sections/hero";
 import About from "./sections/about";
 import Projects from "./sections/projects";
 import Contact from "./sections/contact";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { motion } from 'framer-motion'
 
 export default function Home() {
