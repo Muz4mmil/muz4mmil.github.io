@@ -29,7 +29,7 @@ export default function Home() {
       <nav className="fixed top-0 w-max pt-10 pb-6 right-[5%] bg-white z-50">
         <ul className='relative w-max ml-auto flex font-semibold text-neutral-800 gap-5 justify-end max-sm:text-sm max-sm:gap-3 z-50'>
           {nav.map((n, i) => (
-            <>
+            <div key={i} className="flex gap-5">
               <li className="h-5 overflow-y-hidden">
                 <button
                   onClick={() => scrollToSection(n.ref)}
@@ -40,7 +40,7 @@ export default function Home() {
                   <span className="h-5">{n.name}</span>
                 </button>
               </li> {i !== nav.length - 1 && <>/</>}
-            </>
+            </div>
           ))}
           <motion.div initial={{ scaleX: 1 }} animate={{ scaleX: 0 }} transition={{ delay: 1.5, duration: 0.6 }} className="w-full h-full bg-white absolute top-0 right-0 origin-right"></motion.div>
         </ul>
