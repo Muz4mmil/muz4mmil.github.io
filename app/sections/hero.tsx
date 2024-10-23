@@ -11,7 +11,7 @@ export default function Hero({ contactRef }: HeroProps) {
     { name: 'LINKEDIN', link: 'https://www.linkedin.com/in/muz4mmil', delay: 1 },
     { name: 'GITHUB', link: 'https://github.com/muz4mmil', delay: 1.1 },
     { name: 'INSTAGRAM', link: 'https://instagram.com/muz4mmil.s', delay: 1.2 },
-    { name: 'X', link: 'https://x.com/Muz4mmil_', delay: 1.3 },
+    { name: 'X (TWITTER)', link: 'https://x.com/Muz4mmil_', delay: 1.3 },
   ]
 
   return (

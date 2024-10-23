@@ -18,8 +18,8 @@ export default function Projects() {
 					<motion.div
 						initial={{ scale: 0.2, opacity: 0 }}
 						whileInView={{ scale: 1, opacity: 1 }}
-						transition={{ delay: 0.5 + (index * 0.3) }}
-						viewport={{ once: true }}
+						transition={{ delay: (index * 0.2) }}
+						viewport={{   once: true }}
 						key={index} className="group/card">
 						<div className="p-5 pb-2 h-80 max-sm:h-56 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 border rounded-lg">
 							<div className="w-full h-full relative">

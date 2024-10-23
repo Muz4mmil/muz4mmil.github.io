@@ -62,7 +62,6 @@ export default function Home() {
       <div ref={contact}>
         <Contact />
       </div>
-      <div className="bg-white md:hidden w-full h-14"></div>
     </div>
   );
 }
