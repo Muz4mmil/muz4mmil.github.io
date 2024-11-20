@@ -31,7 +31,7 @@ let skillSet = [
     },
     {
         name: "NodeJS",
-        level: 1,
+        level: 2,
         type: 1
     },
     {
@@ -41,8 +41,18 @@ let skillSet = [
     },
     {
         name: "MongoDB",
-        level: 1,
+        level: 2,
         type: 1
+    },
+    {
+        name: "Redux",
+        level: 2,
+        type: 2
+    },
+    {
+        name: "PSQL",
+        level: 2,
+        type: 2
     },
     {
         name: "SASS",
@@ -67,6 +77,11 @@ let skillSet = [
     {
         name: "Firebase",
         level: 2,
+        type: 1
+    },
+    {
+        name: "Figma",
+        level: 1,
         type: 1
     }
 ]
