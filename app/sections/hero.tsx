@@ -41,11 +41,10 @@ export default function Hero({ contactRef }: HeroProps) {
 
         <div className="flex gap-3">
           <motion.a
-            href='/Resume-Oct.pdf' download={'Resume-Muzammil'}
+            href='/Muzammil-Resume-Nov.pdf' download={'Resume-Muzammil'}
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ delay: 1.55 }} viewport={{ once: true }}
-            onClick={() => console.log('')}
             className='flex gap-2 items-center border border-black hover:bg-black hover:text-white font-medium rounded-full px-5 py-3'
           >
             Resume <ArrowDown size={22} />
