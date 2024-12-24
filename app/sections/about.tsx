@@ -13,7 +13,7 @@ export default function About() {
 
       <div className="flex flex-1 gap-8 my-7 max-lg:flex-col">
         <div className="relative bg-gray-200 lg:sticky lg:top-28 rounded-lg lg:w-2/5 w-full lg:h-[540px] h-96 overflow-hidden">
-          <Image src={'/me1.png'} layout='fill' alt='me' objectFit='cover' />
+          <Image src={'/me1.png'} layout='fill' alt='me' objectFit='cover' className='' />
           <motion.div
             initial={{ scaleY: 1 }}
             whileInView={{ scaleY: 0 }}
@@ -21,7 +21,7 @@ export default function About() {
             viewport={{ once: true }}
             className='absolute top-0 left-0 h-full w-full origin-top bg-white'
           ></motion.div>
-        </div>
+        </div> 
 
         <div className="lg:w-3/5 h-full">
           <h2 className="text-5xl font-bold max-w-[500px] leading-tight">
@@ -47,7 +47,7 @@ export default function About() {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1.4 }}
             viewport={{ once: true }}
-            className="text-lg text-neutral-600 mt-5 leading-normal">
+            className="text-xl text-neutral-600 mt-10 leading-normal">
             I’m a Developer who loves bringing cool ideas to life on the internet. I’m all about crafting simple, user-friendly designs that look great and work smoothly. Outside of coding, you’ll find me snapping photos, gaming, or just hanging out with friends. Let’s connect and make something awesome!
           </motion.p>
 
@@ -57,9 +57,9 @@ export default function About() {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 1.7 }}
               viewport={{ once: true }}
-              className='border-b  border-neutral-300 pb-8 text-neutral-900'>
-              <h3 className="mb-3 font-semibold">Education</h3>
-              <p className='text-lg text-neutral-800'>I{"'"}m currently pursuing a <span className='font-medium'>Bachelor{"'"}s degree of Computer Science</span> at the <span className='font-medium'>Maharashtra Institute of Technology, Aurangabad</span>, expected to graduate in 2025.</p>
+              className='border-b  border-neutral-300 pb-16 text-neutral-900'>
+              <h3 className="mb-3 font-semibold text-2xl">Education</h3>
+              <p className='text-xl text-neutral-800'>I{"'"}m currently pursuing a <span className='font-medium'>Bachelor{"'"}s degree of Computer Science</span> at the <span className='font-medium'>Maharashtra Institute of Technology, Aurangabad</span>, expected to graduate in 2025.</p>
             </motion.div>
 
 
@@ -69,19 +69,19 @@ export default function About() {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 1.9 }}
               viewport={{ once: true }}
-              className='mt-8 text-neutral-900'>
-              <h3 className="mb-3 font-semibold">Experiences</h3>
+              className='mt-20 text-neutral-900'>
+              <h3 className="mb-3 font-semibold text-2xl">Experiences</h3>
               {/* <p className='text-lg text-neutral-600'>I’ve worked as a <strong>Full-Stack Developer Intern at DermaQ</strong> (Mar 2024 - Apr 2024), where I redesigned a responsive dashboard to enhance user experience. Earlier, I was a <strong>Web Developer at Morfeed</strong> (Feb 2023 - Apr 2023), building responsive components and integrating Firebase for secure data handling.</p> */}
-              <div className="flex max-sm:flex-col gap-2">
+              <div className="flex max-sm:flex-col gap-5">
                 <div className="rounded-2xl border p-4 text-neutral-800">
                   <p className="text-xs">(Mar 2024 - Apr 2024)</p>
-                  <p className="font-semibold text-neutral-900">Full-Stack Developer Intern</p>
+                  <p className="font-semibold text-neutral-900 text-lg mt-2">Full-Stack Developer Intern</p>
                   <p className="">DermaQ</p>
                   <p className="mt-2">Developed some key pages & Redesigned a responsive dashboard to enhance user experience</p>
                 </div>
                 <div className="rounded-2xl border p-4 text-neutral-800">
                   <p className="text-xs">(Feb 2023 - Apr 2023)</p>
-                  <p className="font-semibold text-neutral-900">Web Developer Intern</p>
+                  <p className="font-semibold text-neutral-900 text-lg mt-2">Web Developer Intern</p>
                   <p className="">Morfeed</p>
                   <p className="mt-2">Built responsive components and integrated Firebase for secure data handling.</p>
                 </div>

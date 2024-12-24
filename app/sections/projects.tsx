@@ -16,9 +16,9 @@ export default function Projects() {
 			<div className="grid grid-cols-2 max-sm:grid-cols-1 gap-12 my-10">
 				{projects.projects.map((project, index) => (
 					<motion.div
-						initial={{ scale: 0.2, opacity: 0 }}
+						initial={{ scale: 0.5, opacity: 0 }}
 						whileInView={{ scale: 1, opacity: 1 }}
-						transition={{ delay: (index * 0.2) }}
+						transition={{ delay: (index * 0.2), duration: 0.4 }}
 						viewport={{   once: true }}
 						key={index} className="group/card">
 						<div className="p-5 pb-2 h-80 max-sm:h-56 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 border rounded-lg">

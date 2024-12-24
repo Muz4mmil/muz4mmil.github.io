@@ -22,13 +22,13 @@ export default function Hero({ contactRef }: HeroProps) {
 
       <div className="ml-[5%] max-sm:mb-40 mb-24 flex-1 flex flex-col justify-center gap-2 font-extrabold text-5xl md:text-head">
         <div className="h-[5.35rem] max-sm:h-[6rem] overflow-y-hidden">
-          <motion.h1 whileInView={{ y: 0, opacity: 1 }} initial={{ y: 80, opacity: 0 }} viewport={{ once: true }} transition={{ bounce: 0 }}>I{"'"}m Muzammil Siddiqui</motion.h1>
+          <motion.h1 whileInView={{ y: 0, opacity: 1 }} initial={{ y: 80, opacity: 0 }} viewport={{ once: true }} transition={{ bounce: 0, ease: 'easeOut', duration: 0.4 }}>I{"'"}m Muzammil Siddiqui</motion.h1>
         </div>
         <div className="h-[5.35rem] max-sm:h-[6rem] overflow-y-hidden">
-          <motion.h1 whileInView={{ y: 0, opacity: 1 }} initial={{ y: 80, opacity: 0 }} viewport={{ once: true }} transition={{ delay: 0.25, bounce: 0 }}>Full Stack Developer who</motion.h1>
+          <motion.h1 whileInView={{ y: 0, opacity: 1 }} initial={{ y: 80, opacity: 0 }} viewport={{ once: true }} transition={{ delay: 0.3, bounce: 0, ease: 'easeOut', duration: 0.4 }}>Full Stack Developer who</motion.h1>
         </div>
         <div className="h-[5.35rem] max-sm:h-[6rem] overflow-y-hidden">
-          <motion.h1 whileInView={{ y: 0, opacity: 1 }} initial={{ y: 80, opacity: 0 }} viewport={{ once: true }} transition={{ delay: 0.5, bounce: 0 }} className="text-gray-400">create great experiences</motion.h1>
+          <motion.h1 whileInView={{ y: 0, opacity: 1 }} initial={{ y: 80, opacity: 0 }} viewport={{ once: true }} transition={{ delay: 0.6, bounce: 0, ease: 'easeOut', duration: 0.4 }} className="text-gray-400">create great experiences</motion.h1>
         </div>
       </div>
 
