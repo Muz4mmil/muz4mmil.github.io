@@ -35,8 +35,8 @@ export default function Projects() {
 							</div>
 						</div>
 
-						<p className='my-3 text-justify text-neutral-600'>{project.description}</p>
-						<div className="flex gap-3 flex-wrap">
+						<p className='my-3 md:text-lg text-neutral-600'>{project.description}</p>
+						<div className="flex space-x-3 flex-wrap">
 							{project.techStack.map((item, i) => (
 								<div key={i} className='flex gap-3'>
 									<div className="text-xs">{item}</div>

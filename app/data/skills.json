@@ -9,6 +9,7 @@
     "frameworks_libraries_tools": [
         "ReactJS",
         "NextJS",
+        "React Native",
         "NodeJS",
         "Express",
         "Tailwind CSS",

@@ -23,8 +23,8 @@ export default function About() {
           ></motion.div>
         </div> 
 
-        <div className="lg:w-3/5 h-full">
-          <h2 className="text-5xl font-bold max-w-[500px] leading-tight">
+        <div className="lg:w-3/5 h-full md:mt-10">
+          <h2 className="text-4xl md:text-6xl font-bold max-w-[600px] leading-tight">
             {
               ['Crafting', 'Ideas', 'with', 'Code', '&', 'Creativity'].map((word, i) => (
                 <motion.span
@@ -33,7 +33,7 @@ export default function About() {
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.2, delay: 0.7 + (i * 0.1) }}
                   viewport={{ once: true }}
-                  className='inline-block mr-2'
+                  className='inline-block mr-4'
                 >
                   {word}
                 </motion.span>
@@ -47,19 +47,19 @@ export default function About() {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1.4 }}
             viewport={{ once: true }}
-            className="text-xl text-neutral-600 mt-10 leading-normal">
+            className="text-xl md:text-3xl text-neutral-500 mt-10 leading-normal">
             I’m a Developer who loves bringing cool ideas to life on the internet. I’m all about crafting simple, user-friendly designs that look great and work smoothly. Outside of coding, you’ll find me snapping photos, gaming, or just hanging out with friends. Let’s connect and make something awesome!
           </motion.p>
 
-          <div className="flex flex-col w-full justify-between mt-20">
+          <div className="flex flex-col w-full justify-between mt-20 md:mt-40">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ delay: 1.7 }}
+              transition={{ delay: 0.3 }}
               viewport={{ once: true }}
-              className='border-b  border-neutral-300 pb-16 text-neutral-900'>
+              className='border-b  border-neutral-300 pb-12 text-neutral-900'>
               <h3 className="mb-3 font-semibold text-2xl">Education</h3>
-              <p className='text-xl text-neutral-800'>I{"'"}m currently pursuing a <span className='font-medium'>Bachelor{"'"}s degree of Computer Science</span> at the <span className='font-medium'>Maharashtra Institute of Technology, Aurangabad</span>, expected to graduate in 2025.</p>
+              <p className='text-xl md:text-2xl text-neutral-600'>I{"'"}m currently pursuing a <span className='font-medium'>Bachelor{"'"}s degree of Computer Science</span> at the <span className='font-medium'>Maharashtra Institute of Technology, Aurangabad</span>, expected to graduate in 2025.</p>
             </motion.div>
 
 
@@ -67,23 +67,23 @@ export default function About() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ delay: 1.9 }}
+              transition={{ delay: 0.6 }}
               viewport={{ once: true }}
-              className='mt-20 text-neutral-900'>
+              className='mt-10 text-neutral-900'>
               <h3 className="mb-3 font-semibold text-2xl">Experiences</h3>
               {/* <p className='text-lg text-neutral-600'>I’ve worked as a <strong>Full-Stack Developer Intern at DermaQ</strong> (Mar 2024 - Apr 2024), where I redesigned a responsive dashboard to enhance user experience. Earlier, I was a <strong>Web Developer at Morfeed</strong> (Feb 2023 - Apr 2023), building responsive components and integrating Firebase for secure data handling.</p> */}
               <div className="flex max-sm:flex-col gap-5">
                 <div className="rounded-2xl border p-4 text-neutral-800">
                   <p className="text-xs">(Mar 2024 - Apr 2024)</p>
-                  <p className="font-semibold text-neutral-900 text-lg mt-2">Full-Stack Developer Intern</p>
+                  <p className="font-semibold text-neutral-900 text-lg md:text-2xl mt-2">Full-Stack Developer Intern</p>
                   <p className="">DermaQ</p>
-                  <p className="mt-2">Developed some key pages & Redesigned a responsive dashboard to enhance user experience</p>
+                  <p className="mt-2 md:text-lg">Developed some key pages & Redesigned a responsive dashboard to enhance user experience</p>
                 </div>
                 <div className="rounded-2xl border p-4 text-neutral-800">
                   <p className="text-xs">(Feb 2023 - Apr 2023)</p>
-                  <p className="font-semibold text-neutral-900 text-lg mt-2">Web Developer Intern</p>
+                  <p className="font-semibold text-neutral-900 text-lg md:text-2xl mt-2">Web Developer Intern</p>
                   <p className="">Morfeed</p>
-                  <p className="mt-2">Built responsive components and integrated Firebase for secure data handling.</p>
+                  <p className="mt-2 md:text-lg">Built responsive components and integrated Firebase for secure data handling.</p>
                 </div>
               </div>
             </motion.div>
@@ -105,7 +105,7 @@ export default function About() {
                     <motion.div
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
-                      transition={{ delay: 0.3 + (i * 0.06) }}
+                      transition={{ delay: 0.3 + (i * 0.1) }}
                       viewport={{ once: true }}
                       key={item}
                       className="rounded-full border border-neutral-400 px-5 py-2 text-lg w-max">
