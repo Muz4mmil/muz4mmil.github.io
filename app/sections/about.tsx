@@ -81,7 +81,7 @@ export default function About() {
                 </div>
                 <div className="rounded-2xl border p-4 text-neutral-800">
                   <p className="text-xs">(Jan 2025 - Present)</p>
-                  <p className="font-semibold text-neutral-900 text-lg md:text-2xl mt-2">Web Developer Intern</p>
+                  <p className="font-semibold text-neutral-900 text-lg md:text-2xl mt-2">Software Developer Intern</p>
                   <p className="">Penguin Apps</p>
                   <p className="mt-2 md:text-lg">Integrated new features, resolved bugs in a school management system, contributed to mobile app screens development, and currently building scalable APIs using a headless CMS.</p>
                 </div>
