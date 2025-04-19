@@ -34,7 +34,7 @@ export default function Hero({ contactRef }: HeroProps) {
         </div>
         <div className="ml-[5%] flex gap-3 md:hidden">
           <motion.a
-            href='/Resume-Muzammil-Apr 25.pdf' download={'Resume-Muzammil'}
+            href='/Resume-Muzammil.pdf' download={'Resume-Muzammil'}
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ delay: 1.55 }} viewport={{ once: true }}
