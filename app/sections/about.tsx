@@ -73,15 +73,15 @@ export default function About() {
               <h3 className="mb-3 font-semibold text-2xl">Experiences</h3>
               {/* <p className='text-lg text-neutral-600'>I’ve worked as a <strong>Full-Stack Developer Intern at DermaQ</strong> (Mar 2024 - Apr 2024), where I redesigned a responsive dashboard to enhance user experience. Earlier, I was a <strong>Web Developer at Morfeed</strong> (Feb 2023 - Apr 2023), building responsive components and integrating Firebase for secure data handling.</p> */}
               <div className="flex max-sm:flex-col gap-5">
-                <div className="rounded-2xl border p-4 text-neutral-800">
-                  <p className="text-xs">(Mar 2024 - Apr 2024)</p>
-                  <p className="font-semibold text-neutral-900 text-lg md:text-2xl mt-2">Full-Stack Developer Intern</p>
+                <div className="md:w-2/5 rounded-2xl border p-4 text-neutral-800">
+                  <p className="text-xs">Mar 2024 - Apr 2024</p>
+                  <p className="font-semibold text-neutral-900 text-lg md:text-xl mt-2">Full-Stack Developer Intern</p>
                   <p className="">DermaQ</p>
                   <p className="mt-2 md:text-lg">Developed some key pages & Redesigned a responsive dashboard to enhance user experience</p>
                 </div>
-                <div className="rounded-2xl border p-4 text-neutral-800">
-                  <p className="text-xs">(Jan 2025 - Present)</p>
-                  <p className="font-semibold text-neutral-900 text-lg md:text-2xl mt-2">Software Developer Intern</p>
+                <div className="md:w-3/5 rounded-2xl border p-4 text-neutral-800">
+                  <p className="text-xs">Jan 2025 - Present</p>
+                  <p className="font-semibold text-neutral-900 text-lg md:text-xl mt-2">Software Developer Intern</p>
                   <p className="">Penguin Apps</p>
                   <p className="mt-2 md:text-lg">Integrated new features, resolved bugs in a school management system, contributed to mobile app screens development, and currently building scalable APIs using a headless CMS.</p>
                 </div>
