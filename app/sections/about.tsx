@@ -5,94 +5,144 @@ import { motion } from 'framer-motion'
 
 export default function About() {
   return (
-    <section id='#ABOUT' className='relative max-w-[1366px] mx-auto px-[5%] w-full flex flex-col bg-white'>
+    <section id='#ABOUT' className='relative max-w-[1366px] mx-auto px-[5%] w-full flex flex-col bg-white min-h-screen'>
       <div className="sticky top-0 z-10 bg-white">
         <h1 className="text-4xl font-semibold mt-8 max-sm:mt-20 w-max">About</h1>
         <hr className='mt-4' />
       </div>
 
-      <div className="flex flex-1 gap-8 my-7 max-lg:flex-col">
-        <div className="relative bg-gray-200 lg:sticky lg:top-28 rounded-lg lg:w-2/5 w-full lg:h-[540px] h-96 overflow-hidden">
-          <Image src={'/me1.png'} layout='fill' alt='me' objectFit='cover' className='' />
-          <motion.div
-            initial={{ scaleY: 1 }}
-            whileInView={{ scaleY: 0 }}
-            transition={{ duration: 0.7, bounce: 0, ease: 'easeInOut' }}
-            viewport={{ once: true }}
-            className='absolute top-0 left-0 h-full w-full origin-top bg-white'
-          ></motion.div>
-        </div> 
+      <div className="flex flex-col py-16 space-y-32">
 
-        <div className="lg:w-3/5 h-full md:mt-10">
-          <h2 className="text-4xl md:text-6xl font-bold max-w-[600px] leading-tight">
-            {
-              ['Crafting', 'Ideas', 'with', 'Code', '&', 'Creativity'].map((word, i) => (
-                <motion.span
-                  key={i}
-                  initial={{ y: 48, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.2, delay: 0.7 + (i * 0.1) }}
-                  viewport={{ once: true }}
-                  className='inline-block mr-4'
-                >
-                  {word}
-                </motion.span>
-              ))
-            }
-            {/* Crafting Ideas with Code & Creativity */}
-          </h2>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 1.4 }}
-            viewport={{ once: true }}
-            className="text-xl md:text-3xl text-neutral-500 mt-10 leading-normal">
-            I’m a Developer who loves bringing cool ideas to life on the internet. I’m all about crafting simple, user-friendly designs that look great and work smoothly. Outside of coding, you’ll find me snapping photos, gaming, or just hanging out with friends. Let’s connect and make something awesome!
-          </motion.p>
-
-          <div className="flex flex-col w-full justify-between mt-20 md:mt-40">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              viewport={{ once: true }}
-              className='border-b  border-neutral-300 pb-12 text-neutral-900'>
-              <h3 className="mb-3 font-semibold text-2xl">Education</h3>
-              <p className='text-xl md:text-2xl text-neutral-600'>I{"'"}m currently pursuing a <span className='font-medium'>Bachelor{"'"}s degree of Computer Science</span> at the <span className='font-medium'>Maharashtra Institute of Technology, Aurangabad</span>, expected to graduate in 2025.</p>
-            </motion.div>
-
-
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-              viewport={{ once: true }}
-              className='mt-10 text-neutral-900'>
-              <h3 className="mb-3 font-semibold text-2xl">Experiences</h3>
-              {/* <p className='text-lg text-neutral-600'>I’ve worked as a <strong>Full-Stack Developer Intern at DermaQ</strong> (Mar 2024 - Apr 2024), where I redesigned a responsive dashboard to enhance user experience. Earlier, I was a <strong>Web Developer at Morfeed</strong> (Feb 2023 - Apr 2023), building responsive components and integrating Firebase for secure data handling.</p> */}
-              <div className="flex max-sm:flex-col gap-5">
-                <div className="md:w-2/5 rounded-2xl border p-4 text-neutral-800">
-                  <p className="text-xs">Mar 2024 - Apr 2024</p>
-                  <p className="font-semibold text-neutral-900 text-lg md:text-xl mt-2">Full-Stack Developer Intern</p>
-                  <p className="">DermaQ</p>
-                  <p className="mt-2 md:text-lg">Developed some key pages & Redesigned a responsive dashboard to enhance user experience</p>
-                </div>
-                <div className="md:w-3/5 rounded-2xl border p-4 text-neutral-800">
-                  <p className="text-xs">Jan 2025 - Present</p>
-                  <p className="font-semibold text-neutral-900 text-lg md:text-xl mt-2">Software Developer Intern</p>
-                  <p className="">Penguin Apps</p>
-                  <p className="mt-2 md:text-lg">Integrated new features, resolved bugs in a school management system, contributed to mobile app screens development, and currently building scalable APIs using a headless CMS.</p>
-                </div>
-              </div>
-            </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="grid md:grid-cols-2 gap-16 items-center"
+        >
+          <div>
+            <h2 className="text-5xl md:text-7xl font-extralight leading-none mb-8 text-black">
+              Developer
+              <br />
+              <span className="font-light italic">& Creator</span>
+            </h2>
+            <p className="text-xl md:text-2xl font-light text-gray-600 leading-relaxed">
+              Crafting digital experiences through clean code and thoughtful design
+            </p>
           </div>
 
-          <div className="my-20">
+          <div className="relative w-full h-80 md:h-96 rounded-none overflow-hidden">
+            <Image
+              src={'/me1.png'}
+              layout='fill'
+              alt='me'
+              objectFit='cover'
+              className='grayscale hover:grayscale-0 transition-all duration-700'
+            />
+            <motion.div
+              initial={{ scaleY: 1 }}
+              whileInView={{ scaleY: 0 }}
+              transition={{ duration: 1, ease: 'easeInOut' }}
+              viewport={{ once: true }}
+              className='absolute top-0 left-0 h-full w-full origin-bottom bg-white'
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="max-w-4xl"
+        >
+          <p className="text-2xl md:text-4xl font-light leading-relaxed text-neutral-600">
+            I'm a developer who transforms ideas into digital reality. My approach centers on
+            <em className="font-normal text-neutral-800"> simplicity, functionality, and user experience</em>.
+            Outside of coding, you'll find me snapping photos, gaming, or just hanging out with friends.
+          </p>
+        </motion.div>
+
+        <div className="space-y-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h1 className="text-3xl font-semibold">My Journey</h1>
+
+            <div className="space-y-12 mt-10">
+              <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
+                <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
+                  May 2025 — Present
+                </div>
+                <div className="md:col-span-3">
+                  <h4 className="text-xl font-normal mb-2">Software Developer</h4>
+                  <p className="text-gray-600 mb-3">SleekSky</p>
+                  <p className="text-gray-700 font-light leading-relaxed">
+                    Building scalable APIs with headless CMS, developing mobile app interfaces,
+                    and enhancing school management systems through feature integration and bug resolution.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
+                <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
+                  Jan 2025 — Apr 2025
+                </div>
+                <div className="md:col-span-3">
+                  <h4 className="text-xl font-normal mb-2">Software Developer Intern</h4>
+                  <p className="text-gray-600 mb-3">Penguin Apps</p>
+                  <p className="text-gray-700 font-light leading-relaxed">
+                    Building scalable APIs with headless CMS, developing mobile app interfaces,
+                    and enhancing school management systems through feature integration and bug resolution.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
+                <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
+                  Mar — Apr 2024
+                </div>
+                <div className="md:col-span-3">
+                  <h4 className="text-xl font-normal mb-2">Full-Stack Developer Intern</h4>
+                  <p className="text-gray-600 mb-3">DermaQ</p>
+                  <p className="text-gray-700 font-light leading-relaxed">
+                    Redesigned responsive dashboards and developed key application pages
+                    to enhance overall user experience and interface functionality.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-4 gap-8 py-6">
+                <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
+                  2021 — 2025
+                </div>
+                <div className="md:col-span-3">
+                  <h4 className="text-xl font-normal mb-2">Bachelor of Computer Science</h4>
+                  <p className="text-gray-600 mb-3">Maharashtra Institute of Technology, Aurangabad</p>
+                  <p className="text-gray-700 font-light leading-relaxed">
+                    Pursuing comprehensive computer science education with focus on
+                    software development, algorithms, and modern technology stack.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="space-y-5"
+        >
+          <div className="">
             <h1 className="text-3xl font-semibold">Stuff I know...</h1>
 
-            <div className="mt-4">
+            <div className="mt-6">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -107,9 +157,10 @@ export default function About() {
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: 0.3 + (i * 0.1) }}
                       viewport={{ once: true }}
-                      key={item}
-                      className="rounded-full border border-neutral-400 px-5 py-2 text-lg w-max">
-                      {item}
+                      key={item.name}
+                      className="rounded-full border flex items-center gap-2 border-neutral-400 px-5 py-2 text-lg w-max">
+                      <i className={item.icon + " text-neutral-400"}></i>
+                      {item.name}
                     </motion.div>
                   ))}
                 </div>
@@ -128,9 +179,10 @@ export default function About() {
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: 0.6 + (i * 0.06) }}
                       viewport={{ once: true }}
-                      key={item}
-                      className="rounded-full border border-neutral-400 px-5 py-2 text-lg w-max">
-                      {item}
+                      key={item.name}
+                      className="rounded-full border flex items-center gap-2  border-neutral-400 px-5 py-2 text-lg w-max">
+                      <i className={item.icon + " text-neutral-400"}></i>
+                      {item.name}
                     </motion.div>
                   ))}
                 </div>
@@ -149,16 +201,17 @@ export default function About() {
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: 1.3 + (i * 0.06) }}
                       viewport={{ once: true }}
-                      key={item}
-                      className="rounded-full border border-neutral-400 px-5 py-2 text-lg w-max">
-                      {item}
+                      key={item.name}
+                      className="rounded-full border flex items-center gap-2  border-neutral-400 px-5 py-2 text-lg w-max">
+                      <i className={item.icon + " text-neutral-400"}></i>
+                      {item.name}
                     </motion.div>
                   ))}
                 </div>
               </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
