@@ -57,9 +57,9 @@ export default function About() {
           className="max-w-4xl"
         >
           <p className="text-2xl md:text-4xl font-light leading-relaxed text-neutral-600">
-            I'm a developer who transforms ideas into digital reality. My approach centers on
+            I’m a developer who transforms ideas into digital reality. My approach centers on
             <em className="font-normal text-neutral-800"> simplicity, functionality, and user experience</em>.
-            Outside of coding, you'll find me snapping photos, gaming, or just hanging out with friends.
+            Outside of coding, you’ll find me snapping photos, gaming, or just hanging out with friends.
           </p>
         </motion.div>
 
