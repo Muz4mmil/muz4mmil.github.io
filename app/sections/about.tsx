@@ -73,7 +73,7 @@ export default function About() {
             <h1 className="text-3xl font-semibold">My Journey</h1>
 
             <div className="space-y-12 mt-10">
-              <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
+              {/* <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
                 <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
                   May 2025 — Present
                 </div>
@@ -85,7 +85,7 @@ export default function About() {
                     and enhancing school management systems through feature integration and bug resolution.
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
                 <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
