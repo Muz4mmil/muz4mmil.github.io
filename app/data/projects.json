@@ -1,6 +1,19 @@
 {
 	"projects": [
 		{
+			"name": "CoGlider",
+			"description": "CoGlider is a cross platform Mobile app designed to connect like-minded individuals by matching them based on skills and proximity. Whether you're looking for a project partner, a mentor, or just someone to collaborate with, CoGlider simplifies the process by providing intelligent recommendations and real-time communication.",
+			"techStack": [
+				"React Native",
+				"Tailwind CSS",
+				"Firebase",
+				"Typescript"
+			],
+			"link": "https://coglider.vercel.app/",
+			"code": "https://github.com/Muz4mmil/CoGlider",
+			"imagePath": "/projects/coglider.png"
+		},
+		{
 			"name": "ProJet",
 			"description": "A sleek platform where developers and students can upload, manage, and showcase all their personal or academic projects in one place.\nIt also lets users explore projects from others, encouraging collaboration, knowledge sharing, and community-driven growth within student and tech circles.",
 			"techStack": [

@@ -27,7 +27,10 @@ export default function Projects() {
 							transition={{ duration: 0.6, delay: index * 0.15 }}
 						>
 							<div className="lg:w-1/2 w-full text-black space-y-5">
-								<h3 className="text-2xl font-medium tracking-tight">{project.name}</h3>
+								<div className="flex items-end">
+									<span className='text-7xl font-bold text-neutral-200 tracking-tighter' style={{ lineHeight: '3.5rem'}}>0{index + 1}</span>
+									<h3 className="text-3xl -ml-4 font-medium bg-white tracking-tight" style={{ lineHeight: '1.5rem'}}>{project.name}</h3>
+								</div>
 								<p className="text-neutral-600 leading-relaxed md:text-lg">{project.description}</p>
 
 								<div className="flex gap-3 flex-wrap text-sm text-neutral-500 tracking-wide">
@@ -49,7 +52,7 @@ export default function Projects() {
 									src={project.imagePath}
 									alt={project.name}
 									fill
-									className="object-contain p-10 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
+									className={`object-contain p-10 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out ${!index && 'object-cover p-0 scale-[1.10] max-sm:scale-125 mt-5'}`}
 								/>
 							</div>
 						</motion.div>
