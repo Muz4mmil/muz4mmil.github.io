@@ -39,7 +39,7 @@ export default function Contact() {
 	};
 
 	return (
-		<section id='#CONTACT' className='h-[100dvh] relative max-w-[1366px] mx-auto px-[5%] w-full flex flex-col bg-white'>
+		<section id='#CONTACT' className='sm:h-[100dvh] relative max-w-[1366px] mx-auto px-[5%] w-full flex flex-col bg-white max-sm:mb-10'>
 			<div className="sticky top-0 z-10 bg-white">
 				<h1 className="text-4xl font-semibold mt-8 mb-4 max-sm:mt-20 w-max text-white max-sm:h-0 max-sm:overflow-hidden">. </h1>
 			</div>
@@ -78,13 +78,13 @@ export default function Contact() {
 								whileInView={{ opacity: 1 }}
 								transition={{ delay: 1.35 }}
 								viewport={{ once: true }}
-								value={email} onChange={(e) => setEmail(e.target.value)} type="email" className="text-2xl max-sm:text-xl border border-neutral-400 px-6 py-4 rounded-full" placeholder='Email' required />
+								value={email} onChange={(e) => setEmail(e.target.value)} type="email" className="text-2xl max-sm:text-xl border border-neutral-400 px-6 py-4 mt-[-1px] rounded-full" placeholder='Email' required />
 							<motion.textarea
 								initial={{ opacity: 0 }}
 								whileInView={{ opacity: 1 }}
 								transition={{ delay: 1.5 }}
 								viewport={{ once: true }}
-								value={message} onChange={(e) => setMessage(e.target.value)} rows={5} className="text-2xl max-sm:text-xl border border-neutral-400 px-6 py-4 rounded-3xl" placeholder='Message' required />
+								value={message} onChange={(e) => setMessage(e.target.value)} rows={5} className="text-2xl max-sm:text-xl border border-neutral-400 px-6 py-4 mt-[-1px] rounded-3xl" placeholder='Message' required />
 						</div>
 
 						<motion.button

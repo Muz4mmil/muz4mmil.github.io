@@ -26,10 +26,10 @@ export default function Home() {
 
   return (
     <div className='font-geist'>
-      <nav className="fixed top-0 w-max pt-10 pb-6 right-[5%] bg-white z-50">
+      <nav className="fixed top-0 w-max pt-10 pb-6 right-[5%] bg-white z-50 max-sm:w-full">
         <ul className='relative w-max ml-auto flex font-semibold text-neutral-800 gap-5 justify-end max-sm:text-sm max-sm:gap-3 z-50'>
           {nav.map((n, i) => (
-            <div key={i} className="flex gap-5">
+            <div key={i} className="flex gap-5 max-sm:gap-4 max-[380px]:gap-2">
               <li className="h-5 overflow-y-hidden">
                 <button
                   onClick={() => scrollToSection(n.ref)}
@@ -57,7 +57,7 @@ export default function Home() {
       <div ref={projects}>
         <Projects />
       </div>
-      <div className="bg-white w-full h-28"></div>
+      <div className="bg-white w-full h-28 max-sm:hidden"></div>
       <div className="bg-white md:hidden w-full h-10"></div>
       <div ref={contact}>
         <Contact />

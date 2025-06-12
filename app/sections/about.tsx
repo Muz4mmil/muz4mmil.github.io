@@ -11,7 +11,7 @@ export default function About() {
         <hr className='mt-4' />
       </div>
 
-      <div className="flex flex-col py-16 space-y-32">
+      <div className="flex flex-col py-16 space-y-32 max-sm:space-y-10">
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -63,17 +63,17 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className="space-y-16">
+        <div className="">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h1 className="text-3xl font-semibold">My Journey</h1>
+            <h1 className="text-3xl font-semibold max-sm:mt-10">My Journey</h1>
 
-            <div className="space-y-12 mt-10">
-              {/* <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
+            <div className="space-y-12 max-sm:space-y-5 mt-10 max-sm:mt-4">
+              <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
                 <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
                   May 2025 — Present
                 </div>
@@ -85,7 +85,7 @@ export default function About() {
                     and enhancing school management systems through feature integration and bug resolution.
                   </p>
                 </div>
-              </div> */}
+              </div>
 
               <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
                 <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
