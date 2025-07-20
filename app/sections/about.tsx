@@ -73,7 +73,12 @@ export default function About() {
             <h1 className="text-3xl font-semibold max-sm:mt-10">My Journey</h1>
 
             <div className="space-y-12 max-sm:space-y-5 mt-10 max-sm:mt-4">
-              <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
                 <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
                   May 2025 — Present
                 </div>
@@ -85,9 +90,14 @@ export default function About() {
                     and enhancing school management systems through feature integration and bug resolution.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
                 <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
                   Jan 2025 — Apr 2025
                 </div>
@@ -99,9 +109,14 @@ export default function About() {
                     and enhancing school management systems through feature integration and bug resolution.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
                 <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
                   Mar — Apr 2024
                 </div>
@@ -113,9 +128,14 @@ export default function About() {
                     to enhance overall user experience and interface functionality.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="grid md:grid-cols-4 gap-8 py-6">
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="grid md:grid-cols-4 gap-8 py-6">
                 <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
                   2021 — 2025
                 </div>
@@ -127,7 +147,7 @@ export default function About() {
                     software development, algorithms, and modern technology stack.
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>

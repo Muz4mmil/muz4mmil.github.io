@@ -21,15 +21,15 @@ export default function Projects() {
 						<motion.div
 							key={index}
 							className={`flex flex-col-reverse lg:flex-row items-center gap-10 mt-16 ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
-							initial={{ opacity: 0, y: 40 }}
+							initial={{ opacity: 0, y: 100 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
 							transition={{ duration: 0.6, delay: index * 0.15 }}
 						>
 							<div className="lg:w-1/2 w-full text-black space-y-5">
 								<div className="flex items-end">
-									<span className='text-7xl font-bold text-neutral-200 tracking-tighter' style={{ lineHeight: '3.5rem'}}>0{index + 1}</span>
-									<h3 className="text-3xl -ml-4 font-medium bg-white tracking-tight" style={{ lineHeight: '1.5rem'}}>{project.name}</h3>
+									<span className='text-7xl font-bold text-neutral-200 tracking-tighter' style={{ lineHeight: '3.5rem' }}>0{index + 1}</span>
+									<h3 className="text-3xl -ml-4 font-medium bg-white tracking-tight" style={{ lineHeight: '1.5rem' }}>{project.name}</h3>
 								</div>
 								<p className="text-neutral-600 leading-relaxed md:text-lg">{project.description}</p>
 
@@ -48,12 +48,15 @@ export default function Projects() {
 							</div>
 
 							<div className="relative lg:w-1/2 w-full h-72 sm:h-96 overflow-hidden bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-md">
-								<Image
-									src={project.imagePath}
-									alt={project.name}
-									fill
-									className={`object-contain p-10 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out ${!index && 'object-cover p-0 scale-[1.10] max-sm:scale-125 mt-5'}`}
-								/>
+								<div className="h-full w-full">
+
+									<Image
+										src={project.imagePath}
+										alt={project.name}
+										fill
+										className={`object-contain p-10 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out ${!index && 'object-cover p-[0px]'}`}
+									/>
+								</div>
 							</div>
 						</motion.div>
 					);
