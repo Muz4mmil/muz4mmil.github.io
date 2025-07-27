@@ -72,7 +72,7 @@ export default function About() {
           >
             <h1 className="text-3xl font-semibold max-sm:mt-10">My Journey</h1>
 
-            <div className="space-y-12 max-sm:space-y-5 mt-10 max-sm:mt-4">
+            <div className="space-y-12 max-sm:space-y-5 mt-10 max-sm:mt-4 overflow-hidden">
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -86,8 +86,7 @@ export default function About() {
                   <h4 className="text-xl font-normal mb-2">Software Developer</h4>
                   <p className="text-gray-600 mb-3">SleekSky</p>
                   <p className="text-gray-700 font-light leading-relaxed">
-                    Building scalable APIs with headless CMS, developing mobile app interfaces,
-                    and enhancing school management systems through feature integration and bug resolution.
+                    Working on a B2B Health Care platform, fixing bugs and integrating features, improving overall user experience.
                   </p>
                 </div>
               </motion.div>
@@ -105,7 +104,7 @@ export default function About() {
                   <h4 className="text-xl font-normal mb-2">Software Developer Intern</h4>
                   <p className="text-gray-600 mb-3">Penguin Apps</p>
                   <p className="text-gray-700 font-light leading-relaxed">
-                    Building scalable APIs with headless CMS, developing mobile app interfaces,
+                    Built scalable APIs with headless CMS, developing mobile app interfaces,
                     and enhancing school management systems through feature integration and bug resolution.
                   </p>
                 </div>
