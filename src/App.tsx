@@ -2,21 +2,25 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue, useVelocity, useAnimationFrame } from 'framer-motion';
 import {
   ArrowUpRight,
-  Mail,
-  Github,
-  Linkedin,
-  Circle,
   ArrowDown,
-  Code2,
-  Cpu,
-  Layout,
   Terminal,
-  Globe,
   Zap,
   ArrowRight
 } from 'lucide-react';
 
-// --- 1. UTILITY COMPONENTS ---
+// --- 1. TYPE DEFINITIONS ---
+
+interface Project {
+  id: number;
+  title: string;
+  category: string;
+  stack: string;
+  color: string;
+  img: string;
+  desc: string;
+}
+
+// --- 2. UTILITY COMPONENTS ---
 
 // Moving Grain Overlay
 const NoiseOverlay = () => (
@@ -69,7 +73,7 @@ const VelocityText = ({ children, baseVelocity = 100, className = "" }: { childr
 };
 
 // Custom Cursor that blends
-const BlendedCursor = ({ isHovered }) => {
+const BlendedCursor = ({ isHovered }: { isHovered: boolean }) => {
   const mouse = { x: useMotionValue(0), y: useMotionValue(0) };
   const smoothMouse = {
     x: useSpring(mouse.x, { stiffness: 150, damping: 15, mass: 0.1 }),
@@ -77,7 +81,7 @@ const BlendedCursor = ({ isHovered }) => {
   };
 
   useEffect(() => {
-    const manageMouseMove = (e) => {
+    const manageMouseMove = (e: MouseEvent) => {
       mouse.x.set(e.clientX);
       mouse.y.set(e.clientY);
     };
@@ -95,7 +99,7 @@ const BlendedCursor = ({ isHovered }) => {
 };
 
 // --- NEW COMPONENT: Static Skill Category ---
-const SkillCategory = ({ title, items }) => {
+const SkillCategory = ({ title, items }: { title: string; items: string[] }) => {
   return (
     <div className="mb-16">
       <h3 className="text-white/40 font-mono text-sm uppercase tracking-widest mb-8 border-l-2 border-white/20 pl-4">
@@ -118,11 +122,11 @@ const SkillCategory = ({ title, items }) => {
 // --- 2. MAIN APPLICATION 
 
 export default function App() {
-  const [hoveredProject, setHoveredProject] = useState(null);
+  const [hoveredProject, setHoveredProject] = useState<Project | null>(null);
   const [cursorVariant, setCursorVariant] = useState(false);
 
   // Smooth Scroll Container Ref
-  const containerRef = useRef(null);
+  // const containerRef = useRef(null);
 
   // Projects Data
   const projects = [
@@ -585,11 +589,11 @@ export default function App() {
 
 // --- 3. FLOATING IMAGE COMPONENT ---
 
-const ProjectPreview = ({ project }) => {
+const ProjectPreview = ({ project }: { project: Project | null }) => {
   const mouse = { x: useMotionValue(0), y: useMotionValue(0) };
 
   useEffect(() => {
-    const updateMouse = (e) => {
+    const updateMouse = (e: MouseEvent) => {
       mouse.x.set(e.clientX);
       mouse.y.set(e.clientY);
     };
