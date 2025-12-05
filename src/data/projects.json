@@ -1,0 +1,58 @@
+{
+	"projects": [
+		{
+			"name": "CoGlider",
+			"description": "CoGlider is a cross platform Mobile app designed to connect like-minded individuals by matching them based on skills and proximity. Whether you're looking for a project partner, a mentor, or just someone to collaborate with, CoGlider simplifies the process by providing intelligent recommendations and real-time communication.",
+			"techStack": [
+				"React Native",
+				"Tailwind CSS",
+				"Firebase",
+				"Typescript"
+			],
+			"link": "https://coglider.vercel.app/",
+			"code": "https://github.com/Muz4mmil/CoGlider",
+			"imagePath": "/projects/coglider.png"
+		},
+		{
+			"name": "ProJet",
+			"description": "A sleek platform where developers and students can upload, manage, and showcase all their personal or academic projects in one place.\nIt also lets users explore projects from others, encouraging collaboration, knowledge sharing, and community-driven growth within student and tech circles.",
+			"techStack": [
+				"ReactJS",
+				"Material UI",
+				"Tailwind CSS",
+				"NodeJS",
+				"Express",
+				"MongoDB",
+				"Firebase"
+			],
+			"link": "https://projetapp.vercel.app/",
+			"code": "https://github.com/Muz4mmil/ProJet",
+			"imagePath": "/projects/projet.png"
+		},
+		{
+			"name": "FileGlide",
+			"description": "A no-login, no-setup file sharing tool built for speed and simplicity.\nUsers can instantly share files across devices using a unique code, making it ideal for classrooms, group work, or quick handoffs — no accounts, no friction, just files.",
+			"techStack": [
+				"ReactJS",
+				"SCSS",
+				"Firebase"
+			],
+			"link": "https://fileglide.web.app/",
+			"code": "https://github.com/Muz4mmil/FileGlide",
+			"imagePath": "/projects/fileglide.png"
+		},
+		{
+			"name": "Diskord",
+			"description": "A real-time chat app with secure, room-based messaging and a built-in AI assistant powered by Gemini.\nWhether you're chatting with friends or asking the AI for help, Diskord blends conversation and intelligence into one smooth, minimal interface.",
+			"techStack": [
+				"ReactJS",
+				"SCSS",
+				"Firebase",
+				"Gemini AI"
+			],
+			"link": "https://diskordchat.web.app/",
+			"code": "https://github.com/Muz4mmil/Diskord",
+			"imagePath": "/projects/diskord.png"
+		}
+	]
+}

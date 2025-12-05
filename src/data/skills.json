@@ -1,0 +1,102 @@
+{
+    "languages": [
+        {
+            "name": "HTML",
+            "icon": "devicon-html5-plain"
+        },
+        {
+            "name": "CSS",
+            "icon": "devicon-css3-plain"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "devicon-javascript-plain"
+        },
+        {
+            "name": "TypeScript",
+            "icon": "devicon-typescript-plain"
+        },
+        {
+            "name": "Python",
+            "icon": "devicon-python-plain"
+        }
+    ],
+    "frameworks_libraries_tools": [
+        {
+            "name": "ReactJS",
+            "icon": "devicon-react-original"
+        },
+        {
+            "name": "NextJS",
+            "icon": "devicon-nextjs-plain"
+        },
+        {
+            "name": "React Native",
+            "icon": "devicon-react-original"
+        },
+        {
+            "name": "NodeJS",
+            "icon": "devicon-nodejs-plain"
+        },
+        {
+            "name": "Express",
+            "icon": "devicon-express-original"
+        },
+        {
+            "name": "Tailwind CSS",
+            "icon": "devicon-tailwindcss-plain"
+        },
+        {
+            "name": "SCSS",
+            "icon": "devicon-sass-original"
+        },
+        {
+            "name": "Redux",
+            "icon": "devicon-redux-original"
+        },
+        {
+            "name": "Material UI",
+            "icon": "devicon-materialui-plain"
+        },
+        {
+            "name": "Firebase",
+            "icon": "devicon-firebase-plain"
+        },
+        {
+            "name": "Supabase",
+            "icon": "devicon-supabase-plain"
+        },
+        {
+            "name": "Figma",
+            "icon": "devicon-figma-plain"
+        }
+    ],
+    "databases": [
+        {
+            "name": "MongoDB",
+            "icon": "devicon-mongodb-plain"
+        },
+        {
+            "name": "PostgreSQL",
+            "icon": "devicon-postgresql-plain"
+        },
+        {
+            "name": "ORMs",
+            "icon": "devicon-sequelize-plain"
+        }
+    ],
+    "soft_skills": [
+        {
+            "name": "Teamwork",
+            "icon": ""
+        },
+        {
+            "name": "Problem Solving",
+            "icon": ""
+        },
+        {
+            "name": "Quick Learning",
+            "icon": ""
+        }
+    ]
+}

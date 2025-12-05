@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Geist";
+  src: local("GeistVF"),
+    url('./assets/fonts/GeistVF.woff')
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-head {
+    font-size: 5.3rem;
+    line-height: 1;
+  }
+}
+
+body {
+  font-family: Geist, Arial, Helvetica, sans-serif;
+}
+
+.times-font {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
