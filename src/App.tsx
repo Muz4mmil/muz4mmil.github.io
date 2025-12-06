@@ -137,7 +137,8 @@ export default function App() {
       stack: "Next.js / Node.js / Stripe / AWS",
       color: "#E0E7FF", // Soft Indigo
       img: "/projects/buddy.webp", // Placeholder for actual abstract UI
-      desc: "A Part-time focused full fledged job portal for students and businesses"
+      desc: "A Part-time focused full fledged job portal for students and businesses",
+      projectLink: 'https://test.buddy-fr.com',
     },
     {
       id: 2,
@@ -146,7 +147,9 @@ export default function App() {
       stack: "React Native / Expo /Firebase",
       color: "#FCE7F3", // Soft Pink
       img: "/projects/coglider.webp",
-      desc: "A Tinder-inspired app designed to connect like-minded individuals by matching them based on skills and proximity"
+      desc: "A Tinder-inspired app designed to connect like-minded individuals by matching them based on skills and proximity",
+      projectLink: 'https://coglider.vercel.app',
+      githubLink: 'https://github.com/Muz4mmil/CoGlider',
     },
     {
       id: 3,
@@ -155,7 +158,9 @@ export default function App() {
       stack: "React.js / Node.js / Firebase",
       color: "#DCFCE7", // Soft Emerald
       img: "/projects/fileglide.webp",
-      desc: "A no-login, no-setup file sharing tool built for speed and simplicity."
+      desc: "A no-login, no-setup file sharing tool built for speed and simplicity.",
+      projectLink: 'https://fileglide.web.app',
+      githubLink: 'https://github.com/Muz4mmil/FileGlide',
     }
   ];
 
@@ -248,7 +253,7 @@ export default function App() {
       </header>
 
       {/* IMPROVED HERO SECTION */}
-      <section className="relative min-h-screen flex flex-col p-6 md:p-10 pt-32 cursor-auto">
+      <section className="relative min-h-svh flex flex-col p-6 md:p-10 pt-32 cursor-auto">
 
         {/* Top Part: Name */}
         <div className="flex-1 flex flex-col justify-center md:justify-end pb-12 md:pb-24 z-10">
@@ -350,11 +355,14 @@ export default function App() {
                   <h3 className="text-4xl md:text-7xl font-display font-bold uppercase text-[#111] group-hover:-skew-x-12 group-hover:translate-x-2 transition-all duration-300 origin-left">
                     {project.title}
                   </h3>
-                  <p className="mt-1 ml-2 text-base font-mono font-bold text-zinc-400">{project.desc}</p>
+                  <p className="mt-1 md:ml-2 text-sm md:text-base font-mono font-medium text-zinc-400">{project.desc}</p>
                 </div>
                 <div className="flex flex-col md:items-end mt-4 md:mt-0 gap-1">
                   <span className="text-sm font-mono uppercase tracking-widest text-zinc-500">{project.category}</span>
                   <span className="text-xs font-mono text-zinc-400">{project.stack}</span>
+                  {project.githubLink && <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="max-sm:hidden text-sm mt-3 underline underline-offset-2 font-mono text-zinc-600 hover:text-zinc-500 transition-colors duration-300 flex items-center gap-1">
+                    View Code <ArrowUpRight size={14} />
+                  </a>}
                 </div>
               </div>
 
@@ -362,11 +370,14 @@ export default function App() {
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                className="md:hidden mt-6"
+                className="md:hidden mt-6 gap-4"
               >
-                <a href="#" className="inline-flex items-center gap-2 text-sm font-bold underline decoration-1 underline-offset-4">
+                <a href={project.projectLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold underline decoration-1 underline-offset-4">
                   VIEW PROJECT <ArrowUpRight size={14} />
                 </a>
+                {project.githubLink && <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="md:hidden text-sm mt-3 underline underline-offset-2 font-mono text-zinc-600 hover:text-zinc-500 transition-colors duration-300 flex items-center gap-1">
+                  View Code <ArrowUpRight size={14} />
+                </a>}
               </motion.div>
             </div>
           ))}
