@@ -282,7 +282,7 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 border-t border-black/10 pt-8 z-10">
 
           {/* Col 1: Status */}
-          <div className="md:col-span-3 flex flex-col justify-between h-full mb-4 md:mb-0">
+          {/* <div className="md:col-span-3 flex flex-col justify-between h-full mb-4 md:mb-0">
             <div className="flex items-center gap-2">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -290,7 +290,7 @@ export default function App() {
               </span>
               <span className="text-xs font-mono uppercase tracking-widest text-zinc-500">Available for work</span>
             </div>
-          </div>
+          </div> */}
 
           {/* Col 2: Description */}
           <div className="md:col-span-6 mb-6 md:mb-0">
@@ -300,12 +300,12 @@ export default function App() {
               transition={{ delay: 0.5, duration: 1 }}
               className="text-xl md:text-2xl font-light text-[#111] leading-relaxed"
             >
-              Crafting digital interfaces with <span className="font-medium border-b border-black/20">precision engineering</span> and <span className="font-medium border-b border-black/20">aesthetic intelligence</span>. Based in Aurangabad, India.
+              <span className="font-medium border-b border-black/20">Full Stack Developer</span> who create great experiences. transforming ideas into digital reality. Based in <span className="font-medium border-b border-black/20">Aurangabad, India</span>.
             </motion.p>
           </div>
 
           {/* Col 3: Scroll */}
-          <div className="md:col-span-3 md:justify-end flex flex-wrap gap-3">
+          <div className="md:col-span-6 md:justify-end flex flex-wrap gap-3">
             <motion.a
               href='/Resume-Muzammil.pdf' download={'Resume-Muzammil'}
               initial={{ scale: 0.5, opacity: 0 }}
@@ -567,9 +567,9 @@ export default function App() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-20">
           <div className="flex flex-col gap-4">
             <span className="text-xs font-mono uppercase text-zinc-500">Socials</span>
-            <a href="#" className="hover:text-zinc-500 transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-zinc-500 transition-colors">Github</a>
-            <a href="#" className="hover:text-zinc-500 transition-colors">X (Twitter)</a>
+            <a href="https://linkedin.com/in/muz4mmil" target='_blank' className="hover:text-zinc-500 transition-colors">LinkedIn</a>
+            <a href="https://github.com/Muz4mmil" target='_blank' className="hover:text-zinc-500 transition-colors">Github</a>
+            <a href="https://x.com/Muz4mmil_" target='_blank' className="hover:text-zinc-500 transition-colors">X (Twitter)</a>
           </div>
           <div className="flex flex-col gap-4">
             <span className="text-xs font-mono uppercase text-zinc-500">Navigation</span>
@@ -585,12 +585,12 @@ export default function App() {
         </div>
 
         <div className="flex justify-between items-end border-t border-black/10 pt-6">
-          <span className="text-[10px] md:text-xs font-mono uppercase text-zinc-400">
+          {/* <span className="text-[10px] md:text-xs font-mono uppercase text-zinc-400">
             © 2025 Muzammil Siddiqui. All Rights Reserved.
           </span>
           <span className="text-[10px] md:text-xs font-mono uppercase text-zinc-400">
             Designed & Engineered
-          </span>
+          </span> */}
         </div>
       </footer>
 
