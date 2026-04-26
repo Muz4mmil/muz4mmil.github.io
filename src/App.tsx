@@ -205,7 +205,7 @@ export default function App() {
       {/* HEADER / NAV */}
       <header className="fixed top-0 left-0 w-full p-6 md:p-10 flex justify-between items-start z-50 mix-blend-difference text-white cursor-auto">
         <div className="flex flex-col">
-          <span className="font-display font-bold text-xl tracking-tighter">MS.</span>
+          <span className="font-display font-bold text-xl tracking-tighter">M.</span>
           {/* <span className="text-xs uppercase tracking-widest opacity-50 mt-1">Portfolio ©2025</span> */}
         </div>
 
@@ -307,7 +307,7 @@ export default function App() {
           {/* Col 3: Scroll */}
           <div className="md:col-span-6 md:justify-end flex flex-wrap gap-3">
             <motion.a
-              href='/Resume-Muzammil.pdf' download={'Resume-Muzammil'}
+              href='/Resume-Muzammil-Nov 25.pdf' download={'Resume-Muzammil'}
               initial={{ scale: 0.5, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ delay: 1 }} viewport={{ once: true }}
