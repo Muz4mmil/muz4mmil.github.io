@@ -280,7 +280,7 @@ export default function App() {
             </motion.div>
           </div>
           <div className="h-72 md:h-auto max-sm:mb-5 md:flex-1 justify-center md:justify-end z-10">
-            <ParticleImage src={'/me3.png'} mouseRadius={30} springSpeed={0.01} repelForce={5} />
+            <ParticleImage src={'/me3.webp'} mouseRadius={30} springSpeed={0.01} repelForce={5} />
           </div>
         </div>
 
