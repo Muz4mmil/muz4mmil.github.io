@@ -7,6 +7,7 @@ import {
   Zap,
   ArrowRight
 } from 'lucide-react';
+import { ParticleImage } from './sections/ParticleImage';
 
 // --- 1. TYPE DEFINITIONS ---
 
@@ -255,31 +256,36 @@ export default function App() {
       {/* IMPROVED HERO SECTION */}
       <section className="relative min-h-svh flex flex-col p-6 md:p-10 pt-32 cursor-auto">
 
-        {/* Top Part: Name */}
-        <div className="flex-1 flex flex-col justify-center md:justify-end pb-12 md:pb-24 z-10">
-          <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
-          >
-            <h1 className="text-[13vw] leading-[0.85] font-display font-bold tracking-tighter uppercase text-[#111] -ml-[0.5vw]">
-              Muzammil
-            </h1>
-          </motion.div>
-          <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.1, ease: [0.76, 0, 0.24, 1] }}
-            className="self-end"
-          >
-            <h1 className="text-[13vw] leading-[0.85] font-display font-bold tracking-tighter uppercase text-[#111] text-right -mr-[0.5vw] opacity-80">
-              Siddiqui
-            </h1>
-          </motion.div>
+        <div className="flex flex-1 max-sm:flex-col-reverse">
+          {/* Top Part: Name */}
+          <div className="flex-1 flex flex-col justify-center md:justify-end pb-4 md:pb-12 z-10">
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+            >
+              <h1 className="text-[10vw] md:text-[5vw] leading-[0.85] font-display font-bold tracking-tighter uppercase text-[#111] -ml-[0.5vw]">
+                Muzammil
+              </h1>
+            </motion.div>
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.1, ease: [0.76, 0, 0.24, 1] }}
+              className="mt-2"
+            >
+              <h1 className="text-[10vw] md:text-[5vw] leading-[0.85] font-display font-bold tracking-tighter uppercase text-[#111] -ml-[0.5vw] opacity-80">
+                Siddiqui
+              </h1>
+            </motion.div>
+          </div>
+          <div className="h-72 md:h-auto max-sm:mb-5 md:flex-1 justify-center md:justify-end z-10">
+            <ParticleImage src={'/me3.png'} mouseRadius={30} springSpeed={0.01} repelForce={5} />
+          </div>
         </div>
 
         {/* Bottom Part: Grid Info */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 border-t border-black/10 pt-8 z-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 border-t border-black/10 pt-4 md:pt-8 z-10">
 
           {/* Col 1: Status */}
           {/* <div className="md:col-span-3 flex flex-col justify-between h-full mb-4 md:mb-0">
@@ -293,7 +299,7 @@ export default function App() {
           </div> */}
 
           {/* Col 2: Description */}
-          <div className="md:col-span-6 mb-6 md:mb-0">
+          <div className="md:col-span-6 mb-0">
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
