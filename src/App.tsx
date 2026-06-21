@@ -9,20 +9,6 @@ import {
 } from 'lucide-react';
 import { ParticleImage } from './sections/ParticleImage';
 
-// --- 1. TYPE DEFINITIONS ---
-
-interface Project {
-  id: number;
-  title: string;
-  category: string;
-  stack: string;
-  color: string;
-  img: string;
-  desc: string;
-  projectLink?: string;
-  githubLink?: string;
-}
-
 // --- 2. UTILITY COMPONENTS ---
 
 // Moving Grain Overlay
@@ -116,67 +102,6 @@ const SkillCategory = ({ title, items }: { title: string; items: string[] }) => 
             </span>
           </div>
         ))}
-      </div>
-    </div>
-  );
-};
-
-
-// --- NEW COMPONENT: Accordion Project Row ---
-const ProjectRow = ({ project, index, setCursorVariant }: { project: Project; index: number; setCursorVariant: (v: boolean) => void }) => {
-  return (
-    <div 
-      className="group relative border-b border-black/10 py-10 transition-colors hover:bg-white/40 px-4 -mx-4 cursor-pointer"
-      onMouseEnter={() => setCursorVariant(true)}
-      onMouseLeave={() => setCursorVariant(false)}
-    >
-      {/* Top Row: Title & Right Info */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between relative z-10">
-        <div className="flex items-center gap-6">
-          <span className="font-mono text-sm opacity-30 md:group-hover:opacity-100 transition-opacity hidden md:block">
-            0{index + 1}
-          </span>
-          <h3 className="text-4xl md:text-7xl font-display font-bold uppercase text-[#111] group-hover:-skew-x-6 group-hover:translate-x-2 transition-all duration-500 origin-left">
-            {project.title}
-          </h3>
-        </div>
-        <div className="flex flex-col md:items-end mt-4 md:mt-0 gap-1">
-          <span className="text-sm font-mono uppercase tracking-widest text-zinc-500">{project.category}</span>
-          <span className="text-xs font-mono text-zinc-400">{project.stack}</span>
-        </div>
-      </div>
-
-      {/* Accordion Content (Image & Description & Links) */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start transition-all duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] 
-        h-auto mt-8 md:h-0 md:mt-0 md:opacity-0 md:group-hover:h-[400px] md:group-hover:mt-10 md:group-hover:opacity-100 overflow-hidden">
-        
-        {/* Left: Image */}
-        <div className="md:col-span-8 w-full h-[300px] md:h-[400px] overflow-hidden rounded-lg">
-          <img 
-            src={project.img} 
-            alt={project.title}
-            className="w-full h-full object-cover scale-100 md:scale-125 md:group-hover:scale-100 transition-transform duration-1000 ease-[cubic-bezier(0.76,0,0.24,1)]" 
-          />
-        </div>
-
-        {/* Right: Info */}
-        <div className="md:col-span-4 flex flex-col justify-between h-full py-4">
-          <p className="text-lg md:text-xl font-light text-zinc-600 leading-relaxed">
-            {project.desc}
-          </p>
-          <div className="flex items-center gap-6 mt-8 md:mt-0 relative z-20">
-            {project.projectLink && (
-              <a href={project.projectLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase border-b border-black pb-1 hover:text-zinc-500 hover:border-zinc-500 transition-colors pointer-events-auto">
-                View Project <ArrowUpRight size={16} />
-              </a>
-            )}
-            {project.githubLink && (
-              <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-mono text-zinc-500 hover:text-black transition-colors pointer-events-auto">
-                Code <ArrowUpRight size={16} />
-              </a>
-            )}
-          </div>
-        </div>
       </div>
     </div>
   );
