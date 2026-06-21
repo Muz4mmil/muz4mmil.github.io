@@ -19,6 +19,8 @@ interface Project {
   color: string;
   img: string;
   desc: string;
+  projectLink?: string;
+  githubLink?: string;
 }
 
 // --- 2. UTILITY COMPONENTS ---
@@ -120,10 +122,69 @@ const SkillCategory = ({ title, items }: { title: string; items: string[] }) => 
 };
 
 
+// --- NEW COMPONENT: Accordion Project Row ---
+const ProjectRow = ({ project, index, setCursorVariant }: { project: Project; index: number; setCursorVariant: (v: boolean) => void }) => {
+  return (
+    <div 
+      className="group relative border-b border-black/10 py-10 transition-colors hover:bg-white/40 px-4 -mx-4 cursor-pointer"
+      onMouseEnter={() => setCursorVariant(true)}
+      onMouseLeave={() => setCursorVariant(false)}
+    >
+      {/* Top Row: Title & Right Info */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between relative z-10">
+        <div className="flex items-center gap-6">
+          <span className="font-mono text-sm opacity-30 md:group-hover:opacity-100 transition-opacity hidden md:block">
+            0{index + 1}
+          </span>
+          <h3 className="text-4xl md:text-7xl font-display font-bold uppercase text-[#111] group-hover:-skew-x-6 group-hover:translate-x-2 transition-all duration-500 origin-left">
+            {project.title}
+          </h3>
+        </div>
+        <div className="flex flex-col md:items-end mt-4 md:mt-0 gap-1">
+          <span className="text-sm font-mono uppercase tracking-widest text-zinc-500">{project.category}</span>
+          <span className="text-xs font-mono text-zinc-400">{project.stack}</span>
+        </div>
+      </div>
+
+      {/* Accordion Content (Image & Description & Links) */}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start transition-all duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] 
+        h-auto mt-8 md:h-0 md:mt-0 md:opacity-0 md:group-hover:h-[400px] md:group-hover:mt-10 md:group-hover:opacity-100 overflow-hidden">
+        
+        {/* Left: Image */}
+        <div className="md:col-span-8 w-full h-[300px] md:h-[400px] overflow-hidden rounded-lg">
+          <img 
+            src={project.img} 
+            alt={project.title}
+            className="w-full h-full object-cover scale-100 md:scale-125 md:group-hover:scale-100 transition-transform duration-1000 ease-[cubic-bezier(0.76,0,0.24,1)]" 
+          />
+        </div>
+
+        {/* Right: Info */}
+        <div className="md:col-span-4 flex flex-col justify-between h-full py-4">
+          <p className="text-lg md:text-xl font-light text-zinc-600 leading-relaxed">
+            {project.desc}
+          </p>
+          <div className="flex items-center gap-6 mt-8 md:mt-0 relative z-20">
+            {project.projectLink && (
+              <a href={project.projectLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase border-b border-black pb-1 hover:text-zinc-500 hover:border-zinc-500 transition-colors pointer-events-auto">
+                View Project <ArrowUpRight size={16} />
+              </a>
+            )}
+            {project.githubLink && (
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-mono text-zinc-500 hover:text-black transition-colors pointer-events-auto">
+                Code <ArrowUpRight size={16} />
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // --- 2. MAIN APPLICATION 
 
 export default function App() {
-  const [hoveredProject, setHoveredProject] = useState<Project | null>(null);
   const [cursorVariant, setCursorVariant] = useState(false);
 
   // Smooth Scroll Container Ref
@@ -194,6 +255,14 @@ export default function App() {
         }
         .stroke-text:hover {
           -webkit-text-stroke: 0;
+        }
+
+        .hide-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
         }
       `}} />
 
@@ -341,56 +410,76 @@ export default function App() {
         </VelocityText>
       </div>
 
-      {/* PROJECTS LIST */}
-      <section id="work" className="py-32 px-6 md:px-10 relative z-20 cursor-auto">
-        <div className="mb-16 border-b border-black border-opacity-10 pb-4 flex justify-between items-end">
+      {/* VERTICAL EDITORIAL GALLERY */}
+      <section id="work" className="relative bg-[#EAEAEA] z-20 cursor-auto py-24 md:py-32">
+        
+        {/* Header */}
+        <div className="px-6 md:px-10 mb-20 flex justify-between items-end border-b border-black/10 pb-4 text-[#111]">
           <h2 className="text-4xl md:text-6xl font-display font-bold uppercase">Selected Works</h2>
-          <span className="font-mono text-sm">(03)</span>
+          <span className="font-mono text-xs">(03)</span>
         </div>
 
-        <div className="flex flex-col">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              onMouseEnter={() => { setHoveredProject(project); setCursorVariant(true); }}
-              onMouseLeave={() => { setHoveredProject(null); setCursorVariant(false); }}
-              className="group relative border-b border-black/10 py-12 md:py-16 transition-colors hover:bg-white/40 px-4 -mx-4"
-            >
-              <div className="flex flex-col md:flex-row md:items-center justify-between relative z-10">
-                <div className="">
-                  <h3 className="text-4xl md:text-7xl font-display font-bold uppercase text-[#111] group-hover:-skew-x-12 group-hover:translate-x-2 transition-all duration-300 origin-left">
-                    {project.title}
-                  </h3>
-                  <p className="mt-1 md:ml-2 text-sm md:text-base font-mono font-medium text-zinc-400">{project.desc}</p>
-                </div>
-                <div className="flex flex-col md:items-end mt-4 md:mt-0 gap-1">
-                  <span className="text-sm font-mono uppercase tracking-widest text-zinc-500">{project.category}</span>
-                  <span className="text-xs font-mono text-zinc-400">{project.stack}</span>
-                  {project.githubLink && <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="max-sm:hidden text-sm mt-3 underline underline-offset-2 font-mono text-zinc-600 hover:text-zinc-500 transition-colors duration-300 flex items-center gap-1">
-                    View Code <ArrowUpRight size={14} />
-                  </a>}
+        <div className="flex flex-col gap-32 md:gap-20 items-center w-full">
+          {projects.map((project, index) => {
+            return (
+              <div 
+                key={project.id} 
+                className="w-full flex items-center justify-center px-6 md:px-10 relative group"
+                onMouseEnter={() => setCursorVariant(true)}
+                onMouseLeave={() => setCursorVariant(false)}
+              >
+                <div className={`w-full max-w-7xl flex flex-col-reverse ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center justify-between gap-12 md:gap-20`}>
+                  
+                  {/* Left: Info */}
+                  <div className="w-full md:w-5/12 flex flex-col justify-center order-2 md:order-1">
+                    
+                    <div className="font-mono text-xs mb-4 text-[#111] opacity-50 flex items-center gap-2">
+                      <span>0{index + 1}</span>
+                      <div className="w-8 h-[1px] bg-[#111]/30"></div>
+                      <span>Featured</span>
+                    </div>
+
+                    <h3 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold uppercase leading-[0.9] mb-6 md:mb-8 text-[#111]">
+                      {project.title}
+                    </h3>
+                    
+                    <p className="text-base md:text-xl font-light text-[#111] opacity-70 leading-relaxed mb-8 max-w-md">
+                      {project.desc}
+                    </p>
+
+                    <div className="font-mono text-[10px] md:text-xs text-[#111] opacity-60 flex flex-wrap gap-4 mb-10 md:mb-16">
+                      {project.stack}
+                    </div>
+
+                    <div className="flex gap-6">
+                      {project.projectLink && (
+                        <a href={project.projectLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs md:text-sm font-bold uppercase border-b border-black/30 pb-1 hover:border-black transition-colors pointer-events-auto text-[#111]">
+                          View Project <ArrowUpRight size={16} />
+                        </a>
+                      )}
+                      {project.githubLink && (
+                        <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs md:text-sm font-mono opacity-50 hover:opacity-100 transition-colors pointer-events-auto text-[#111]">
+                          Source Code <ArrowUpRight size={16} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Right: Image Container */}
+                    <div className="w-full md:w-7/12 h-52 md:h-full relative overflow-hidden order-1 md:order-2 rounded-lg border border-black/5 bg-black/5">
+                     {/* <div className="absolute inset-0 bg-black/10 z-10 group-hover:opacity-0 transition-opacity duration-700" /> */}
+                     <img 
+                       src={project.img} 
+                       alt={project.title}
+                       className="w-full h-full object-cover filter grayscale-[70%] transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]" 
+                     />
+                  </div>
+
                 </div>
               </div>
-
-              {/* Hover Reveal Button (Mobile friendly fallback) */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                className="md:hidden mt-6 gap-4"
-              >
-                <a href={project.projectLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold underline decoration-1 underline-offset-4">
-                  VIEW PROJECT <ArrowUpRight size={14} />
-                </a>
-                {project.githubLink && <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="md:hidden text-sm mt-3 underline underline-offset-2 font-mono text-zinc-600 hover:text-zinc-500 transition-colors duration-300 flex items-center gap-1">
-                  View Code <ArrowUpRight size={14} />
-                </a>}
-              </motion.div>
-            </div>
-          ))}
+            );
+          })}
         </div>
-
-        {/* FLOATING IMAGE REVEAL (Desktop Only) */}
-        <ProjectPreview project={hoveredProject} />
       </section>
 
       {/* --- TOOLKIT SECTION (STATIC & READABLE) --- */}
@@ -603,77 +692,3 @@ export default function App() {
     </div>
   );
 }
-
-// --- 3. FLOATING IMAGE COMPONENT ---
-
-const ProjectPreview = ({ project }: { project: Project | null }) => {
-  const mouse = { x: useMotionValue(0), y: useMotionValue(0) };
-
-  useEffect(() => {
-    const updateMouse = (e: MouseEvent) => {
-      mouse.x.set(e.clientX);
-      mouse.y.set(e.clientY);
-    };
-    window.addEventListener('mousemove', updateMouse);
-    return () => window.removeEventListener('mousemove', updateMouse);
-  }, []);
-
-  const x = useSpring(mouse.x, { stiffness: 200, damping: 20 });
-  const y = useSpring(mouse.y, { stiffness: 200, damping: 20 });
-
-  if (!project) return null;
-
-  return (
-    <motion.div
-      style={{ left: x, top: y }}
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      exit={{ scale: 0, opacity: 0 }}
-      className="fixed z-30 hidden md:block pointer-events-none -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg shadow-2xl"
-    >
-      {/* Preview Card */}
-      <div className="w-[400px] h-[250px] bg-white p-2 relative">
-        <div className="w-full h-full relative overflow-hidden rounded bg-zinc-100">
-          {/* Placeholder Abstract Visuals if Image Fails */}
-          {/* <div
-            className="w-full h-full absolute inset-0"
-            style={{ backgroundColor: project.color }}
-          >
-            {project.title === "Buddy" && (
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="w-3/4 h-3/4 bg-white shadow-lg rounded-lg p-4 space-y-2">
-                  <div className="w-1/3 h-4 bg-zinc-200 rounded" />
-                  <div className="w-full h-32 bg-zinc-100 rounded" />
-                </div>
-              </div>
-            )}
-            {project.title === "CoGlider" && (
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="w-[100px] h-[180px] bg-black rounded-[20px] p-1">
-                  <div className="w-full h-full bg-white rounded-[16px] overflow-hidden relative">
-                    <div className="absolute top-4 left-2 w-8 h-8 rounded-full bg-pink-200" />
-                  </div>
-                </div>
-              </div>
-            )}
-            {project.title === "FileGlide" && (
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="w-24 h-24 border-2 border-dashed border-emerald-500 rounded-full flex items-center justify-center animate-spin-slow">
-                  <ArrowUpRight className="text-emerald-500" />
-                </div>
-              </div>
-            )}
-          </div> */}
-          <div className="w-full h-full flex items-center justify-center">
-            <img src={project.img} alt={project.title} className="w-full h-full object-cover" />
-          </div>
-
-          {/* Label Overlay */}
-          <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase shadow-sm">
-            View Project
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  );
-};
