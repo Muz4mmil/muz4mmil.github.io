@@ -307,7 +307,7 @@ export default function App() {
           {/* Col 3: Scroll */}
           <div className="md:col-span-6 md:justify-end flex flex-wrap gap-3">
             <motion.a
-              href='/Resume-Muzammil-Nov 25.pdf' download={'Resume-Muzammil'}
+              href='/Resume-Muzammil-May 2026.pdf' download={'Resume-Muzammil'}
               initial={{ scale: 0.5, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ delay: 1 }} viewport={{ once: true }}
