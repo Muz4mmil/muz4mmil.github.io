@@ -42,7 +42,9 @@ export default function Projects() {
 								</div>
 
 								<div className="flex gap-4 pt-4">
-									<Link href={project.code} target='_blank' className='flex items-center border border-white hover:border-neutral-300 rounded-full px-3 py-1 group/buttons'>Code <ArrowUpRight size={16} className='ml-1 group-hover/buttons:rotate-45 duration-300' /></Link>
+									{project.code && (
+										<Link href={project.code} target='_blank' className='flex items-center border border-white hover:border-neutral-300 rounded-full px-3 py-1 group/buttons'>Code <ArrowUpRight size={16} className='ml-1 group-hover/buttons:rotate-45 duration-300' /></Link>
+									)}
 									<Link href={project.link} target='_blank' className='flex items-center border border-white hover:border-neutral-300 rounded-full px-3 py-1 group/buttons'>Preview <ArrowUpRight size={16} className='ml-1 group-hover/buttons:rotate-45 duration-300' /></Link>
 								</div>
 							</div>

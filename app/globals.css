@@ -2,6 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Design language: see docs/DESIGN.md. Monochrome editorial — flat surfaces,
+   hairline rules, pill buttons with trailing arrows, oversized tight display type. */
+
+@layer base {
+  /* Default ink is the near-black, not #000. Body-grey is applied per element. */
+  body {
+    @apply bg-paper text-ink;
+  }
+}
+
+@layer components {
+  /* Page container — DESIGN.md §1.5 */
+  .shell {
+    @apply mx-auto w-full max-w-[1366px] px-[5%];
+  }
+
+  /* Display type — §1.2. Pair with <span className="text-ink-muted"> for the
+     two-tone split; the element itself carries the ink colour. */
+  .display-xl {
+    @apply text-display-xl font-bold text-ink;
+  }
+
+  .display-l {
+    @apply text-display-l font-bold text-ink;
+  }
+
+  .display-m {
+    @apply text-display-m font-bold text-ink;
+  }
+
+  /* Section label sitting above a display headline — §1.2. Sentence case, not
+     uppercase, not shrunk. */
+  .eyebrow {
+    @apply text-eyebrow font-normal text-ink;
+  }
+
+  /* Uppercase micro-label: nav, social links, service rail only. */
+  .caps {
+    @apply text-caps font-medium uppercase;
+  }
+
+  /* Buttons — §2.1. Arrow always trails. */
+  .btn-primary {
+    @apply inline-flex h-14 items-center gap-3 rounded-full bg-ink px-8 text-base
+           font-medium text-white transition-colors duration-300 hover:bg-body;
+  }
+
+  .btn-secondary {
+    @apply inline-flex h-11 items-center gap-2 rounded-full border border-line bg-paper
+           px-6 text-sm font-medium text-ink transition-colors duration-300
+           hover:bg-ink hover:text-white;
+  }
+
+  .btn-icon {
+    @apply grid h-11 w-11 place-items-center rounded-full border border-line text-ink
+           transition-colors duration-300 hover:bg-ink hover:text-white;
+  }
+
+  /* Chips — §2.2. Selected state is a flat fill, never a colour change. */
+  .chip {
+    @apply inline-flex h-10 items-center rounded-full border border-line px-4 text-sm text-ink;
+  }
+
+  .chip-selected {
+    @apply inline-flex h-10 items-center rounded-full bg-surface-2 px-4 text-sm text-ink;
+  }
+
+  /* Media card ground — §2.4. Flat grey, no border, no shadow. Caption goes
+     OUTSIDE, below. */
+  .media-card {
+    @apply relative overflow-hidden rounded-media bg-surface;
+  }
+
+  /* Underline input — §2.9. No boxes. */
+  .field {
+    @apply w-full border-0 border-b border-hairline bg-transparent pb-3 text-base text-ink
+           outline-none transition-colors placeholder:text-meta focus:border-ink;
+  }
+
+  .field-label {
+    @apply text-sm font-medium text-ink;
+  }
+
+  /* Divided list row — §2.6 */
+  .row-divided {
+    @apply flex flex-col gap-1 border-b border-hairline py-6 last:border-0;
+  }
+}
 
 @layer utilities {
   .text-balance {
@@ -13,4 +101,3 @@
     line-height: 1;
   }
 }
-

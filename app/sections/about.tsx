@@ -84,9 +84,12 @@ export default function About() {
                 </div>
                 <div className="md:col-span-3">
                   <h4 className="text-xl font-normal mb-2">Software Developer</h4>
-                  <p className="text-gray-600 mb-3">SleekSky</p>
+                  <p className="text-gray-600 mb-3">Sleeksky Technologies</p>
                   <p className="text-gray-700 font-light leading-relaxed">
-                    Working on a B2B Health Care platform, fixing bugs and integrating features, improving overall user experience.
+                    Developing core dashboard components and data visualization features for a B2B healthcare platform,
+                    resolving high-impact bugs across RBAC modules and multiple sub-platforms. Revamped the authentication
+                    system with passwordless login and eliminated redundant API calls, and re-architected notifications
+                    (Email, SMS, IVR) into a dynamic, database-driven decision engine with FSM-based IVR template resolution.
                   </p>
                 </div>
               </motion.div>
@@ -104,27 +107,9 @@ export default function About() {
                   <h4 className="text-xl font-normal mb-2">Software Developer Intern</h4>
                   <p className="text-gray-600 mb-3">Penguin Apps</p>
                   <p className="text-gray-700 font-light leading-relaxed">
-                    Built scalable APIs with headless CMS, developing mobile app interfaces,
-                    and enhancing school management systems through feature integration and bug resolution.
-                  </p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
-                <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
-                  Mar — Apr 2024
-                </div>
-                <div className="md:col-span-3">
-                  <h4 className="text-xl font-normal mb-2">Full-Stack Developer Intern</h4>
-                  <p className="text-gray-600 mb-3">DermaQ</p>
-                  <p className="text-gray-700 font-light leading-relaxed">
-                    Redesigned responsive dashboards and developed key application pages
-                    to enhance overall user experience and interface functionality.
+                    Integrated new features and resolved critical bugs in a full-stack school management system.
+                    Built and integrated RESTful APIs with Strapi Headless CMS, and developed cross-platform mobile
+                    app features and screens using a component-driven architecture for a social media app.
                   </p>
                 </div>
               </motion.div>
@@ -136,14 +121,14 @@ export default function About() {
                 viewport={{ once: true }}
                 className="grid md:grid-cols-4 gap-8 py-6">
                 <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
-                  2021 — 2025
+                  June 2025
                 </div>
                 <div className="md:col-span-3">
                   <h4 className="text-xl font-normal mb-2">Bachelor of Computer Science</h4>
                   <p className="text-gray-600 mb-3">Maharashtra Institute of Technology, Aurangabad</p>
                   <p className="text-gray-700 font-light leading-relaxed">
-                    Pursuing comprehensive computer science education with focus on
-                    software development, algorithms, and modern technology stack.
+                    Completed a comprehensive computer science education with a focus on
+                    software development, algorithms, and modern technology stacks.
                   </p>
                 </div>
               </motion.div>
@@ -219,6 +204,28 @@ export default function About() {
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: 1.3 + (i * 0.06) }}
+                      viewport={{ once: true }}
+                      key={item.name}
+                      className="rounded-full border flex items-center gap-2  border-neutral-400 px-5 py-2 text-lg w-max">
+                      <i className={item.icon + " text-neutral-400"}></i>
+                      {item.name}
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 1.6 }}
+                viewport={{ once: true }}
+                className="mt-5">
+                <p className="font-medium ">Tools & Platforms</p>
+                <div className="flex gap-4 max-sm:gap-2 mt-2 flex-wrap">
+                  {skills.tools_platforms.map((item, i) => (
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ delay: 1.6 + (i * 0.06) }}
                       viewport={{ once: true }}
                       key={item.name}
                       className="rounded-full border flex items-center gap-2  border-neutral-400 px-5 py-2 text-lg w-max">

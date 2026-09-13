@@ -1,14 +1,6 @@
 {
     "languages": [
         {
-            "name": "HTML",
-            "icon": "devicon-html5-plain"
-        },
-        {
-            "name": "CSS",
-            "icon": "devicon-css3-plain"
-        },
-        {
             "name": "JavaScript",
             "icon": "devicon-javascript-plain"
         },
@@ -17,8 +9,12 @@
             "icon": "devicon-typescript-plain"
         },
         {
-            "name": "Python",
-            "icon": "devicon-python-plain"
+            "name": "HTML",
+            "icon": "devicon-html5-plain"
+        },
+        {
+            "name": "CSS",
+            "icon": "devicon-css3-plain"
         }
     ],
     "frameworks_libraries_tools": [
@@ -35,20 +31,8 @@
             "icon": "devicon-react-original"
         },
         {
-            "name": "NodeJS",
-            "icon": "devicon-nodejs-plain"
-        },
-        {
-            "name": "Express",
-            "icon": "devicon-express-original"
-        },
-        {
             "name": "Tailwind CSS",
             "icon": "devicon-tailwindcss-plain"
-        },
-        {
-            "name": "SCSS",
-            "icon": "devicon-sass-original"
         },
         {
             "name": "Redux",
@@ -59,6 +43,36 @@
             "icon": "devicon-materialui-plain"
         },
         {
+            "name": "shadcn/ui",
+            "icon": ""
+        },
+        {
+            "name": "NodeJS",
+            "icon": "devicon-nodejs-plain"
+        },
+        {
+            "name": "Express",
+            "icon": "devicon-express-original"
+        },
+        {
+            "name": "REST APIs",
+            "icon": ""
+        },
+        {
+            "name": "Strapi CMS",
+            "icon": "devicon-strapi-plain"
+        }
+    ],
+    "databases": [
+        {
+            "name": "PostgreSQL",
+            "icon": "devicon-postgresql-plain"
+        },
+        {
+            "name": "MongoDB",
+            "icon": "devicon-mongodb-plain"
+        },
+        {
             "name": "Firebase",
             "icon": "devicon-firebase-plain"
         },
@@ -67,35 +81,29 @@
             "icon": "devicon-supabase-plain"
         },
         {
-            "name": "Prisma ORM",
-            "icon": "devicon-prisma-original"
+            "name": "Database ORMs",
+            "icon": ""
+        }
+    ],
+    "tools_platforms": [
+        {
+            "name": "AWS (EC2, S3, SES)",
+            "icon": "devicon-amazonwebservices-plain-wordmark"
         },
         {
             "name": "Figma",
             "icon": "devicon-figma-plain"
-        }
-    ],
-    "databases": [
-        {
-            "name": "MongoDB",
-            "icon": "devicon-mongodb-plain"
         },
         {
-            "name": "PostgreSQL",
-            "icon": "devicon-postgresql-plain"
-        }
-    ],
-    "soft_skills": [
-        {
-            "name": "Teamwork",
-            "icon": ""
+            "name": "Git",
+            "icon": "devicon-git-plain"
         },
         {
-            "name": "Problem Solving",
-            "icon": ""
+            "name": "GitHub",
+            "icon": "devicon-github-original"
         },
         {
-            "name": "Quick Learning",
+            "name": "AI-Assisted Development",
             "icon": ""
         }
     ]

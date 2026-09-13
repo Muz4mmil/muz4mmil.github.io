@@ -1,6 +1,22 @@
 {
 	"projects": [
 		{
+			"name": "Buddy",
+			"description": "A SaaS job platform (freelance) for part-time job opportunities in France, connecting verified applicants (students & individuals) with businesses.\nImplemented authentication via Clerk, payments using Stripe, a clean UI with shadcn/ui, and multilingual support with next-intl. Built admin and business dashboards for verification, job management, and analytics.",
+			"techStack": [
+				"NextJS",
+				"NodeJS",
+				"Express",
+				"PostgreSQL",
+				"Clerk",
+				"Stripe",
+				"AWS"
+			],
+			"link": "https://test.buddy-fr.com",
+			"code": "",
+			"imagePath": "/projects/buddy.png"
+		},
+		{
 			"name": "CoGlider",
 			"description": "CoGlider is a cross platform Mobile app designed to connect like-minded individuals by matching them based on skills and proximity. Whether you're looking for a project partner, a mentor, or just someone to collaborate with, CoGlider simplifies the process by providing intelligent recommendations and real-time communication.",
 			"techStack": [
@@ -40,19 +56,6 @@
 			"link": "https://fileglide.web.app/",
 			"code": "https://github.com/Muz4mmil/FileGlide",
 			"imagePath": "/projects/fileglide.png"
-		},
-		{
-			"name": "Diskord",
-			"description": "A real-time chat app with secure, room-based messaging and a built-in AI assistant powered by Gemini.\nWhether you're chatting with friends or asking the AI for help, Diskord blends conversation and intelligence into one smooth, minimal interface.",
-			"techStack": [
-				"ReactJS",
-				"SCSS",
-				"Firebase",
-				"Gemini AI"
-			],
-			"link": "https://diskordchat.web.app/",
-			"code": "https://github.com/Muz4mmil/Diskord",
-			"imagePath": "/projects/diskord.png"
 		}
 	]
 }
