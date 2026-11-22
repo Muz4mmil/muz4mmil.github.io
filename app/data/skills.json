@@ -1,110 +1,39 @@
 {
     "languages": [
-        {
-            "name": "JavaScript",
-            "icon": "devicon-javascript-plain"
-        },
-        {
-            "name": "TypeScript",
-            "icon": "devicon-typescript-plain"
-        },
-        {
-            "name": "HTML",
-            "icon": "devicon-html5-plain"
-        },
-        {
-            "name": "CSS",
-            "icon": "devicon-css3-plain"
-        }
+        { "name": "JavaScript", "icon": "/skills/javascript.svg" },
+        { "name": "TypeScript", "icon": "/skills/typescript.svg" },
+        { "name": "HTML", "icon": "/skills/html5.svg" },
+        { "name": "CSS", "icon": "/skills/css3.svg" }
     ],
     "frameworks_libraries_tools": [
-        {
-            "name": "ReactJS",
-            "icon": "devicon-react-original"
-        },
-        {
-            "name": "NextJS",
-            "icon": "devicon-nextjs-plain"
-        },
-        {
-            "name": "React Native",
-            "icon": "devicon-react-original"
-        },
-        {
-            "name": "Tailwind CSS",
-            "icon": "devicon-tailwindcss-plain"
-        },
-        {
-            "name": "Redux",
-            "icon": "devicon-redux-original"
-        },
-        {
-            "name": "Material UI",
-            "icon": "devicon-materialui-plain"
-        },
-        {
-            "name": "shadcn/ui",
-            "icon": ""
-        },
-        {
-            "name": "NodeJS",
-            "icon": "devicon-nodejs-plain"
-        },
-        {
-            "name": "Express",
-            "icon": "devicon-express-original"
-        },
-        {
-            "name": "REST APIs",
-            "icon": ""
-        },
-        {
-            "name": "Strapi CMS",
-            "icon": "devicon-strapi-plain"
-        }
+        { "name": "React", "icon": "/skills/react.svg" },
+        { "name": "Next.js", "icon": "/skills/nextjs.svg" },
+        { "name": "React Native", "icon": "/skills/react.svg" },
+        { "name": "Tailwind CSS", "icon": "/skills/tailwindcss.svg" },
+        { "name": "Redux", "icon": "/skills/redux.svg" },
+        { "name": "Material UI", "icon": "/skills/materialui.svg" },
+        { "name": "shadcn/ui", "icon": "/skills/shadcn.svg" },
+        { "name": "Node.js", "icon": "/skills/nodejs.svg" },
+        { "name": "Express", "icon": "/skills/express.svg" },
+        { "name": "REST APIs", "icon": "/skills/api.svg" },
+        { "name": "Strapi CMS", "icon": "/skills/strapi.svg" }
     ],
     "databases": [
-        {
-            "name": "PostgreSQL",
-            "icon": "devicon-postgresql-plain"
-        },
-        {
-            "name": "MongoDB",
-            "icon": "devicon-mongodb-plain"
-        },
-        {
-            "name": "Firebase",
-            "icon": "devicon-firebase-plain"
-        },
-        {
-            "name": "Supabase",
-            "icon": "devicon-supabase-plain"
-        },
-        {
-            "name": "Database ORMs",
-            "icon": ""
-        }
+        { "name": "PostgreSQL", "icon": "/skills/postgresql.svg" },
+        { "name": "MongoDB", "icon": "/skills/mongodb.svg" },
+        { "name": "Firebase", "icon": "/skills/firebase.svg" },
+        { "name": "Supabase", "icon": "/skills/supabase.svg" },
+        { "name": "Database ORMs", "icon": "/skills/database-orm.svg" }
     ],
     "tools_platforms": [
-        {
-            "name": "AWS (EC2, S3, SES)",
-            "icon": "devicon-amazonwebservices-plain-wordmark"
-        },
-        {
-            "name": "Figma",
-            "icon": "devicon-figma-plain"
-        },
-        {
-            "name": "Git",
-            "icon": "devicon-git-plain"
-        },
-        {
-            "name": "GitHub",
-            "icon": "devicon-github-original"
-        },
-        {
-            "name": "AI-Assisted Development",
-            "icon": ""
-        }
+        { "name": "AWS (EC2, S3, SES)", "icon": "/skills/amazonwebservices.svg" },
+        { "name": "n8n", "icon": "/skills/n8n.svg" },
+        { "name": "Stripe", "icon": "/skills/stripe.svg" },
+        { "name": "Grafana", "icon": "/skills/grafana.svg" },
+        { "name": "MCP", "icon": "/skills/mcp.svg" },
+        { "name": "Figma", "icon": "/skills/figma.svg" },
+        { "name": "Git", "icon": "/skills/git.svg" },
+        { "name": "GitHub", "icon": "/skills/github.svg" },
+        { "name": "AI-Assisted Development", "icon": "/skills/claude-mascot.svg" }
     ]
 }

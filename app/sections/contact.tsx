@@ -1,103 +1,107 @@
 'use client'
 
-import { ArrowRight } from 'lucide-react'
-import React, { useState } from 'react'
-import emailjs from '@emailjs/browser';
+import { ArrowUpRight } from 'lucide-react'
 import { motion } from 'framer-motion';
 
+import { PERSON, SOCIALS } from '@/app/lib/site'
+import WordReveal from '@/app/components/word-reveal'
+
+const EMAIL = PERSON.email
+const PHONE = PERSON.phone
+const LOCATION = PERSON.location.label
+
 export default function Contact() {
-	const [name, setName] = useState('')
-	const [email, setEmail] = useState('')
-	const [message, setMessage] = useState('')
-	const [sending, setSending] = useState(false)
-
-	const sendEmail = (e: React.FormEvent) => {
-		e.preventDefault();
-		if (!name && !email && !message) return;
-
-		setSending(true)
-		const data = { name, email, message }
-
-		emailjs
-			.send(
-				process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
-				process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
-				data,
-				{
-					publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-				})
-			.then(
-				() => {
-					alert("Message Sent Successfully! I'll reach out to you ASAP ;)");
-					setSending(false)
-				},
-				(error) => {
-					console.log('FAILED TO SEND MESSAGE...', error.text);
-					setSending(false)
-				},
-			);
-	};
-
 	return (
-		<section id='#CONTACT' className='sm:h-[100dvh] relative max-w-[1366px] mx-auto px-[5%] w-full flex flex-col bg-white max-sm:mb-10'>
-			<div className="sticky top-0 z-10 bg-white">
-				<h1 className="text-4xl font-semibold mt-8 mb-4 max-sm:mt-20 w-max text-white max-sm:h-0 max-sm:overflow-hidden">. </h1>
+		<section id='contact' className='min-h-[100dvh] max-sm:pt-24 max-sm:pb-10 relative max-w-[1366px] mx-auto px-[5%] w-full flex flex-col bg-white'>
+			{/* Mobile: the section is one viewport tall, padded past the fixed nav (~76px)
+			    so the headline is never hidden behind it. min-h, not h, so a tall
+			    headline on a short phone pushes the page instead of overflowing. */}
+			<div className="sticky top-0 z-10 bg-white max-sm:hidden" aria-hidden="true">
+				<div className="section-label mt-8 mb-4 w-max text-white">. </div>
 			</div>
-			<div className="lg:mb-36 grid lg:grid-cols-2 grid-cols-1 place-items-center lg:gap-20 h-full">
+			<div className=" flex flex-col flex-1 lg:gap-20">
 				<div className="relative">
-					<p className="text-6xl max-sm:text-4xl leading-[1.2] text-gray-400 font-extrabold">
-						Feel free to reach out—I{"'"}m always excited to <span className="text-black">connect, collaborate, learn, and grow!</span>
-					</p>
-					<motion.div
-						initial={{ scaleX: 1 }}
-						whileInView={{ scaleX: 0 }}
-						transition={{ delay: 0.5, duration: 0.8, ease: 'easeIn' }}
-						viewport={{ once: true }}
-						className="absolute top-0 left-0 h-full w-full origin-right bg-white">
-
-					</motion.div>
+					<WordReveal
+						as="p"
+						inline
+						onView
+						delay={0.1}
+						step={0.07}
+						className="display-l text-ink-muted max-w-[18ch] md:max-w-[22ch]"
+						lines={[
+							{ text: 'Feel free to reach out. I’m always excited to' },
+							{ text: 'connect, collaborate, learn, and grow!', className: 'text-ink' },
+						]}
+					/>
 				</div>
 
-				<div className="lg:mt-20 mt-8 w-full">
-					<motion.h3
+				<div className="lg:mt-20 mt-auto w-full flex max-sm:flex-col justify-between gap-10">
+					<div>
+					<motion.h2
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
 						transition={{ delay: 1 }}
 						viewport={{ once: true }}
-						className="text-3xl font-medium text-neutral-800">Get in touch</motion.h3>
-					<form onSubmit={sendEmail} className='mt-4 flex flex-col gap-3'>
-						<div className="flex flex-col rounded-3xl">
-							<motion.input
-								initial={{ opacity: 0 }}
-								whileInView={{ opacity: 1 }}
-								transition={{ delay: 1.2 }}
-								viewport={{ once: true }}
-								value={name} onChange={(e) => setName(e.target.value)} type="text" className="text-2xl max-sm:text-xl border border-neutral-400 px-6 py-4 rounded-full" placeholder='Name' required />
-							<motion.input
-								initial={{ opacity: 0 }}
-								whileInView={{ opacity: 1 }}
-								transition={{ delay: 1.35 }}
-								viewport={{ once: true }}
-								value={email} onChange={(e) => setEmail(e.target.value)} type="email" className="text-2xl max-sm:text-xl border border-neutral-400 px-6 py-4 mt-[-1px] rounded-full" placeholder='Email' required />
-							<motion.textarea
-								initial={{ opacity: 0 }}
-								whileInView={{ opacity: 1 }}
-								transition={{ delay: 1.5 }}
-								viewport={{ once: true }}
-								value={message} onChange={(e) => setMessage(e.target.value)} rows={5} className="text-2xl max-sm:text-xl border border-neutral-400 px-6 py-4 mt-[-1px] rounded-3xl" placeholder='Message' required />
-						</div>
+						className="heading">Get in touch</motion.h2>
 
-						<motion.button
-							initial={{ scale: 0 }}
-							whileInView={{ scale: 1 }}
-							transition={{ delay: 1.8 }}
+					{/* Contact details. <address> is the semantic element for a person's contact info. */}
+					<address className="mt-5 flex flex-col gap-2 not-italic">
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ delay: 1.2, duration: 0.6 }}
 							viewport={{ once: true }}
-							type='submit' className={`w-max ml-auto flex gap-2 items-center border border-black ${sending ? 'bg-white text-black' : 'bg-black text-white'}  rounded-full px-5 py-3`}
-							disabled={sending}
-						>
-							{sending ? 'Sending . . .' : <>Send <ArrowRight size={22} /></>}
-						</motion.button>
-					</form>
+							className="flex flex-col gap-1">
+							<div>
+								<a href={`mailto:${EMAIL}`} className="group inline-flex items-center gap-2 lg:text-2xl text-lg font-medium tracking-[-0.01em] text-ink break-all">
+									{EMAIL}
+									<ArrowUpRight size={20} strokeWidth={2} className="shrink-0 group-hover:rotate-45 duration-300" />
+								</a>
+							</div>
+						</motion.div>
+
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ delay: 1.2, duration: 0.6 }}
+							viewport={{ once: true }}
+							className="flex flex-col gap-1">
+							<div>
+								<a href={`tel:${PHONE}`} className="group inline-flex items-center gap-2 lg:text-2xl text-lg font-medium tracking-[-0.01em] text-ink break-all">
+									{PHONE}
+									<ArrowUpRight size={20} strokeWidth={2} className="shrink-0 group-hover:rotate-45 duration-300" />
+								</a>
+							</div>
+						</motion.div>
+
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ delay: 1.35, duration: 0.6 }}
+							viewport={{ once: true }}
+							className="flex flex-col gap-1">
+							<div className="lg:text-2xl text-lg tracking-[-0.01em] text-meta">{LOCATION}</div>
+						</motion.div>
+
+					</address>
+					</div>
+
+					{/* Socials — same links and arrow treatment as the hero, stacked in a column on the right. */}
+					<ul className="caps text-ink flex flex-col gap-3 sm:self-end">
+						{SOCIALS.map((s, i) => (
+							<motion.li
+								key={s.name}
+								initial={{ opacity: 0 }}
+								whileInView={{ opacity: 1 }}
+								viewport={{ once: true }}
+								transition={{ delay: 1.2 + i * 0.1 }}>
+								<a href={s.link} target="_blank" rel="noopener noreferrer" className="flex gap-2 items-center group sm:justify-end">
+									{s.name}
+									<ArrowUpRight size={18} strokeWidth={2} className="group-hover:rotate-45 duration-300" />
+								</a>
+							</motion.li>
+						))}
+					</ul>
 				</div>
 			</div>
 		</section>

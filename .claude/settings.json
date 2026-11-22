@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node --version; Get-Content \"C:\\\\Users\\\\tauqeer  siddiqui\\\\.claude\\\\skills\\\\design-taste-frontend\\\\references\\\\critique.md\" -TotalCount 5; \\(Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue\\) -ne $null)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri http://localhost:3000 -UseBasicParsing -TimeoutSec 30; $r.StatusCode; \\($r.Content -match 'Muzammil'\\) } catch { $_.Exception.Message })",
+      "PowerShell(node \"C:\\\\Users\\\\tauqeer  siddiqui\\\\.claude\\\\skills\\\\design-taste-frontend\\\\scripts\\\\inspect.mjs\" http://localhost:3000 --out .taste-skill/before 2>&1)",
+      "mcp__plugin_antislop_antislop-contrast__check_contrast",
+      "PowerShell(node \"C:\\\\Users\\\\tauqeer  siddiqui\\\\.claude\\\\skills\\\\design-taste-frontend\\\\scripts\\\\inspect.mjs\" http://localhost:3000 --out .taste-skill/after 2>&1)",
+      "PowerShell($c = @\\(\"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\",\"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"\\) | Where-Object { Test-Path $_ } | Select-Object -First 1; $out = \"$env:TEMP\\\\claude\\\\439c8bc5487e4d51\\\\435461b4-89ba-488d-aca7-4f75f8835d3c\\\\scratchpad\"; New-Item -ItemType Directory -Force $out | Out-Null; & $c --headless=new --disable-gpu --hide-scrollbars --window-size=390,844 --virtual-time-budget=6000 --screenshot=\"$out\\\\contact-390.png\" \"http://localhost:3000/#contact\" 2>$null; & $c --headless=new --disable-gpu --hide-scrollbars --window-size=1440,900 --virtual-time-budget=6000 --screenshot=\"$out\\\\contact-1440.png\" \"http://localhost:3000/#contact\" 2>$null; Get-ChildItem $out | Select-Object Name, Length)",
+      "PowerShell($out = \"$env:TEMP\\\\claude\\\\439c8bc5487e4d51\\\\435461b4-89ba-488d-aca7-4f75f8835d3c\\\\scratchpad\"; Get-ChildItem $out -ErrorAction SilentlyContinue | Select-Object FullName, Length; Test-Path \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\"; Test-Path \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\")",
+      "Read(//c/Users/tauqeer  siddiqui/AppData/Local/Temp/claude/439c8bc5487e4d51/435461b4-89ba-488d-aca7-4f75f8835d3c/scratchpad/**)",
+      "PowerShell($s = \"$env:TEMP\\\\claude\\\\439c8bc5487e4d51\\\\435461b4-89ba-488d-aca7-4f75f8835d3c\\\\scratchpad\"; node \"$s\\\\settle.mjs\" http://localhost:3000 \"$s\")",
+      "PowerShell(npx next lint 2>&1)",
+      "PowerShell(npx next build 2>&1)",
+      "PowerShell(node \"C:\\\\Users\\\\tauqeer  siddiqui\\\\.claude\\\\skills\\\\design-taste-frontend\\\\scripts\\\\inspect.mjs\" out/index.html --out .taste-skill/after-build 2>&1)",
+      "PowerShell($s = \"$env:TEMP\\\\claude\\\\439c8bc5487e4d51\\\\435461b4-89ba-488d-aca7-4f75f8835d3c\\\\scratchpad\"; node \"$s\\\\skills.mjs\" http://localhost:3000 \"$s\")",
+      "PowerShell($s = \"$env:TEMP\\\\claude\\\\439c8bc5487e4d51\\\\435461b4-89ba-488d-aca7-4f75f8835d3c\\\\scratchpad\"; node \"$s\\\\sticky.mjs\" http://localhost:3000 \"$s\")",
+      "PowerShell($s = \"$env:TEMP\\\\claude\\\\439c8bc5487e4d51\\\\435461b4-89ba-488d-aca7-4f75f8835d3c\\\\scratchpad\"; node \"$s\\\\journey.mjs\" http://localhost:3000 \"$s\")",
+      "PowerShell($s = \"$env:TEMP\\\\claude\\\\439c8bc5487e4d51\\\\435461b4-89ba-488d-aca7-4f75f8835d3c\\\\scratchpad\"; node \"$s\\\\more.mjs\" http://localhost:3000 \"$s\")",
+      "PowerShell(npx tsc --noEmit 2>&1 | Select-Object -Last 10; \"exit: $LASTEXITCODE\")",
+      "PowerShell(npx tsc --noEmit 2>&1 | Select-Object -Last 10; $s = \"$env:TEMP\\\\claude\\\\439c8bc5487e4d51\\\\435461b4-89ba-488d-aca7-4f75f8835d3c\\\\scratchpad\"; node \"$s\\\\more.mjs\" http://localhost:3000 \"$s\")",
+      "PowerShell($s = \"$env:TEMP\\\\claude\\\\439c8bc5487e4d51\\\\435461b4-89ba-488d-aca7-4f75f8835d3c\\\\scratchpad\"; node \"$s\\\\ratio.mjs\" http://localhost:3000)",
+      "PowerShell($s = \"$env:TEMP\\\\claude\\\\439c8bc5487e4d51\\\\435461b4-89ba-488d-aca7-4f75f8835d3c\\\\scratchpad\"; node \"$s\\\\heroscroll.mjs\" http://localhost:3000 \"$s\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\tauqeer  siddiqui\\AppData\\Local\\Temp\\claude\\439c8bc5487e4d51\\435461b4-89ba-488d-aca7-4f75f8835d3c\\scratchpad"
+    ]
+  }
+}

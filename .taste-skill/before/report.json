@@ -1,0 +1,3057 @@
+{
+ "url": "http://localhost:3000",
+ "at": "2026-11-22T06:09:43.401Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.25,
+    0.34,
+    0.28,
+    0.18,
+    0.29,
+    0.45,
+    0.36,
+    0.19
+   ],
+   "motion": {
+    "elements": 96,
+    "css": 21,
+    "transitions": 0,
+    "scripted": 75,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6755,
+     "screens": 7.5,
+     "words": 600,
+     "img": 34,
+     "video": 0,
+     "canvas": 0,
+     "svg": 21,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "me.webp",
+      "buddy.webp",
+      "tripgoals.webp",
+      "coglider.png",
+      "fileglide.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+     "words": 10,
+     "chars": 72,
+     "lines": 3,
+     "size": 84.8,
+     "vw": 5.9,
+     "font": "geistSans",
+     "weight": 800,
+     "tracking": 0,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 301,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+     "words": 10,
+     "lines": 3,
+     "size": 84.8,
+     "font": "geistSans"
+    },
+    "headings": [
+     {
+      "text": ".",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 0,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+      "words": 10,
+      "chars": 72,
+      "lines": 3,
+      "size": 84.8,
+      "vw": 5.9,
+      "font": "geistSans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 301,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 1044,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Web & App Developer",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "geistSans",
+      "weight": 200,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 1237,
+      "mixedFonts": [
+       "geistSans",
+       "geistSans italic"
+      ],
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "I’m a developer who transforms ideas into digital reality. My approach centers on simplicity, functionality, and user experience. Outside of coding, you’ll find me snapping photos, gaming, or just han",
+      "words": 33,
+      "chars": 222,
+      "lines": 5,
+      "size": 36,
+      "vw": 2.5,
+      "font": "geistSans",
+      "weight": 300,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.62,
+      "top": 1677,
+      "mixedFonts": [
+       "geistSans",
+       "geistSans italic"
+      ],
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "My Journey",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 2005,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Stuff I know...",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 3062,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Projects",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.1,
+      "top": 3874,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "01",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.05,
+      "top": 3999,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Buddy",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.06,
+      "top": 4032,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "02",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.06,
+      "top": 4443,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "TripGoals",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.1,
+      "top": 4476,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "03",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.06,
+      "top": 4929,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "CoGlider",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 4962,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "04",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.06,
+      "top": 5390,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "FileGlide",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.09,
+      "top": 5423,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": ".",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 5855,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Feel free to reach out. I'm always excited to connect, collaborate, learn, and grow!",
+      "words": 14,
+      "chars": 84,
+      "lines": 3,
+      "size": 60,
+      "vw": 4.2,
+      "font": "geistSans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 5943,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Get in touch",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "geistSans",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 6319,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 19,
+     "maxLines": 5,
+     "over2Lines": 1,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 2
+    },
+    "type": {
+     "families": [
+      {
+       "family": "geistSans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      18,
+      20,
+      24,
+      26,
+      30,
+      36,
+      60,
+      72,
+      85
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "geistSans",
+      "size": 18,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.4
+     },
+     "measureChars": 83,
+     "max": {
+      "size": 84.8,
+      "vw": 5.9,
+      "font": "geistSans",
+      "text": "I'm"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.002,
+     "microSamples": [
+      "AWS",
+      "SCSS"
+     ],
+     "upperShare": 0.04,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 72,
+      "top": 3999
+     },
+     {
+      "text": "02",
+      "size": 72,
+      "top": 4443
+     },
+     {
+      "text": "03",
+      "size": 72,
+      "top": 4929
+     },
+     {
+      "text": "04",
+      "size": 72,
+      "top": 5390
+     }
+    ],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#56606b",
+       "share": 0.63
+      },
+      {
+       "color": "#000000",
+       "share": 0.17
+      },
+      {
+       "color": "#8a9099",
+       "share": 0.05
+      },
+      {
+       "color": "#525252",
+       "share": 0.04
+      },
+      {
+       "color": "#262626",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#000000"
+     },
+     "lowContrast": [
+      {
+       "text": "Sleeksky Technologies, San Francisco (Re",
+       "ratio": 2.2,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#a9afb8",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Penguin Apps, Mumbai (Remote)",
+       "ratio": 2.2,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#a9afb8",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Maharashtra Institute of Technology, Aur",
+       "ratio": 2.2,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#a9afb8",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "creates",
+       "ratio": 2.5,
+       "need": 3,
+       "size": 84.8,
+       "fg": "#9ca3af",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "great",
+       "ratio": 2.5,
+       "need": 3,
+       "size": 84.8,
+       "fg": "#9ca3af",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "experiences",
+       "ratio": 2.5,
+       "need": 3,
+       "size": 84.8,
+       "fg": "#9ca3af",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Resume",
+      "Let's Talk"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "hr.mt-4 1222px rule",
+      "hr.mt-4 1222px rule"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 24,
+     "squareMedia": 0,
+     "roundedMedia": 5,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geistsans",
+     "geistsans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 6755,
+    "margins": {
+     "left": 105,
+     "right": 113
+    },
+    "sections": [
+     {
+      "sel": "section#home.h-[100dvh].relative",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 19,
+      "media": 0,
+      "middle": 3,
+      "heading": {
+       "text": "I'm",
+       "size": 85,
+       "tag": "h1"
+      },
+      "left": 105,
+      "right": 156,
+      "textLeft": 105,
+      "textRight": 156,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.relative.max-w-[1366px]",
+      "tag": "section",
+      "top": 1012,
+      "height": 2718,
+      "words": 323,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Web",
+       "size": 72,
+       "tag": "h3"
+      },
+      "left": 109,
+      "right": 109,
+      "textLeft": 109,
+      "textRight": 165,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#projects.relative.max-w-[1366px]",
+      "tag": "section",
+      "top": 3842,
+      "height": 1901,
+      "words": 257,
+      "media": 4,
+      "middle": 40,
+      "heading": {
+       "text": "Projects",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 109,
+      "right": 109,
+      "textLeft": 109,
+      "textRight": 113,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.min-h-[100dvh].max-sm:pt-24",
+      "tag": "section",
+      "top": 5855,
+      "height": 900,
+      "words": 21,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Feel",
+       "size": 60,
+       "tag": "span"
+      },
+      "left": 109,
+      "right": 141,
+      "textLeft": 109,
+      "textRight": 141,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+      "size": 85,
+      "top": 301,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 105,
+      "n": 15
+     },
+     {
+      "x": 532,
+      "n": 3
+     },
+     {
+      "x": 701,
+      "n": 2
+     },
+     {
+      "x": 740,
+      "n": 2
+     },
+     {
+      "x": 809,
+      "n": 2
+     },
+     {
+      "x": 164,
+      "n": 1
+     },
+     {
+      "x": 179,
+      "n": 1
+     },
+     {
+      "x": 244,
+      "n": 1
+     },
+     {
+      "x": 285,
+      "n": 1
+     },
+     {
+      "x": 329,
+      "n": 1
+     },
+     {
+      "x": 452,
+      "n": 1
+     },
+     {
+      "x": 560,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 32,
+    "bodySize": 18,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.2,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 1440,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.46,
+    0.48,
+    0.43,
+    0.2,
+    0.45,
+    0.56,
+    0.57,
+    0.34,
+    0.23
+   ],
+   "motion": {
+    "elements": 94,
+    "css": 25,
+    "transitions": 0,
+    "scripted": 69,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8917,
+     "screens": 8.7,
+     "words": 600,
+     "img": 34,
+     "video": 0,
+     "canvas": 0,
+     "svg": 21,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "me.webp",
+      "buddy.webp",
+      "tripgoals.webp",
+      "coglider.png",
+      "fileglide.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+     "words": 10,
+     "chars": 72,
+     "lines": 6,
+     "size": 84.8,
+     "vw": 11,
+     "font": "geistSans",
+     "weight": 800,
+     "tracking": 0,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.95,
+     "top": 225,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+     "words": 10,
+     "lines": 6,
+     "size": 84.8,
+     "font": "geistSans"
+    },
+    "headings": [
+     {
+      "text": ".",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 0,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+      "words": 10,
+      "chars": 72,
+      "lines": 6,
+      "size": 84.8,
+      "vw": 11,
+      "font": "geistSans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 225,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.14,
+      "top": 1168,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Web & App Developer",
+      "words": 4,
+      "chars": 19,
+      "lines": 3,
+      "size": 72,
+      "vw": 9.4,
+      "font": "geistSans",
+      "weight": 200,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1309,
+      "mixedFonts": [
+       "geistSans",
+       "geistSans italic"
+      ],
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "I’m a developer who transforms ideas into digital reality. My approach centers on simplicity, functionality, and user experience. Outside of coding, you’ll find me snapping photos, gaming, or just han",
+      "words": 33,
+      "chars": 222,
+      "lines": 6,
+      "size": 36,
+      "vw": 4.7,
+      "font": "geistSans",
+      "weight": 300,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1801,
+      "mixedFonts": [
+       "geistSans",
+       "geistSans italic"
+      ],
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "My Journey",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2169,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Stuff I know...",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3322,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Projects",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 4414,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "01",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 9.4,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.1,
+      "top": 4959,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Buddy",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 4992,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "02",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 9.4,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 5796,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "TripGoals",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.18,
+      "top": 5829,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "03",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 9.4,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 6660,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "CoGlider",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 6693,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "04",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 9.4,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 7468,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "FileGlide",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 7501,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": ".",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 7873,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Feel free to reach out. I'm always excited to connect, collaborate, learn, and grow!",
+      "words": 14,
+      "chars": 84,
+      "lines": 4,
+      "size": 60,
+      "vw": 7.8,
+      "font": "geistSans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 7961,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Get in touch",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "geistSans",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 8741,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 19,
+     "maxLines": 6,
+     "over2Lines": 2,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 2
+    },
+    "type": {
+     "families": [
+      {
+       "family": "geistSans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      18,
+      20,
+      24,
+      26,
+      30,
+      36,
+      60,
+      72,
+      85
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "geistSans",
+      "size": 18,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.4
+     },
+     "measureChars": 77,
+     "max": {
+      "size": 84.8,
+      "vw": 11,
+      "font": "geistSans",
+      "text": "I'm"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.002,
+     "microSamples": [
+      "AWS",
+      "SCSS"
+     ],
+     "upperShare": 0.04,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 72,
+      "top": 4959
+     },
+     {
+      "text": "02",
+      "size": 72,
+      "top": 5796
+     },
+     {
+      "text": "03",
+      "size": 72,
+      "top": 6660
+     },
+     {
+      "text": "04",
+      "size": 72,
+      "top": 7468
+     }
+    ],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#efeff1",
+       "top": 4535,
+       "hsl": {
+        "h": 240,
+        "s": 0.07,
+        "l": 0.94
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#56606b",
+       "share": 0.63
+      },
+      {
+       "color": "#000000",
+       "share": 0.17
+      },
+      {
+       "color": "#8a9099",
+       "share": 0.05
+      },
+      {
+       "color": "#525252",
+       "share": 0.04
+      },
+      {
+       "color": "#262626",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#000000"
+     },
+     "lowContrast": [
+      {
+       "text": "Sleeksky Technologies, San Francisco (Re",
+       "ratio": 2.2,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#a9afb8",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Penguin Apps, Mumbai (Remote)",
+       "ratio": 2.2,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#a9afb8",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Maharashtra Institute of Technology, Aur",
+       "ratio": 2.2,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#a9afb8",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "creates",
+       "ratio": 2.5,
+       "need": 3,
+       "size": 84.8,
+       "fg": "#9ca3af",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "great",
+       "ratio": 2.5,
+       "need": 3,
+       "size": 84.8,
+       "fg": "#9ca3af",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "experiences",
+       "ratio": 2.5,
+       "need": 3,
+       "size": 84.8,
+       "fg": "#9ca3af",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Resume",
+      "Let's Talk"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "hr.mt-4 691px rule",
+      "hr.mt-4 691px rule"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 24,
+     "squareMedia": 0,
+     "roundedMedia": 5,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geistsans",
+     "geistsans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8917,
+    "margins": {
+     "left": 38,
+     "right": 38
+    },
+    "sections": [
+     {
+      "sel": "section#home.h-[100dvh].relative",
+      "tag": "section",
+      "top": 0,
+      "height": 1024,
+      "words": 19,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "I'm",
+       "size": 85,
+       "tag": "h1"
+      },
+      "left": 38,
+      "right": 89,
+      "textLeft": 38,
+      "textRight": 89,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.relative.max-w-[1366px]",
+      "tag": "section",
+      "top": 1136,
+      "height": 3134,
+      "words": 323,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Web",
+       "size": 72,
+       "tag": "h3"
+      },
+      "left": 38,
+      "right": 38,
+      "textLeft": 38,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#projects.relative.max-w-[1366px]",
+      "tag": "section",
+      "top": 4382,
+      "height": 3378,
+      "words": 257,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Projects",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 38,
+      "textLeft": 38,
+      "textRight": 41,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.min-h-[100dvh].max-sm:pt-24",
+      "tag": "section",
+      "top": 7873,
+      "height": 1024,
+      "words": 21,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Feel",
+       "size": 60,
+       "tag": "span"
+      },
+      "left": 38,
+      "right": 63,
+      "textLeft": 38,
+      "textRight": 63,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+      "size": 85,
+      "top": 225,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 38,
+      "n": 24
+     },
+     {
+      "x": 107,
+      "n": 3
+     },
+     {
+      "x": 94,
+      "n": 1
+     },
+     {
+      "x": 177,
+      "n": 1
+     },
+     {
+      "x": 219,
+      "n": 1
+     },
+     {
+      "x": 385,
+      "n": 1
+     },
+     {
+      "x": 498,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 32,
+    "bodySize": 18,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.4,
+    0.49,
+    0.48,
+    0.61,
+    0.34,
+    0.22,
+    0.51,
+    0.59,
+    0.57,
+    0.54,
+    0.39,
+    0.27
+   ],
+   "motion": {
+    "elements": 96,
+    "css": 25,
+    "transitions": 0,
+    "scripted": 71,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 9474,
+     "screens": 11.2,
+     "words": 588,
+     "img": 34,
+     "video": 0,
+     "canvas": 0,
+     "svg": 21,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "me.webp",
+      "buddy.webp",
+      "tripgoals.webp",
+      "coglider.png",
+      "fileglide.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+     "words": 10,
+     "chars": 72,
+     "lines": 6,
+     "size": 48,
+     "vw": 12.3,
+     "font": "geistSans",
+     "weight": 800,
+     "tracking": 0,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.95,
+     "top": 216,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+     "words": 10,
+     "lines": 6,
+     "size": 48,
+     "font": "geistSans"
+    },
+    "headings": [
+     {
+      "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+      "words": 10,
+      "chars": 72,
+      "lines": 6,
+      "size": 48,
+      "vw": 12.3,
+      "font": "geistSans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 216,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 1036,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Web & App Developer",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 48,
+      "vw": 12.3,
+      "font": "geistSans",
+      "weight": 200,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1157,
+      "mixedFonts": [
+       "geistSans",
+       "geistSans italic"
+      ],
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "My Journey",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2126,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Software Developer Sleeksky Technologies, San Francisco (Remote)",
+      "words": 7,
+      "chars": 64,
+      "lines": 3,
+      "size": 24,
+      "vw": 6.2,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2227,
+      "tag": "h4",
+      "kind": "heading"
+     },
+     {
+      "text": "Software Developer Intern Penguin Apps, Mumbai (Remote)",
+      "words": 7,
+      "chars": 55,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2997,
+      "tag": "h4",
+      "kind": "heading"
+     },
+     {
+      "text": "Bachelor of Computer Science Maharashtra Institute of Technology, Aurangabad",
+      "words": 9,
+      "chars": 76,
+      "lines": 3,
+      "size": 24,
+      "vw": 6.2,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3364,
+      "tag": "h4",
+      "kind": "heading"
+     },
+     {
+      "text": "Stuff I know...",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3625,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Projects",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "geistSans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 5265,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "01",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.5,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 5714,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Buddy",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 5747,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "02",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.5,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 6548,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "TripGoals",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 6581,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "03",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.5,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 7434,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "CoGlider",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 7467,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "04",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.5,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 8268,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "FileGlide",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "geistSans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 8301,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Feel free to reach out. I'm always excited to connect, collaborate, learn, and grow!",
+      "words": 14,
+      "chars": 84,
+      "lines": 5,
+      "size": 36,
+      "vw": 9.2,
+      "font": "geistSans",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8726,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Get in touch",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "geistSans",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9118,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 19,
+     "maxLines": 6,
+     "over2Lines": 3,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 1
+    },
+    "type": {
+     "families": [
+      {
+       "family": "geistSans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      18,
+      20,
+      24,
+      30,
+      36,
+      48,
+      72
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "geistSans",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.4
+     },
+     "measureChars": 39,
+     "max": {
+      "size": 72,
+      "vw": 18.5,
+      "font": "geistSans",
+      "text": "01"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.002,
+     "microSamples": [
+      "AWS",
+      "SCSS"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 72,
+      "top": 5714
+     },
+     {
+      "text": "02",
+      "size": 72,
+      "top": 6548
+     },
+     {
+      "text": "03",
+      "size": 72,
+      "top": 7434
+     },
+     {
+      "text": "04",
+      "size": 72,
+      "top": 8268
+     }
+    ],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#efeff1",
+       "top": 5386,
+       "hsl": {
+        "h": 240,
+        "s": 0.07,
+        "l": 0.94
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#56606b",
+       "share": 0.64
+      },
+      {
+       "color": "#000000",
+       "share": 0.17
+      },
+      {
+       "color": "#8a9099",
+       "share": 0.05
+      },
+      {
+       "color": "#525252",
+       "share": 0.04
+      },
+      {
+       "color": "#a9afb8",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#000000"
+     },
+     "lowContrast": [
+      {
+       "text": "Sleeksky Technologies, San Francisco (Re",
+       "ratio": 2.2,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#a9afb8",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Penguin Apps, Mumbai (Remote)",
+       "ratio": 2.2,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#a9afb8",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Maharashtra Institute of Technology, Aur",
+       "ratio": 2.2,
+       "need": 4.5,
+       "size": 20,
+       "fg": "#a9afb8",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "creates",
+       "ratio": 2.5,
+       "need": 3,
+       "size": 48,
+       "fg": "#9ca3af",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "great",
+       "ratio": 2.5,
+       "need": 3,
+       "size": 48,
+       "fg": "#9ca3af",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "experiences",
+       "ratio": 2.5,
+       "need": 3,
+       "size": 48,
+       "fg": "#9ca3af",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Resume",
+      "Let's Talk"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "hr.mt-4 351px rule",
+      "hr.mt-4 351px rule"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 24,
+     "squareMedia": 0,
+     "roundedMedia": 5,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geistsans",
+     "geistsans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 9474,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section#home.h-[100dvh].relative",
+      "tag": "section",
+      "top": 0,
+      "height": 844,
+      "words": 19,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "I'm",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 10,
+      "textLeft": 20,
+      "textRight": 10,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.sticky.top-0",
+      "tag": "div",
+      "top": 956,
+      "height": 137,
+      "words": 1,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "About",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 265,
+      "textLeft": 20,
+      "textRight": 265,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "div.grid.md:grid-cols-2",
+      "tag": "div",
+      "top": 1157,
+      "height": 577,
+      "words": 13,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Web",
+       "size": 48,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.max-w-4xl",
+      "tag": "div",
+      "top": 1774,
+      "height": 312,
+      "words": 35,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "I’m a developer who transforms ideas into digital ",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 23,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.grid.lg:grid-cols-12",
+      "tag": "div",
+      "top": 2126,
+      "height": 1459,
+      "words": 223,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "My Journey",
+       "size": 30,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.space-y-5",
+      "tag": "div",
+      "top": 3625,
+      "height": 1456,
+      "words": 51,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Stuff I know...",
+       "size": 30,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 52,
+      "textLeft": 20,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.sticky.top-0",
+      "tag": "div",
+      "top": 5185,
+      "height": 137,
+      "words": 1,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Projects",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 225,
+      "textLeft": 20,
+      "textRight": 225,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "div.flex.flex-col-reverse",
+      "tag": "div",
+      "top": 5386,
+      "height": 770,
+      "words": 70,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Buddy",
+       "size": 30,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.flex.flex-col-reverse",
+      "tag": "div",
+      "top": 6220,
+      "height": 822,
+      "words": 78,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "TripGoals",
+       "size": 30,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.flex.flex-col-reverse",
+      "tag": "div",
+      "top": 7106,
+      "height": 770,
+      "words": 61,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "CoGlider",
+       "size": 30,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.flex.flex-col-reverse",
+      "tag": "div",
+      "top": 7940,
+      "height": 690,
+      "words": 47,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "FileGlide",
+       "size": 30,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.min-h-[100dvh].max-sm:pt-24",
+      "tag": "section",
+      "top": 8630,
+      "height": 844,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Feel",
+       "size": 36,
+       "tag": "span"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "I'm Muzammil Siddiqui Full Stack Developer who creates great experiences",
+      "size": 48,
+      "top": 216,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 23
+     },
+     {
+      "x": 89,
+      "n": 4
+     },
+     {
+      "x": 75,
+      "n": 1
+     },
+     {
+      "x": 121,
+      "n": 1
+     },
+     {
+      "x": 166,
+      "n": 1
+     },
+     {
+      "x": 216,
+      "n": 1
+     },
+     {
+      "x": 279,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 32,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "2 headline(s) wrap past two lines at 1440px: \"I'm Muzammil Siddiqui Full Stack Developer who c\" → 3 lines (10 words, 84.8px); \"Feel free to reach out. I'm always excited to co\" → 3 lines (14 words, 60px, a paragraph set above 36px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "statement-length",
+   "width": 1440,
+   "message": "1 large-set statement(s) run past 3 lines at 1440px: \"I’m a developer who transforms ideas int…\" → 5 lines at 36px",
+   "fix": "A statement set large is about 30 words. Cut it, or set the rest as ordinary body text."
+  },
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 1440,
+   "message": "2 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"01\", \"02\", \"03\", \"04\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "2 tiny uppercase letter-spaced label(s): \"AWS\", \"SCSS\"",
+   "fix": "Prefer sentence case at body size.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "2 thin rule(s)/divider line(s): hr.mt-4 1222px rule | hr.mt-4 1222px rule",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Unreadable text: \"Sleeksky Technologies, San Francisco (Re\" 2.2:1 (#a9afb8 on #ffffff); \"Penguin Apps, Mumbai (Remote)\" 2.2:1 (#a9afb8 on #ffffff); \"Maharashtra Institute of Technology, Aur\" 2.2:1 (#a9afb8 on #ffffff); \"creates\" 2.5:1 (#9ca3af on #ffffff)",
+   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "11 different font sizes (14, 16, 18, 20, 24, 26, 30, 36, 60, 72, 85).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (6.4:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 4 screens in a row: \"About\"; \"Projects\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "FAIL",
+   "id": "empty-screens",
+   "width": 1440,
+   "message": "2 of 8 desktop screens are almost empty ground (under 20% of the screen holds text, a picture or a colour field): screens 4, 8.",
+   "fix": "An empty screen is a rest only once per page. Elsewhere it means the section is underbuilt: set its content larger, give it the full information, put it on a colour field, or cut it."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "4 headline(s) wrap past two lines at 768px: \"I'm Muzammil Siddiqui Full Stack Developer who c\" → 6 lines (10 words, 84.8px); \"Web & App Developer\" → 3 lines (4 words, 72px); \"I’m a developer who transforms ideas into digita\" → 6 lines (33 words, 36px, a paragraph set above 32px); \"Feel free to reach out. I'm always excited to co\" → 4 lines (14 words, 60px, a paragraph set above 32px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "4 headline(s) wrap past two lines at 390px: \"I'm Muzammil Siddiqui Full Stack Developer who c\" → 6 lines (10 words, 48px); \"Software Developer Sleeksky Technologies, San Fr\" → 3 lines (7 words, 24px); \"Bachelor of Computer Science Maharashtra Institu\" → 3 lines (9 words, 24px); \"Feel free to reach out. I'm always excited to co\" → 5 lines (14 words, 36px, a paragraph set above 24px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "reduced-hidden",
+   "width": 1440,
+   "message": "With reduced motion requested, 3 text block(s) on the first screen stay invisible: \"Resume\", \"Let\", \"s Talk\"",
+   "fix": "Put every hidden starting state inside @media (prefers-reduced-motion: no-preference); the reduced page is the finished page (references/motion.md §8)."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Codes\\Web\\portfolio\\muz4mmil.github.io\\.taste-skill\\before\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Codes\\Web\\portfolio\\muz4mmil.github.io\\.taste-skill\\before\\desktop-page-01.jpg",
+    "C:\\Codes\\Web\\portfolio\\muz4mmil.github.io\\.taste-skill\\before\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Codes\\Web\\portfolio\\muz4mmil.github.io\\.taste-skill\\before\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Codes\\Web\\portfolio\\muz4mmil.github.io\\.taste-skill\\before\\tablet-page-01.jpg",
+    "C:\\Codes\\Web\\portfolio\\muz4mmil.github.io\\.taste-skill\\before\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Codes\\Web\\portfolio\\muz4mmil.github.io\\.taste-skill\\before\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Codes\\Web\\portfolio\\muz4mmil.github.io\\.taste-skill\\before\\mobile-page-01.jpg",
+    "C:\\Codes\\Web\\portfolio\\muz4mmil.github.io\\.taste-skill\\before\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

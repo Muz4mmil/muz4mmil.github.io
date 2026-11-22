@@ -15,25 +15,29 @@ Quick orientation (the spec has the detail and the rationale):
 
 - **Monochrome only.** No accent colour, no gradients, no shadows on cards.
   Use the `ink` / `ink-muted` / `body` / `meta` / `hairline` / `line` / `surface`
-  tokens in `tailwind.config.ts`; never `#000`.
+  tokens in `tailwind.config.ts` rather than inline `black` / `#000`, so the
+  values stay changeable in one place. `ink` is true black.
 - **Three weights: 400 / 500 / 700.** `italic`, `font-extralight` and
   `font-black` are banned.
 - **Two-tone headlines** are the signature: one `ink` half, one `ink-muted`
   half, same size and weight. Exactly one split per headline.
+- **Inter, one family.** Set on `<body>` via `font-sans`; no font classes needed.
 - **Display type is tight** — negative tracking, line-height ≤ 1.0. Use the
-  `display-xl` / `display-l` / `display-m` classes.
+  `display-xl` / `display-l` / `display-m` classes, `.heading` for in-section
+  headings and `text-title` for row titles. No sizes outside DESIGN.md §1.2.
 - **Buttons are pills with a trailing arrow.** `btn-primary` (solid, h-14),
   `btn-secondary` (outlined, h-11), `btn-icon` (circle, h-11 w-11).
 - **Media cards** are a flat `surface` rectangle at `rounded-media` (24px) with
   the caption *outside and below* — bold title over a grey descriptor.
-- **Forms use underline inputs** (`.field`), never boxed ones.
+- **New forms use underline inputs** (`.field`), not boxed ones. The existing
+  contact form is a deliberate exception — see `docs/DESIGN.md` §6.
 - **Radii:** pill, 24px, 16px. Nothing else.
 - Left-align everything. Never centre a display headline.
 - Reuse the existing framer-motion vocabulary (masked line reveal, wipe panel,
   fade-up, `viewport={{ once: true }}`) rather than inventing new effects.
 
 Shared primitives live in `app/globals.css` under `@layer components`
-(`.shell`, `.display-*`, `.eyebrow`, `.caps`, `.btn-*`, `.chip*`, `.media-card`,
+(`.shell`, `.display-*`, `.heading`, `.section-label`, `.eyebrow`, `.caps`, `.btn-*`, `.chip*`, `.media-card`,
 `.field`, `.row-divided`). Prefer them over re-deriving utility strings.
 
 `docs/DESIGN.md` §5 lists the anti-patterns to check against before shipping,

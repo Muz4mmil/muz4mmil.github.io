@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# muz4mmil.github.io
 
-## Getting Started
+Personal portfolio of **Muzammil Siddiqui**, full stack developer.
 
-First, run the development server:
+A single-page site with four sections (Home, About, Projects, Contact) in a monochrome, editorial style: oversized tight headlines, two-tone ink/grey type, pill buttons and flat grey media cards.
+
+## Stack
+
+- [Next.js](https://nextjs.org) (App Router) + TypeScript
+- [Tailwind CSS](https://tailwindcss.com) with design tokens in `tailwind.config.ts`
+- [framer-motion](https://www.framer.com/motion/) for scroll reveals
+- [Lenis](https://lenis.darkroom.engineering/) for smooth scrolling
+- [lucide-react](https://lucide.dev) icons, [Devicon](https://devicon.dev) skill logos (self-hosted SVGs)
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # production build (also type-checks)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Set `NEXT_PUBLIC_SITE_URL` to the deployed origin (defaults to `https://muz4mmil.github.io`). It is used for the canonical URL, Open Graph tags, JSON-LD, `robots.txt` and `sitemap.xml`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+  page.tsx              Server component composing the sections
+  layout.tsx            Fonts, metadata, Lenis smooth-scroll root
+  components/
+    nav.tsx             Fixed nav + mobile menu (client)
+    json-ld.tsx         schema.org Person / WebSite / ProfilePage graph
+  sections/             hero, about, projects, contact
+  data/                 projects.json, skills.json, journey.json
+  lib/
+    site.ts             Name, contact details, socials, SEO copy (one source of truth)
+    use-section-scroll.ts  Smooth #anchor scrolling through Lenis
+  opengraph-image.tsx   Generated social share card
+  robots.ts, sitemap.ts
+public/
+  projects/             Project screenshots
+  skills/               Skill icons (SVG)
+docs/DESIGN.md          The binding design spec — read before any visual change
+```
 
-## Learn More
+## Editing content
 
-To learn more about Next.js, take a look at the following resources:
+Most updates don't need code changes:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| To change… | Edit |
+|---|---|
+| Projects | `app/data/projects.json` (`imageFit`: `cover` for photos, `contain` for device mockups) |
+| Experience & education | `app/data/journey.json` |
+| Skills | `app/data/skills.json` (icon = path to an SVG in `public/skills/`) |
+| Name, email, socials, SEO title/description | `app/lib/site.ts` |
+| Résumé | replace `public/Resume-Muzammil.pdf` |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Design
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All visual work follows [`docs/DESIGN.md`](docs/DESIGN.md). It covers the colour tokens, type scale, components, motion vocabulary and the anti-patterns to check before shipping.

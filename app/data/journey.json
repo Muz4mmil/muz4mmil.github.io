@@ -1,0 +1,22 @@
+{
+	"journey": [
+		{
+			"period": "May 2025 – Present",
+			"title": "Software Developer",
+			"org": "Sleeksky Technologies, San Francisco (Remote)",
+			"description": "Building the Simple HealthKit platform (US at-home health testing). Re-architected Email, SMS and IVR notifications from hardcoded logic into a database-driven decision engine with FSM-based IVR template resolution, so new notification flows ship without code changes. Built production n8n workflows for patient support and operations, including an AI chatbot API that creates Zoho Desk tickets for health-plan members, and now building a Patient Support MCP server that exposes kit status, test results and shipping lookups as tools for an inbound voice AI agent. Also revamped authentication with passwordless login and removed redundant API calls, and built dashboard components and charts while fixing RBAC bugs across 5 sub-platforms."
+		},
+		{
+			"period": "Jan 2025 – Apr 2025",
+			"title": "Software Developer Intern",
+			"org": "Penguin Apps, Mumbai (Remote)",
+			"description": "Integrated new features and resolved critical bugs in a full-stack school management system. Built and integrated RESTful APIs with Strapi Headless CMS, and developed cross-platform mobile app features and screens using a component-driven architecture for a social media app."
+		},
+		{
+			"period": "June 2025",
+			"title": "Bachelor of Computer Science",
+			"org": "Maharashtra Institute of Technology, Aurangabad",
+			"description": "Completed a comprehensive computer science education with a focus on software development, algorithms, and modern technology stacks."
+		}
+	]
+}

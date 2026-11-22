@@ -1,17 +1,126 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useId, useMemo, useRef, useState } from 'react'
 import skills from '@/app/data/skills.json'
+import journey from '@/app/data/journey.json'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
+import { PERSON } from '@/app/lib/site'
+import WordReveal from '@/app/components/word-reveal'
+
+// Every group starts at the same moment; each then fades its own pills in one by one.
+const skillGroups = [
+  { label: 'Languages', items: skills.languages, delay: 0.3, step: 0.1 },
+  { label: 'Frameworks, Libraries & Tools', items: skills.frameworks_libraries_tools, delay: 0.3, step: 0.06 },
+  { label: 'Databases', items: skills.databases, delay: 0.3, step: 0.06 },
+  { label: 'Tools & Platforms', items: skills.tools_platforms, delay: 0.3, step: 0.06 },
+]
+
+const EASE = [0.16, 1, 0.3, 1] as const
+
+const PARAGRAPH = 'text-base md:text-body-l text-body leading-[1.6]'
+
+// Instagram-caption truncation: the text stops at the last whole word that fits in
+// 4 lines (3 from md up) with "… more" inline after it; expanded, it ends in " less".
+// The cut is measured on a hidden copy and re-measured when the width changes.
+// Before the first measurement (and without JS) it falls back to a CSS line clamp.
+function ClampedText({ text, className }: { text: string; className?: string }) {
+  const wrapRef = useRef<HTMLDivElement>(null)
+  const measureRef = useRef<HTMLParagraphElement>(null)
+  const id = useId()
+  const words = useMemo(() => text.split(' '), [text])
+  const [open, setOpen] = useState(false)
+  // undefined: not measured yet · null: fits, no toggle · n: words shown when collapsed
+  const [cut, setCut] = useState<number | null | undefined>(undefined)
+
+  useEffect(() => {
+    const wrap = wrapRef.current
+    const el = measureRef.current
+    if (!wrap || !el) return
+
+    // Mirror the visible markup: running text, then a medium-weight "more".
+    const body = document.createTextNode('')
+    const tail = document.createElement('span')
+    tail.className = 'font-medium'
+    tail.textContent = 'more'
+    el.replaceChildren(body, tail)
+
+    const measure = () => {
+      const lines = window.matchMedia('(min-width: 768px)').matches ? 3 : 4
+      const max = parseFloat(getComputedStyle(el).lineHeight) * lines + 1
+      const fits = (n: number | null) => {
+        body.data = n === null ? text : `${words.slice(0, n).join(' ')}… `
+        tail.style.display = n === null ? 'none' : ''
+        return el.offsetHeight <= max
+      }
+      if (fits(null)) return setCut(null)
+      let lo = 0
+      let hi = words.length - 1
+      while (lo < hi) {
+        const mid = Math.ceil((lo + hi) / 2)
+        if (fits(mid)) lo = mid
+        else hi = mid - 1
+      }
+      setCut(lo)
+    }
+
+    measure()
+    // Only width matters; the wrapper's height changes with the cut itself.
+    let lastWidth = wrap.clientWidth
+    const ro = new ResizeObserver(() => {
+      if (wrap.clientWidth === lastWidth) return
+      lastWidth = wrap.clientWidth
+      measure()
+    })
+    ro.observe(wrap)
+    return () => ro.disconnect()
+  }, [text, words])
+
+  const truncated = typeof cut === 'number'
+  // Inline text button; the pseudo-element widens the tap area without moving the line.
+  // Phones have no hover, so the link is always underlined there, in grey.
+  const toggle = 'relative font-medium text-ink underline-offset-4 hover:underline max-sm:underline max-sm:decoration-line after:absolute after:-inset-x-2 after:-inset-y-3 after:content-[""]'
+
+  return (
+    <div ref={wrapRef} className={`relative max-w-[62ch] ${className ?? ''}`}>
+      <p id={id} className={`${PARAGRAPH} ${cut === undefined ? 'line-clamp-4 md:line-clamp-3' : ''}`}>
+        {truncated && !open ? `${words.slice(0, cut).join(' ')}… ` : text}
+        {truncated && (
+          <>
+            {open && ' '}
+            <button
+              type="button"
+              onClick={() => setOpen((o) => !o)}
+              aria-expanded={open}
+              aria-controls={id}
+              className={toggle}
+            >
+              {open ? 'less' : 'more'}
+            </button>
+          </>
+        )}
+      </p>
+      {/* Hidden copy used only for measuring; filled imperatively above. */}
+      <p
+        ref={measureRef}
+        aria-hidden="true"
+        className={`${PARAGRAPH} pointer-events-none invisible absolute inset-x-0 top-0`}
+      />
+    </div>
+  )
+}
 
 export default function About() {
+  const reduce = useReducedMotion()
+
   return (
-    <section id='#ABOUT' className='relative max-w-[1366px] mx-auto px-[5%] w-full flex flex-col bg-white min-h-screen'>
-      <div className="sticky top-0 z-10 bg-white">
-        <h1 className="text-4xl font-semibold mt-8 max-sm:mt-20 w-max">About</h1>
+    <section id='about' className='relative max-w-[1366px] mx-auto px-[5%] w-full flex flex-col bg-white min-h-screen overflow-x-clip'>
+      <div className="section-bar">
+        <h2 className="section-label w-max">About</h2>
         <hr className='mt-4' />
       </div>
 
-      <div className="flex flex-col py-16 space-y-32 max-sm:space-y-10">
+      <div className="flex flex-col py-16 gap-32 max-sm:gap-10">
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,11 +130,15 @@ export default function About() {
           className="grid md:grid-cols-2 gap-16 items-center"
         >
           <div>
-            <h2 className="text-5xl md:text-7xl font-extralight leading-none mb-8 text-black">
-              Developer
-              <br />
-              <span className="font-light italic">& Creator</span>
-            </h2>
+            <WordReveal
+              as="h3"
+              onView
+              className="text-5xl md:text-7xl font-extralight leading-none mb-8 text-black"
+              lines={[
+                { text: 'Web & App' },
+                { text: 'Developer', className: 'font-light italic' },
+              ]}
+            />
             <p className="text-xl md:text-2xl font-light text-gray-600 leading-relaxed">
               Crafting digital experiences through clean code and thoughtful design
             </p>
@@ -33,11 +146,11 @@ export default function About() {
 
           <div className="relative w-full h-80 md:h-96 rounded-none overflow-hidden">
             <Image
-              src={'/me1.png'}
-              layout='fill'
-              alt='me'
-              objectFit='cover'
-              className='grayscale hover:grayscale-0 transition-all duration-700'
+              src={PERSON.image}
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              alt={`Portrait of ${PERSON.name}`}
+              className='object-cover brightness-110 hover:grayscale-0 transition-all duration-700 rounded-2xl'
             />
             <motion.div
               initial={{ scaleY: 1 }}
@@ -63,77 +176,29 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className="">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h1 className="text-3xl font-semibold max-sm:mt-10">My Journey</h1>
+        {/* Phones: 40px gap + 56px = 96px of air before the journey. */}
+        <div className="grid lg:grid-cols-12 gap-x-12 max-sm:mt-14">
+          <div className="lg:col-span-4">
+            <h3 className="heading lg:sticky lg:top-28">My Journey</h3>
+          </div>
 
-            <div className="space-y-12 max-sm:space-y-5 mt-10 max-sm:mt-4 overflow-hidden">
-              <motion.div
-                initial={{ opacity: 0, x: 100 }}
+          <div className="lg:col-span-8 mt-8 lg:mt-0 flex flex-col gap-20 max-sm:gap-14">
+            {journey.journey.map((entry, i) => (
+              <motion.article
+                key={entry.title}
+                initial={reduce ? false : { opacity: 0, x: 160 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
-                <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
-                  May 2025 — Present
-                </div>
-                <div className="md:col-span-3">
-                  <h4 className="text-xl font-normal mb-2">Software Developer</h4>
-                  <p className="text-gray-600 mb-3">Sleeksky Technologies</p>
-                  <p className="text-gray-700 font-light leading-relaxed">
-                    Developing core dashboard components and data visualization features for a B2B healthcare platform,
-                    resolving high-impact bugs across RBAC modules and multiple sub-platforms. Revamped the authentication
-                    system with passwordless login and eliminated redundant API calls, and re-architected notifications
-                    (Email, SMS, IVR) into a dynamic, database-driven decision engine with FSM-based IVR template resolution.
-                  </p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="grid md:grid-cols-4 gap-8 py-6 border-b border-gray-100">
-                <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
-                  Jan 2025 — Apr 2025
-                </div>
-                <div className="md:col-span-3">
-                  <h4 className="text-xl font-normal mb-2">Software Developer Intern</h4>
-                  <p className="text-gray-600 mb-3">Penguin Apps</p>
-                  <p className="text-gray-700 font-light leading-relaxed">
-                    Integrated new features and resolved critical bugs in a full-stack school management system.
-                    Built and integrated RESTful APIs with Strapi Headless CMS, and developed cross-platform mobile
-                    app features and screens using a component-driven architecture for a social media app.
-                  </p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="grid md:grid-cols-4 gap-8 py-6">
-                <div className="text-sm font-light text-gray-500 uppercase tracking-wide">
-                  June 2025
-                </div>
-                <div className="md:col-span-3">
-                  <h4 className="text-xl font-normal mb-2">Bachelor of Computer Science</h4>
-                  <p className="text-gray-600 mb-3">Maharashtra Institute of Technology, Aurangabad</p>
-                  <p className="text-gray-700 font-light leading-relaxed">
-                    Completed a comprehensive computer science education with a focus on
-                    software development, algorithms, and modern technology stacks.
-                  </p>
-                </div>
-              </motion.div>
-            </div>
-          </motion.div>
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 1.4, delay: i * 0.1, ease: EASE }}
+              >
+                <p className="caps text-meta">{entry.period}</p>
+                {/* Caption pair (§2.4): bold title over a grey descriptor. */}
+                <h4 className="mt-4 text-title font-bold text-ink">{entry.title}</h4>
+                <p className="mt-1 text-base text-meta">{entry.org}</p>
+                <ClampedText className="mt-5" text={entry.description} />
+              </motion.article>
+            ))}
+          </div>
         </div>
 
         <motion.div
@@ -144,97 +209,39 @@ export default function About() {
           className="space-y-5"
         >
           <div className="">
-            <h1 className="text-3xl font-semibold">Stuff I know...</h1>
+            <h3 className="heading">Stuff I know...</h3>
 
-            <div className="mt-6">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.3 }}
-                viewport={{ once: true }}
-                className="">
-                <p className="font-medium ">Languages</p>
-                <div className="flex gap-4 max-sm:gap-2 mt-2 flex-wrap">
-                  {skills.languages.map((item, i) => (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ delay: 0.3 + (i * 0.1) }}
-                      viewport={{ once: true }}
-                      key={item.name}
-                      className="rounded-full border flex items-center gap-2 border-neutral-400 px-5 py-2 text-lg w-max">
-                      <i className={item.icon + " text-neutral-400"}></i>
-                      {item.name}
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.6 }}
-                viewport={{ once: true }}
-                className="mt-5">
-                <p className="font-medium ">Frameworks, Libraries & Tools</p>
-                <div className="flex gap-4 max-sm:gap-2 mt-2 flex-wrap">
-                  {skills.frameworks_libraries_tools.map((item, i) => (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ delay: 0.6 + (i * 0.06) }}
-                      viewport={{ once: true }}
-                      key={item.name}
-                      className="rounded-full border flex items-center gap-2  border-neutral-400 px-5 py-2 text-lg w-max">
-                      <i className={item.icon + " text-neutral-400"}></i>
-                      {item.name}
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 1.3 }}
-                viewport={{ once: true }}
-                className="mt-5">
-                <p className="font-medium ">Databases</p>
-                <div className="flex gap-4 max-sm:gap-2 mt-2 flex-wrap">
-                  {skills.databases.map((item, i) => (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ delay: 1.3 + (i * 0.06) }}
-                      viewport={{ once: true }}
-                      key={item.name}
-                      className="rounded-full border flex items-center gap-2  border-neutral-400 px-5 py-2 text-lg w-max">
-                      <i className={item.icon + " text-neutral-400"}></i>
-                      {item.name}
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 1.6 }}
-                viewport={{ once: true }}
-                className="mt-5">
-                <p className="font-medium ">Tools & Platforms</p>
-                <div className="flex gap-4 max-sm:gap-2 mt-2 flex-wrap">
-                  {skills.tools_platforms.map((item, i) => (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ delay: 1.6 + (i * 0.06) }}
-                      viewport={{ once: true }}
-                      key={item.name}
-                      className="rounded-full border flex items-center gap-2  border-neutral-400 px-5 py-2 text-lg w-max">
-                      <i className={item.icon + " text-neutral-400"}></i>
-                      {item.name}
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
+            <div className="mt-8">
+              {skillGroups.map((group, gi) => (
+                <motion.div
+                  key={group.label}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ delay: group.delay }}
+                  viewport={{ once: true }}
+                  className={gi === 0 ? '' : 'mt-8'}
+                >
+                  <p className="text-sm font-medium text-ink">{group.label}</p>
+                  <div className="flex gap-3 max-sm:gap-2 mt-3 flex-wrap">
+                    {group.items.map((item, i) => (
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ delay: group.delay + (i * group.step) }}
+                        viewport={{ once: true }}
+                        key={item.name}
+                        className="rounded-full border border-line flex items-center gap-2 px-6 py-3 text-xl w-max max-sm:px-4 max-sm:py-2 max-sm:text-base">
+                        <div className="flex items-center brightness-0 opacity-40">
+                          {/* Decorative — the name sits right beside it. Plain <img>: next/image adds nothing for local SVGs. */}
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={item.icon} alt="" width={20} height={20} className="w-5 h-5 max-sm:w-4 max-sm:h-4" />
+                        </div>
+                        {item.name}
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </motion.div>

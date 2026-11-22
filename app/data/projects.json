@@ -1,61 +1,77 @@
 {
 	"projects": [
 		{
-			"name": "Buddy",
+			"name": "Buddy - Job Platform",
 			"description": "A SaaS job platform (freelance) for part-time job opportunities in France, connecting verified applicants (students & individuals) with businesses.\nImplemented authentication via Clerk, payments using Stripe, a clean UI with shadcn/ui, and multilingual support with next-intl. Built admin and business dashboards for verification, job management, and analytics.",
 			"techStack": [
-				"NextJS",
-				"NodeJS",
+				"Next.js",
+				"Node.js",
 				"Express",
 				"PostgreSQL",
 				"Clerk",
 				"Stripe",
 				"AWS"
 			],
-			"link": "https://test.buddy-fr.com",
+			"link": "https://www.buddy-jobs.com",
 			"code": "",
-			"imagePath": "/projects/buddy.png"
+			"imagePath": "/projects/buddy.webp",
+			"imageFit": "cover"
 		},
 		{
-			"name": "CoGlider",
-			"description": "CoGlider is a cross platform Mobile app designed to connect like-minded individuals by matching them based on skills and proximity. Whether you're looking for a project partner, a mentor, or just someone to collaborate with, CoGlider simplifies the process by providing intelligent recommendations and real-time communication.",
+			"name": "ONG Contracting - Portfolio and Product Catalogue",
+			"description": "A ground-up redesign for a UAE industrial supplier, with a 150-product catalogue across 13 categories and 56 sub-categories, filters and a quote cart that sends by WhatsApp or email. An admin portal manages products, categories and page content, and every page ships with structured data for search and AI answers.",
+			"techStack": [
+				"Next.js",
+				"TypeScript",
+				"Supabase",
+				"Tailwind CSS"
+			],
+			"link": "https://www.ongcontracting.com",
+			"code": "",
+			"imagePath": "/projects/ong.webp",
+			"imageFit": "cover"
+		},
+		{
+			"name": "TripGoals - Travel itineraries",
+			"description": "A travel platform for curated tour packages across India, from Himalayan treks to beaches and heritage trails. Travellers browse by category and destination, save favourites to a wishlist and plan their trip over WhatsApp.\nAppwrite powers authentication, the database and file storage, with role-based access for admins, editors and regular users, all wrapped in a polished UI with smooth animations built on shadcn/ui.",
+			"techStack": [
+				"Next.js",
+				"TypeScript",
+				"Appwrite",
+				"Tailwind CSS",
+				"shadcn/ui"
+			],
+			"link": "https://tripgoals.co.in",
+			"code": "",
+			"imagePath": "/projects/tripgoals.webp",
+			"imageFit": "cover"
+		},
+		{
+			"name": "CoGlider - Matchmaking for tech partners",
+			"description": "Ideas are better built together. A cross-platform mobile app designed to connect like-minded individuals by matching them based on skills and proximity. Whether you're looking for a project partner, a mentor, or just someone to collaborate with, CoGlider simplifies the process by providing intelligent recommendations and real-time communication.",
 			"techStack": [
 				"React Native",
 				"Tailwind CSS",
 				"Firebase",
-				"Typescript"
+				"TypeScript"
 			],
 			"link": "https://coglider.vercel.app/",
 			"code": "https://github.com/Muz4mmil/CoGlider",
-			"imagePath": "/projects/coglider.png"
+			"imagePath": "/projects/coglider.webp",
+			"imageFit": "cover"
 		},
 		{
-			"name": "ProJet",
-			"description": "A sleek platform where developers and students can upload, manage, and showcase all their personal or academic projects in one place.\nIt also lets users explore projects from others, encouraging collaboration, knowledge sharing, and community-driven growth within student and tech circles.",
-			"techStack": [
-				"ReactJS",
-				"Material UI",
-				"Tailwind CSS",
-				"NodeJS",
-				"Express",
-				"MongoDB",
-				"Firebase"
-			],
-			"link": "https://projetapp.vercel.app/",
-			"code": "https://github.com/Muz4mmil/ProJet",
-			"imagePath": "/projects/projet.png"
-		},
-		{
-			"name": "FileGlide",
+			"name": "FileGlide - Easy file sharing tool",
 			"description": "A no-login, no-setup file sharing tool built for speed and simplicity.\nUsers can instantly share files across devices using a unique code, making it ideal for classrooms, group work, or quick handoffs — no accounts, no friction, just files.",
 			"techStack": [
-				"ReactJS",
+				"React",
 				"SCSS",
 				"Firebase"
 			],
 			"link": "https://fileglide.web.app/",
 			"code": "https://github.com/Muz4mmil/FileGlide",
-			"imagePath": "/projects/fileglide.png"
+			"imagePath": "/projects/fileglide.png",
+			"imageFit": "contain"
 		}
 	]
 }

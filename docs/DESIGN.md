@@ -22,18 +22,19 @@ grayscale until hover.
 | Token | Value | Use |
 |---|---|---|
 | `paper` | `#FFFFFF` | Page ground. Default for every section. |
-| `ink` | `#0B111A` | Headlines, primary button fill, logo. Cool near-black — **never `#000`**. |
-| `ink-muted` | `#A9AFB8` | The second half of a two-tone headline. Light enough to read as a separate voice. |
-| `body` | `#56606B` | Paragraphs, descriptions, quotes. |
-| `meta` | `#8A9099` | Dates, roles, captions, secondary lines under a bold label. |
+| `ink` | `#000000` | Headlines, primary button fill, logo. True black. |
+| `ink-muted` | `#8D939C` | The second half of a two-tone headline. Light enough to read as a separate voice. 3.1:1 on paper — **display-size text only** (passes WCAG large-text, fails below ~24px). |
+| `body` | `#56606B` | Paragraphs, descriptions, quotes. 6.4:1. |
+| `meta` | `#6B7280` | Dates, roles, captions, secondary lines under a bold label. 4.8:1 — the lightest grey allowed for small text. |
 | `hairline` | `#E6E7EA` | 1px rules, list dividers, input underlines. |
-| `line` | `#D7D9DE` | Outlined pill/chip borders. |
+| `line` | `#A3A3A3` | Outlined pill/chip borders: `.btn-secondary`, `.btn-icon`, `.chip`, the skill pills. (Was `#D7D9DE`; darkened Nov 2026 to match the skill pills.) |
 | `surface` | `#EFEFF1` | Media card ground (the grey rectangle mockups sit on). |
 | `surface-2` | `#F5F6F7` | Chip selected state, subtle panel fills. |
 | `night` | `#1C1C1C` | Optional inverted section ground. |
 
 Rules:
-- Pure black and pure `#000` shadows are banned. Use `ink`.
+- Always reach for the `ink` token rather than writing `black` / `#000` inline,
+  so the value stays changeable in one place.
 - No gradients anywhere — not on cards, not on buttons, not behind media. The
   reference's grey card is a **flat fill**.
 - No coloured borders, no tinted states, no semantic colour (success/error uses
@@ -41,9 +42,13 @@ Rules:
 
 ### 1.2 Typography
 
-Typeface: **Geist Sans** (`font-geist`) — the closest available stand-in for the
-reference's tight geometric grotesk. Geist Mono is not used in the design
-language; reserve it for actual code.
+Typeface: **Inter** — the reference's own face. Loaded with `next/font/google`
+in `app/layout.tsx` (variable font, normal + italic, self-hosted at build time)
+and mapped to Tailwind's `font-sans`, which `<body>` carries, so nothing needs a
+font class. Inter's optical sizing switches to its tighter display cut at large
+sizes automatically. One family for everything; no monospace in the design.
+(`app/opengraph-image.tsx` still renders with Geist from `node_modules/geist` —
+it is a generated image, not page type.)
 
 Only **three weights** exist in this system. This is a hard constraint — the
 reference never reaches for anything else, and extra weights are the fastest way
@@ -61,17 +66,23 @@ never by italicising.
 
 #### Type scale
 
-| Role | Size | Weight | Line-height | Tracking |
-|---|---|---|---|---|
-| **Display XL** — hero headline | `clamp(2.75rem, 8vw, 6.5rem)` | 700 | `0.95` | `-0.035em` |
-| **Display L** — section headline | `clamp(2.25rem, 5.5vw, 4.5rem)` | 700 | `1.0` | `-0.03em` |
-| **Display M** — sub-headline, big pull quote | `clamp(1.75rem, 3.5vw, 2.75rem)` | 700 | `1.05` | `-0.025em` |
-| **Title** — card/list-row title | `1.125rem` – `1.25rem` | 700 | `1.3` | `-0.01em` |
-| **Eyebrow** — section label ("About Me") | `1rem` – `1.125rem` | 400 | `1.4` | `0` |
-| **Body L** — hero support paragraph | `1.125rem` | 400 | `1.55` | `0` |
-| **Body** | `1rem` | 400 | `1.6` | `0` |
-| **Meta** — dates, captions, roles | `0.875rem` | 400 | `1.45` | `0` |
-| **Caps** — nav, social links, service rail | `0.8125rem` – `0.875rem` | 500/600 | `1.2` | `0.06em`, UPPERCASE |
+| Role | Class | Size | Weight | Line-height | Tracking |
+|---|---|---|---|---|---|
+| **Display XL** — hero headline | `.display-xl` | `clamp(3rem, 7.5vw, 6rem)` | 700 | `1.02` | `-0.035em` |
+| **Display L** — section statement (contact) | `.display-l` | `clamp(2.25rem, 5.5vw, 4.5rem)` | 700 | `1.0` | `-0.04em` |
+| **Display M** — sub-headline, big pull quote | `.display-m` | `clamp(1.75rem, 3.5vw, 2.75rem)` | 700 | `1.05` | `-0.035em` |
+| **Section label** — sticky "About"/"Projects" (§6) | `.section-label` | `2.25rem` | 600 | Tailwind `text-4xl` | `-0.03em` |
+| **Heading** — in-section heading: "My Journey", project names, "Get in touch" | `.heading` | `clamp(1.5rem, 2.4vw, 1.875rem)` | 700 | `1.15` | `-0.03em` |
+| **Title** — card/list-row title, journey role | `text-title font-bold` | `1.25rem` | 700 | `1.3` | `-0.02em` |
+| **Eyebrow** — section label ("About Me") | `.eyebrow` | `1.0625rem` | 400 | `1.4` | `0` |
+| **Body L** — desktop paragraphs | `text-body-l` | `1.125rem` | 400 | `1.55` | `0` |
+| **Body** — phone paragraphs, org/descriptor lines | `text-base` | `1rem` | 400 | `1.6` | `0` |
+| **Meta** — chip group labels, small captions | `text-sm` | `0.875rem` | 400/500 | `1.45` | `0` |
+| **Caps** — nav, social links, dates/periods | `.caps` | `0.875rem` | 500 | `1.2` | `0.06em`, UPPERCASE |
+
+Paragraphs are `text-base md:text-body-l`: 16px on a phone, 18px from `md` up.
+Don't add a size outside this table; if something seems to need one, it is
+probably one of these roles.
 
 Notes that matter:
 - Display type is **tight**. Negative tracking and line-height under `1.0` are
@@ -81,8 +92,9 @@ Notes that matter:
   ordinary sentence-case body-size text sitting directly above the huge
   headline. The contrast between a calm 16px line and a 100px line *is* the
   hierarchy. Do not shrink it to 11px and letter-space it.
-- UPPERCASE + letter-spacing is reserved for exactly three things: nav items,
-  social/outbound links, and the right-hand service rail. Never for headings.
+- UPPERCASE + letter-spacing is reserved for exactly four things: nav items,
+  social/outbound links, the right-hand service rail, and dates/periods. Never
+  for a headline, a section heading, a group label, or running text.
 
 #### The two-tone headline — the signature move
 
@@ -118,7 +130,7 @@ box holds an image, it is rounded.
   and no shadow. Depth in the reference comes from the device mockups inside the
   image asset, not from CSS.
 - The only permitted shadow, for a mockup that must float free of a card:
-  `0 24px 60px -24px rgba(11, 17, 26, 0.18)`. Use sparingly.
+  `0 24px 60px -24px rgba(0, 0, 0, 0.18)`. Use sparingly.
 - Borders are **always 1px**, always `hairline` or `line`, never coloured, never
   doubled. They appear on: outlined pills, chips, list-row dividers, and input
   underlines. Nowhere else.
@@ -149,11 +161,11 @@ more.
 
 All buttons are **pills** with a **trailing** icon. The arrow never leads.
 
-**Primary** — solid, for the one action that matters in a viewport.
+**Primary** — solid, for the one action that matters in a viewport. The fill
+stays flat black on hover; it does not lighten.
 ```tsx
 <button className="inline-flex h-14 items-center gap-3 rounded-full bg-ink px-8
-                   text-base font-medium text-white transition-colors duration-300
-                   hover:bg-body">
+                   text-base font-medium text-white">
   Let&apos;s Talk <ArrowRight size={20} strokeWidth={2} />
 </button>
 ```
@@ -250,9 +262,18 @@ hairline rules.
   <span className="text-sm text-meta">2022 — AWWWARDS</span>
 </li>
 ```
-For the experience timeline, the same row becomes a `md:grid-cols-4` with the
-date in column 1 (`Meta`, uppercase, tracking `0.06em`) and the content spanning
-columns 2–4.
+**Hard limits — this pattern is easy to overuse.** In the reference it only ever
+carries two-line rows (an award, an attribution). It is **not** for long-form
+content, and it may appear **once** on the page.
+
+- **Two lines per row, maximum.** The moment a row needs a paragraph, this is
+  the wrong component — a rule under every row of prose reads as a CV table,
+  not an editorial list. Use §3's asymmetric split instead.
+- **Never twice on one page.** Two divided lists stacked in sequence is the
+  single fastest way to make a portfolio look like a résumé template, however
+  correct each one is in isolation.
+- **More than ~5 rows? Change component.** Reach for a bento grid, a card grid,
+  or grouped chunks. A longer list is never the answer to a long list.
 
 ### 2.7 Logo wall
 
@@ -338,7 +359,7 @@ keep it and reuse it rather than inventing new effects.
 | Stagger (chips, list items) | `delay: base + i * 0.06` |
 | Hover — arrow | `ArrowUpRight` rotates 45°, `duration-300` |
 | Hover — image | `grayscale → grayscale-0`, `duration-700` |
-| Hover — pill | fill inverts, `duration-300` |
+| Hover — outlined pill | fill inverts to `ink`, `duration-300`. The solid primary pill has no hover state. |
 
 All scroll-triggered animation uses `viewport={{ once: true }}`. Nothing loops,
 nothing parallaxes, nothing bounces (`bounce: 0`).
@@ -351,7 +372,8 @@ nothing parallaxes, nothing bounces (`bounce: 0`).
 - ❌ Drop shadows on cards, buttons, or nav
 - ❌ `italic`, `font-extralight`, `font-thin`, `font-black`
 - ❌ Any accent or semantic colour
-- ❌ Boxed/fully-outlined form inputs — underline only
+- ❌ Boxed/fully-outlined form inputs — underline only (the contact form is a
+  deliberate exception, see §6)
 - ❌ Centred display headlines
 - ❌ Uppercase section headings
 - ❌ Corner radii other than pill / 24px / 16px
@@ -362,15 +384,41 @@ nothing parallaxes, nothing bounces (`bounce: 0`).
 
 ---
 
-## 6. Conformance backlog for existing sections
+## 6. Status of existing sections
 
-Current code is close, but these are the known deltas from this spec. Fix them
-opportunistically when touching the file.
+### Accepted deviations — leave these alone
 
-| File | Delta |
+Muzammil has explicitly chosen to keep these as they are. They diverge from the
+sections above, and that is intentional. **Do not "fix" them**, and do not cite
+§5 against them.
+
+| Area | Deviation |
 |---|---|
-| `app/sections/projects.tsx` | Media card uses `bg-gradient-to-br from-neutral-50 to-neutral-100` → flat `bg-surface`; `rounded-md` → `rounded-[24px]`. Project name/tech should follow the §2.4 caption pair. |
-| `app/sections/about.tsx` | `font-extralight` + `italic` on the "Developer & Creator" headline → weight 700 two-tone per §1.2. Photo container `rounded-none` → `rounded-[24px]`. |
-| `app/sections/contact.tsx` | Boxed `rounded-full` inputs → underline inputs per §2.9; add labels above fields. |
-| `app/sections/hero.tsx` | Already correct in spirit (two-tone headline, pill CTAs, uppercase social row). Fixed-px line masks (`h-[5.35rem]`) should move to a line-height-relative value when the type scale is applied. |
-| Section headers (`About` / `Projects`) | The sticky `text-4xl font-semibold` + `<hr>` header is a different idiom from the reference. Migrate to the §3 "section opening": eyebrow → two-tone display headline. |
+| `app/sections/about.tsx` — "Web & App Developer" intro + paragraph | Uses `font-extralight`, `font-light` and `italic`, against the three-weight rule in §1.2. Re-confirmed Nov 2026 when the rest of the type was conformed. |
+| `app/sections/about.tsx` — "Stuff I know..." skill pills | Kept at their original size (`px-6 py-3 text-xl`) with a `border-line` border instead of the §2.2 `.chip`; only shrink on phones (`max-sm:px-4 max-sm:py-2 max-sm:text-base`). Chosen Nov 2026. |
+| Section headers (`About` / `Projects`) | The sticky `.section-bar` (holding a `.section-label` + `<hr>`) — on phones it shares the menu button's row at the top of the screen, since the phone nav is only that button — kept instead of the §3 eyebrow → display headline opening. Also means these keep weight 600. |
+| `.btn-primary` | No hover state — the solid pill does not lighten or invert. |
+
+### Conformed
+
+- `app/sections/hero.tsx` — typography conformed Nov 2026 (was an accepted
+  deviation at weight 800, default tracking). Now `.display-xl` through the
+  shared `WordReveal`, two-tone ink / `ink-muted`, `.caps` socials, `.btn-*`
+  actions. Layout, copy and the word reveal are unchanged.
+- Typeface switched from Geist to Inter (Nov 2026); `meta` and `ink-muted`
+  darkened to pass contrast.
+- `app/sections/projects.tsx` — flat `.media-card`, `.btn-secondary` actions,
+  `text-caps` tech list, baseline-aligned numerals, `imageFit` driven by data.
+- `app/sections/about.tsx` — My Journey and "Stuff I know" both on spec tokens,
+  data extracted to `app/data/journey.json`.
+- `app/sections/contact.tsx` — the form was removed (Sept 2026). In its place,
+  "Get in touch" at weight 700 over a `<dl>` of contact details using the §2.4
+  caption pair (grey `meta` label, bold `ink` value); the email is an outbound
+  link with the §2.3 rotating `ArrowUpRight`.
+- `app/page.tsx` — mobile menu built on `.btn-icon` + the divided-list idiom.
+
+### Known issue
+
+`app/data/projects.json` references `/projects/buddy.png`, which does not exist
+in `public/projects/`. The Buddy card renders a broken image until the asset is
+added.
